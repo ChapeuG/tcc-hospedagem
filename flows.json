@@ -1,39 +1,284 @@
 [
     {
-        "id": "1b1ce8e2.cd3017",
+        "id": "e6a504baa2efc0c0",
         "type": "tab",
         "label": "Cadastro Medicamentos",
         "disabled": false,
         "info": ""
     },
     {
-        "id": "93d8e26c.9a58b",
+        "id": "46666654041163aa",
+        "type": "tab",
+        "label": "Dashboard",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "a3a8f60e.4747a8",
+        "type": "ui_group",
+        "name": "CadastroMed2",
+        "tab": "f44ad2a3.2331b",
+        "order": 3,
+        "disp": false,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "c0c4f2d.99e0b1",
+        "type": "ui_group",
+        "name": "Selecione o número do Compartimento",
+        "tab": "f44ad2a3.2331b",
+        "order": 1,
+        "disp": true,
+        "width": "7",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "49ce15cd.8c285c",
+        "type": "ui_group",
+        "name": "CadastroMed3",
+        "tab": "f44ad2a3.2331b",
+        "order": 4,
+        "disp": false,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "ab7eb3dd.ce18e",
+        "type": "ui_group",
+        "name": "CadastroMed4",
+        "tab": "f44ad2a3.2331b",
+        "order": 5,
+        "disp": false,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "74b0a92c.8c4be8",
+        "type": "ui_group",
+        "name": "CadastroMed5",
+        "tab": "f44ad2a3.2331b",
+        "order": 6,
+        "disp": false,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "65ee5774.da5698",
+        "type": "ui_group",
+        "name": "CadastroMed6",
+        "tab": "f44ad2a3.2331b",
+        "order": 7,
+        "disp": false,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "c12a1ba1.28b078",
+        "type": "ui_group",
+        "name": "CadastroMed7",
+        "tab": "f44ad2a3.2331b",
+        "order": 8,
+        "disp": false,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "9cabde5c.717f7",
+        "type": "ui_group",
+        "name": "CadastroMed1",
+        "tab": "f44ad2a3.2331b",
+        "order": 2,
+        "disp": false,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "90559693.85cfa8",
+        "type": "ui_group",
+        "name": "Medicação 1",
+        "tab": "e3277e2c.a85d8",
+        "order": 2,
+        "disp": true,
+        "width": "8",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "46e64040.1f32b",
+        "type": "ui_group",
+        "name": "Informações Gerais",
+        "tab": "e3277e2c.a85d8",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "7e158bed.eb3f54",
+        "type": "ui_group",
+        "name": "Medicação 2",
+        "tab": "e3277e2c.a85d8",
+        "order": 3,
+        "disp": true,
+        "width": "8",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "f44ad2a3.2331b",
+        "type": "ui_tab",
+        "name": "Medicamentos",
+        "icon": "fa-medkit",
+        "order": 4,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "e3277e2c.a85d8",
+        "type": "ui_tab",
+        "name": "Dashboard",
+        "icon": "fa-bar-chart",
+        "order": 5,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "9b45bb49aef2f6fb",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "059998258fe85c80",
+        "type": "MySQLdatabase",
+        "name": "Tcc- Azure",
+        "host": "primysql.mysql.database.azure.com",
+        "port": "3306",
+        "db": "Tcc",
+        "tz": "",
+        "charset": "UTF8"
+    },
+    {
+        "id": "79d319bb80a3013d",
         "type": "ui_ui_control",
-        "z": "1b1ce8e2.cd3017",
+        "z": "e6a504baa2efc0c0",
         "name": "",
         "events": "all",
         "x": 380,
         "y": 160,
         "wires": [
             [
-                "80738337.48c3b",
-                "bd5179e5.2a2258",
-                "b9afab97.a56fd8",
-                "ed961bd2.e401c8",
-                "85c505a4.737a78",
-                "2fcac090.040b2",
-                "6a878037.18bd7"
+                "325ea61a2b4cf486",
+                "39960b47a420cef9",
+                "a4a343f32fed1b7d",
+                "8f3191e6b6db3ea7",
+                "254e1be6b6fd7c9f",
+                "37aa1d704f91cc23",
+                "62c1199a89536997"
             ]
         ]
     },
     {
-        "id": "f73774c4.e77268",
+        "id": "433b5d166dda29bd",
         "type": "function",
-        "z": "1b1ce8e2.cd3017",
+        "z": "e6a504baa2efc0c0",
         "name": "",
-        "func": "qtd = msg.payload;\n\nif (qtd==0){\n    msg.payload = {\"group\": {\"hide\": [\"Medicamentos_CadastroMed1\",\"Medicamentos_CadastroMed2\",\"Medicamentos_CadastroMed3\",\"Medicamentos_CadastroMed4\", \"Medicamentos_CadastroMed5\",\"Medicamentos_CadastroMed6\", \"Medicamentos_CadastroMed7\"]}}\n    return msg;\n}else if (qtd == 1){\n    msg.payload = {\"group\": {\"hide\": [\"Medicamentos_CadastroMed2\",\"Medicamentos_CadastroMed3\",\"Medicamentos_CadastroMed4\", \"Medicamentos_CadastroMed5\",\"Medicamentos_CadastroMed6\", \"Medicamentos_CadastroMed7\"], \"show\": [\"Medicamentos_CadastroMed1\"]}}\n    return msg;\n}else if(qtd==2){\n    msg.payload = {\"group\": {\"hide\": [\"Medicamentos_CadastroMed3\",\"Medicamentos_CadastroMed4\", \"Medicamentos_CadastroMed5\",\"Medicamentos_CadastroMed6\", \"Medicamentos_CadastroMed7\"], \"show\": [\"Medicamentos_CadastroMed1\", \"Medicamentos_CadastroMed2\"]}}\n    return msg;\n}else if(qtd==3){\n    msg.payload = {\"group\": {\"hide\": [\"Medicamentos_CadastroMed4\", \"Medicamentos_CadastroMed5\",\"Medicamentos_CadastroMed6\", \"Medicamentos_CadastroMed7\"], \"show\": [\"Medicamentos_CadastroMed1\", \"Medicamentos_CadastroMed2\", \"Medicamentos_CadastroMed3\"]}}\n    return msg;\n}else if(qtd==4){\n    msg.payload = {\"group\": {\"hide\": [\"Medicamentos_CadastroMed5\",\"Medicamentos_CadastroMed6\", \"Medicamentos_CadastroMed7\"], \"show\": [\"Medicamentos_CadastroMed1\", \"Medicamentos_CadastroMed2\", \"Medicamentos_CadastroMed3\", \"Medicamentos_CadastroMed4\"]}}\n    return msg;\n}else if(qtd==5){\n    msg.payload = {\"group\": {\"hide\": [\"Medicamentos_CadastroMed6\", \"Medicamentos_CadastroMed7\"], \"show\": [\"Medicamentos_CadastroMed1\", \"Medicamentos_CadastroMed2\", \"Medicamentos_CadastroMed3\", \"Medicamentos_CadastroMed4\", \"Medicamentos_CadastroMed5\"]}}\n    return msg;\n}else if(qtd==6){\n    msg.payload = {\"group\": {\"hide\": [\"Medicamentos_CadastroMed7\"], \"show\": [\"Medicamentos_CadastroMed1\", \"Medicamentos_CadastroMed2\", \"Medicamentos_CadastroMed3\", \"Medicamentos_CadastroMed4\", \"Medicamentos_CadastroMed5\", \"Medicamentos_CadastroMed6\"]}}\n    return msg;\n}else if(qtd==7){\n    msg.payload = {\"group\": {\"show\": [\"Medicamentos_CadastroMed1\", \"Medicamentos_CadastroMed2\", \"Medicamentos_CadastroMed3\", \"Medicamentos_CadastroMed4\", \"Medicamentos_CadastroMed5\", \"Medicamentos_CadastroMed6\", \"Medicamentos_CadastroMed7\"]}}\n    return msg;\n}\n\n        \n      \n\n     \n\n    ",
+        "func": "qtd = msg.payload;\n\nif (qtd == 0) {\n    msg.payload = { \"group\": { \"hide\": [\"Medicamentos_CadastroMed1\", \"Medicamentos_CadastroMed2\", \"Medicamentos_CadastroMed3\", \"Medicamentos_CadastroMed4\", \"Medicamentos_CadastroMed5\", \"Medicamentos_CadastroMed6\", \"Medicamentos_CadastroMed7\"] } }\n    return msg;\n} else if (qtd == 1) {\n    msg.payload = { \"group\": { \"hide\": [\"Medicamentos_CadastroMed2\", \"Medicamentos_CadastroMed3\", \"Medicamentos_CadastroMed4\", \"Medicamentos_CadastroMed5\", \"Medicamentos_CadastroMed6\", \"Medicamentos_CadastroMed7\"], \"show\": [\"Medicamentos_CadastroMed1\"] } }\n    return msg;\n} else if (qtd == 2) {\n    msg.payload = { \"group\": { \"hide\": [\"Medicamentos_CadastroMed1\", \"Medicamentos_CadastroMed3\", \"Medicamentos_CadastroMed4\", \"Medicamentos_CadastroMed5\", \"Medicamentos_CadastroMed6\", \"Medicamentos_CadastroMed7\"], \"show\": [\"Medicamentos_CadastroMed2\"] } }\n    return msg;\n} else if (qtd == 3) {\n    msg.payload = { \"group\": { \"hide\": [\"Medicamentos_CadastroMed1\", \"Medicamentos_CadastroMed2\", \"Medicamentos_CadastroMed4\", \"Medicamentos_CadastroMed5\", \"Medicamentos_CadastroMed6\", \"Medicamentos_CadastroMed7\"], \"show\": [\"Medicamentos_CadastroMed3\"] } }\n    return msg;\n} else if (qtd == 4) {\n    msg.payload = { \"group\": { \"hide\": [\"Medicamentos_CadastroMed1\", \"Medicamentos_CadastroMed2\", \"Medicamentos_CadastroMed3\", \"Medicamentos_CadastroMed5\", \"Medicamentos_CadastroMed6\", \"Medicamentos_CadastroMed7\"], \"show\": [\"Medicamentos_CadastroMed4\"] } }\n    return msg;\n} else if (qtd == 5) {\n    msg.payload = { \"group\": { \"hide\": [\"Medicamentos_CadastroMed1\", \"Medicamentos_CadastroMed2\", \"Medicamentos_CadastroMed3\", \"Medicamentos_CadastroMed4\", \"Medicamentos_CadastroMed6\", \"Medicamentos_CadastroMed7\"], \"show\": [\"Medicamentos_CadastroMed5\"] } }\n    return msg;\n} else if (qtd == 6) {\n    msg.payload = { \"group\": { \"hide\": [\"Medicamentos_CadastroMed1\", \"Medicamentos_CadastroMed2\", \"Medicamentos_CadastroMed3\", \"Medicamentos_CadastroMed4\", \"Medicamentos_CadastroMed5\", \"Medicamentos_CadastroMed7\"], \"show\": [\"Medicamentos_CadastroMed6\"] } }\n    return msg;\n} else if (qtd == 7) {\n    msg.payload = { \"group\": { \"hide\": [\"Medicamentos_CadastroMed1\", \"Medicamentos_CadastroMed2\", \"Medicamentos_CadastroMed3\", \"Medicamentos_CadastroMed4\", \"Medicamentos_CadastroMed5\", \"Medicamentos_CadastroMed6\"], \"show\": [\"Medicamentos_CadastroMed7\"] } }\n    return msg;\n}\n\n\n\n\n\n\n",
         "outputs": 1,
-        "noerr": 0,
+        "noerr": 9,
         "initialize": "",
         "finalize": "",
         "libs": [],
@@ -41,14 +286,15 @@
         "y": 160,
         "wires": [
             [
-                "93d8e26c.9a58b"
+                "79d319bb80a3013d",
+                "b463b26a397ec145"
             ]
         ]
     },
     {
-        "id": "1b7aff00.0f3931",
+        "id": "95da4330641e550e",
         "type": "inject",
-        "z": "1b1ce8e2.cd3017",
+        "z": "e6a504baa2efc0c0",
         "name": "",
         "props": [
             {
@@ -70,16 +316,16 @@
         "y": 60,
         "wires": [
             [
-                "05fb4dcada77c2b6"
+                "4f34cf6f184638d3"
             ]
         ]
     },
     {
-        "id": "80738337.48c3b",
+        "id": "325ea61a2b4cf486",
         "type": "ui_form",
-        "z": "1b1ce8e2.cd3017",
+        "z": "e6a504baa2efc0c0",
         "name": "",
-        "label": "Medicamento 2",
+        "label": "Compartimento 2",
         "group": "a3a8f60e.4747a8",
         "order": 1,
         "width": 0,
@@ -121,52 +367,10 @@
                 "rows": null
             },
             {
-                "label": "Compartimento 1 ",
-                "value": "medPlace2_1",
-                "type": "checkbox",
-                "required": false,
-                "rows": null
-            },
-            {
                 "label": "Compartimento 2",
                 "value": "medPlace2_2",
-                "type": "checkbox",
+                "type": "switch",
                 "required": true,
-                "rows": null
-            },
-            {
-                "label": "Compartimento 3",
-                "value": "medPlace2_3",
-                "type": "checkbox",
-                "required": false,
-                "rows": null
-            },
-            {
-                "label": "Compartimento 4",
-                "value": "medPlace2_4",
-                "type": "checkbox",
-                "required": false,
-                "rows": null
-            },
-            {
-                "label": "Compartimento 5 ",
-                "value": "medPlace2_5",
-                "type": "checkbox",
-                "required": false,
-                "rows": null
-            },
-            {
-                "label": "Compartimento 6",
-                "value": "medPlace2_6",
-                "type": "checkbox",
-                "required": false,
-                "rows": null
-            },
-            {
-                "label": "Compartimento 7",
-                "value": "medPlace2_7",
-                "type": "checkbox",
-                "required": false,
                 "rows": null
             }
         ],
@@ -176,13 +380,7 @@
             "medStartTime2": "",
             "medFreq2": "",
             "dosMed2": "",
-            "medPlace2_1": false,
-            "medPlace2_2": false,
-            "medPlace2_3": false,
-            "medPlace2_4": false,
-            "medPlace2_5": false,
-            "medPlace2_6": false,
-            "medPlace2_7": false
+            "medPlace2_2": false
         },
         "payload": "",
         "submit": "Enviar",
@@ -191,28 +389,27 @@
         "topicType": "msg",
         "splitLayout": "",
         "className": "",
-        "x": 620,
-        "y": 900,
+        "x": 610,
+        "y": 420,
         "wires": [
             [
-                "9bde799.7d15d88",
-                "5e20f06a.56c57",
-                "10948f0c.9a0521"
+                "1dac03d7b3cb8dae",
+                "ca6242afe16958f3"
             ]
         ]
     },
     {
-        "id": "cf51649e.cf4748",
+        "id": "6d477cdec9a13299",
         "type": "ui_dropdown",
-        "z": "1b1ce8e2.cd3017",
+        "z": "e6a504baa2efc0c0",
         "name": "",
         "label": "N.º",
-        "tooltip": "Selecione o número de medicamentos para cadastro",
+        "tooltip": "Selecione o número do Compartimento",
         "place": "Selecione",
         "group": "c0c4f2d.99e0b1",
         "order": 1,
-        "width": 0,
-        "height": 0,
+        "width": "0",
+        "height": "0",
         "passthru": true,
         "multiple": false,
         "options": [
@@ -265,14 +462,14 @@
         "y": 160,
         "wires": [
             [
-                "f73774c4.e77268"
+                "433b5d166dda29bd"
             ]
         ]
     },
     {
-        "id": "bd5179e5.2a2258",
+        "id": "39960b47a420cef9",
         "type": "ui_form",
-        "z": "1b1ce8e2.cd3017",
+        "z": "e6a504baa2efc0c0",
         "name": "",
         "label": "Medicamento 3",
         "group": "49ce15cd.8c285c",
@@ -385,20 +582,19 @@
         "topic": "topic",
         "topicType": "msg",
         "splitLayout": "",
-        "x": 620,
-        "y": 1060,
+        "x": 580,
+        "y": 1380,
         "wires": [
             [
-                "8fb15fec.b07fe",
-                "c6da47dc.4f4928",
-                "85d31014.3300d"
+                "a3a0ea2b15c6abd6",
+                "1750bb03a058aada"
             ]
         ]
     },
     {
-        "id": "b9afab97.a56fd8",
+        "id": "a4a343f32fed1b7d",
         "type": "ui_form",
-        "z": "1b1ce8e2.cd3017",
+        "z": "e6a504baa2efc0c0",
         "name": "",
         "label": "Medicamento 4",
         "group": "ab7eb3dd.ce18e",
@@ -511,20 +707,19 @@
         "topic": "topic",
         "topicType": "msg",
         "splitLayout": "",
-        "x": 620,
-        "y": 1200,
+        "x": 580,
+        "y": 1520,
         "wires": [
             [
-                "5838b5bd.10651c",
-                "72c32fd5.00e52",
-                "9dc8b411.80fa58"
+                "294779edad3ff617",
+                "0a46c482fe4342ce"
             ]
         ]
     },
     {
-        "id": "ed961bd2.e401c8",
+        "id": "8f3191e6b6db3ea7",
         "type": "ui_form",
-        "z": "1b1ce8e2.cd3017",
+        "z": "e6a504baa2efc0c0",
         "name": "",
         "label": "Medicamento 5",
         "group": "74b0a92c.8c4be8",
@@ -637,20 +832,19 @@
         "topic": "topic",
         "topicType": "msg",
         "splitLayout": "",
-        "x": 620,
-        "y": 1340,
+        "x": 580,
+        "y": 1660,
         "wires": [
             [
-                "354da1c6.52f2de",
-                "861f9464.872d58",
-                "7167fcd3.8741f4"
+                "7047cafa919f90a5",
+                "12bb1a05315cdf7c"
             ]
         ]
     },
     {
-        "id": "85c505a4.737a78",
+        "id": "254e1be6b6fd7c9f",
         "type": "ui_form",
-        "z": "1b1ce8e2.cd3017",
+        "z": "e6a504baa2efc0c0",
         "name": "",
         "label": "Medicamento 6",
         "group": "65ee5774.da5698",
@@ -763,20 +957,19 @@
         "topic": "topic",
         "topicType": "msg",
         "splitLayout": "",
-        "x": 620,
-        "y": 1480,
+        "x": 580,
+        "y": 1800,
         "wires": [
             [
-                "874e4bd4.ef83e8",
-                "96c2bec4.a63bb",
-                "d93fd66b.4891e8"
+                "4acff92875535c29",
+                "deca04628302a43f"
             ]
         ]
     },
     {
-        "id": "2fcac090.040b2",
+        "id": "37aa1d704f91cc23",
         "type": "ui_form",
-        "z": "1b1ce8e2.cd3017",
+        "z": "e6a504baa2efc0c0",
         "name": "",
         "label": "Medicamento 7",
         "group": "c12a1ba1.28b078",
@@ -889,20 +1082,19 @@
         "topic": "topic",
         "topicType": "msg",
         "splitLayout": "",
-        "x": 620,
-        "y": 1620,
+        "x": 580,
+        "y": 1940,
         "wires": [
             [
-                "7b0bf6c.5e67f08",
-                "48e9d6b1.20fed8",
-                "e6f9d09d.5c62a"
+                "d29489c4f7704423",
+                "a688b197ebba8789"
             ]
         ]
     },
     {
-        "id": "702c9c1a.d692c4",
+        "id": "8407d4e3127f5363",
         "type": "change",
-        "z": "1b1ce8e2.cd3017",
+        "z": "e6a504baa2efc0c0",
         "name": "[MED1] Create global variables",
         "rules": [
             {
@@ -995,20 +1187,19 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 810,
-        "y": 340,
+        "x": 870,
+        "y": 160,
         "wires": [
             [
-                "c12eea3e.4aaba8",
-                "f5a7ddf42ddc335f",
-                "1710ad77e3b0c916"
+                "12e2253907f46188",
+                "cf1d3b5ea450389d"
             ]
         ]
     },
     {
-        "id": "9bde799.7d15d88",
+        "id": "1dac03d7b3cb8dae",
         "type": "change",
-        "z": "1b1ce8e2.cd3017",
+        "z": "e6a504baa2efc0c0",
         "name": "[MED2] Create global variables",
         "rules": [
             {
@@ -1101,18 +1292,18 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 890,
-        "y": 900,
+        "x": 870,
+        "y": 420,
         "wires": [
             [
-                "3132748d.828fdc"
+                "b285d15b351cba37"
             ]
         ]
     },
     {
-        "id": "8fb15fec.b07fe",
+        "id": "a3a0ea2b15c6abd6",
         "type": "change",
-        "z": "1b1ce8e2.cd3017",
+        "z": "e6a504baa2efc0c0",
         "name": "[MED3] Create global variables",
         "rules": [
             {
@@ -1205,18 +1396,18 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 890,
-        "y": 1060,
+        "x": 850,
+        "y": 1380,
         "wires": [
             [
-                "ab42a4ea.a3a5d8"
+                "5513dc8d6efa0efc"
             ]
         ]
     },
     {
-        "id": "5838b5bd.10651c",
+        "id": "294779edad3ff617",
         "type": "change",
-        "z": "1b1ce8e2.cd3017",
+        "z": "e6a504baa2efc0c0",
         "name": "[MED4] Create global variables",
         "rules": [
             {
@@ -1309,18 +1500,18 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 890,
-        "y": 1200,
+        "x": 850,
+        "y": 1520,
         "wires": [
             [
-                "4f800199.43ec8"
+                "16731e9a5a012df2"
             ]
         ]
     },
     {
-        "id": "354da1c6.52f2de",
+        "id": "7047cafa919f90a5",
         "type": "change",
-        "z": "1b1ce8e2.cd3017",
+        "z": "e6a504baa2efc0c0",
         "name": "[MED5] Create global variables",
         "rules": [
             {
@@ -1413,18 +1604,18 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 890,
-        "y": 1340,
+        "x": 850,
+        "y": 1660,
         "wires": [
             [
-                "80cee24.f930a2"
+                "07a4b490e436cc71"
             ]
         ]
     },
     {
-        "id": "874e4bd4.ef83e8",
+        "id": "4acff92875535c29",
         "type": "change",
-        "z": "1b1ce8e2.cd3017",
+        "z": "e6a504baa2efc0c0",
         "name": "[MED6] Create global variables",
         "rules": [
             {
@@ -1517,18 +1708,18 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 890,
-        "y": 1480,
+        "x": 850,
+        "y": 1800,
         "wires": [
             [
-                "328daf99.32c93"
+                "5dd43c435d388ed2"
             ]
         ]
     },
     {
-        "id": "7b0bf6c.5e67f08",
+        "id": "d29489c4f7704423",
         "type": "change",
-        "z": "1b1ce8e2.cd3017",
+        "z": "e6a504baa2efc0c0",
         "name": "[MED7] Create global variables",
         "rules": [
             {
@@ -1621,359 +1812,276 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 890,
-        "y": 1620,
+        "x": 850,
+        "y": 1940,
         "wires": [
             [
-                "6325bf0.6edb34"
+                "c238e8223aabb4d6"
             ]
         ]
     },
     {
-        "id": "76f1b272.d0d9ac",
+        "id": "ca6242afe16958f3",
         "type": "function",
-        "z": "1b1ce8e2.cd3017",
-        "name": "[MED1] Create medPlace Array",
-        "func": "var medplace1 = global.set(\"medPlace1\", [0,0,0,0,0,0,0])\n\nvar t = 1\nvar f = 0\n\nif(msg.payload.medPlace1_1 == true){\n    global.set(\"medPlace1[\"+0+\"]\", t)\n}else{\n    global.set(\"medPlace1[\"+0+\"]\", f)\n}\n\nif(msg.payload.medPlace1_2 == true){\n    global.set(\"medPlace1[\"+1+\"]\", t)\n}else{\n    global.set(\"medPlace1[\"+1+\"]\", f)\n}\n\nif(msg.payload.medPlace1_3 == true){\n    global.set(\"medPlace1[\"+2+\"]\", t)\n}else{\n    global.set(\"medPlace1[\"+2+\"]\", f)\n}\n\nif(msg.payload.medPlace1_4 == true){\n    global.set(\"medPlace1[\"+3+\"]\", t)\n}else{\n    global.set(\"medPlace1[\"+3+\"]\", f)\n}\n\nif(msg.payload.medPlace1_5 == true){\n    global.set(\"medPlace1[\"+4+\"]\", t)\n}else{\n    global.set(\"medPlace1[\"+4+\"]\", f)\n}\n\nif(msg.payload.medPlace1_6 == true){\n    global.set(\"medPlace1[\"+5+\"]\", t)\n}else{\n    global.set(\"medPlace1[\"+5+\"]\", f)\n}\n\nif(msg.payload.medPlace1_7 == true){\n    global.set(\"medPlace1[\"+6+\"]\", t)\n}else{\n    global.set(\"medPlace1[\"+6+\"]\", f)\n}\n\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 870,
-        "y": 140,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "5e20f06a.56c57",
-        "type": "function",
-        "z": "1b1ce8e2.cd3017",
+        "z": "e6a504baa2efc0c0",
         "name": "[MED2] Create medPlace Array",
         "func": "var medplace2 = global.set(\"medPlace2\", [0,0,0,0,0,0,0])\n\nvar t = 1\nvar f = 0\n\nif(msg.payload.medPlace2_1 == true){\n    global.set(\"medPlace2[\"+0+\"]\", t)\n}else{\n    global.set(\"medPlace2[\"+0+\"]\", f)\n}\n\nif(msg.payload.medPlace2_2 == true){\n    global.set(\"medPlace2[\"+1+\"]\", t)\n}else{\n    global.set(\"medPlace2[\"+1+\"]\", f)\n}\n\nif(msg.payload.medPlace2_3 == true){\n    global.set(\"medPlace2[\"+2+\"]\", t)\n}else{\n    global.set(\"medPlace2[\"+2+\"]\", f)\n}\n\nif(msg.payload.medPlace2_4 == true){\n    global.set(\"medPlace2[\"+3+\"]\", t)\n}else{\n    global.set(\"medPlace2[\"+3+\"]\", f)\n}\n\nif(msg.payload.medPlace2_5 == true){\n    global.set(\"medPlace2[\"+4+\"]\", t)\n}else{\n    global.set(\"medPlace2[\"+4+\"]\", f)\n}\n\nif(msg.payload.medPlace2_6 == true){\n    global.set(\"medPlace2[\"+5+\"]\", t)\n}else{\n    global.set(\"medPlace2[\"+5+\"]\", f)\n}\n\nif(msg.payload.medPlace2_7 == true){\n    global.set(\"medPlace2[\"+6+\"]\", t)\n}else{\n    global.set(\"medPlace2[\"+6+\"]\", f)\n}\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
-        "x": 890,
-        "y": 860,
+        "x": 870,
+        "y": 380,
         "wires": [
             []
         ]
     },
     {
-        "id": "c6da47dc.4f4928",
+        "id": "1750bb03a058aada",
         "type": "function",
-        "z": "1b1ce8e2.cd3017",
+        "z": "e6a504baa2efc0c0",
         "name": "[MED3] Create medPlace Array",
         "func": "var medplace3 = global.set(\"medPlace3\", [0,0,0,0,0,0,0])\n\nvar t = 1\nvar f = 0\n\nif(msg.payload.medPlace3_1 == true){\n    global.set(\"medPlace3[\"+0+\"]\", t)\n}else{\n    global.set(\"medPlace3[\"+0+\"]\", f)\n}\n\nif(msg.payload.medPlace3_2 == true){\n    global.set(\"medPlace3[\"+1+\"]\", t)\n}else{\n    global.set(\"medPlace3[\"+1+\"]\", f)\n}\n\nif(msg.payload.medPlace3_3 == true){\n    global.set(\"medPlace3[\"+2+\"]\", t)\n}else{\n    global.set(\"medPlace3[\"+2+\"]\", f)\n}\n\nif(msg.payload.medPlace3_4 == true){\n    global.set(\"medPlace3[\"+3+\"]\", t)\n}else{\n    global.set(\"medPlace3[\"+3+\"]\", f)\n}\n\nif(msg.payload.medPlace3_5 == true){\n    global.set(\"medPlace3[\"+4+\"]\", t)\n}else{\n    global.set(\"medPlace3[\"+4+\"]\", f)\n}\n\nif(msg.payload.medPlace3_6 == true){\n    global.set(\"medPlace3[\"+5+\"]\", t)\n}else{\n    global.set(\"medPlace3[\"+5+\"]\", f)\n}\n\nif(msg.payload.medPlace3_7 == true){\n    global.set(\"medPlace3[\"+6+\"]\", t)\n}else{\n    global.set(\"medPlace3[\"+6+\"]\", f)\n}\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
-        "x": 890,
-        "y": 1020,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "72c32fd5.00e52",
-        "type": "function",
-        "z": "1b1ce8e2.cd3017",
-        "name": "[MED4] Create medPlace Array",
-        "func": "var medplace4 = global.set(\"medPlace4\", [0,0,0,0,0,0,0])\n\nvar t = 1\nvar f = 0\n\nif(msg.payload.medPlace4_1 == true){\n    global.set(\"medPlace4[\"+0+\"]\", t)\n}else{\n    global.set(\"medPlace4[\"+0+\"]\", f)\n}\n\nif(msg.payload.medPlace4_2 == true){\n    global.set(\"medPlace4[\"+1+\"]\", t)\n}else{\n    global.set(\"medPlace4[\"+1+\"]\", f)\n}\n\nif(msg.payload.medPlace4_3 == true){\n    global.set(\"medPlace4[\"+2+\"]\", t)\n}else{\n    global.set(\"medPlace4[\"+2+\"]\", f)\n}\n\nif(msg.payload.medPlace4_4 == true){\n    global.set(\"medPlace4[\"+3+\"]\", t)\n}else{\n    global.set(\"medPlace4[\"+3+\"]\", f)\n}\n\nif(msg.payload.medPlace4_5 == true){\n    global.set(\"medPlace4[\"+4+\"]\", t)\n}else{\n    global.set(\"medPlace4[\"+4+\"]\", f)\n}\n\nif(msg.payload.medPlace4_6 == true){\n    global.set(\"medPlace4[\"+5+\"]\", t)\n}else{\n    global.set(\"medPlace4[\"+5+\"]\", f)\n}\n\nif(msg.payload.medPlace4_7 == true){\n    global.set(\"medPlace4[\"+6+\"]\", t)\n}else{\n    global.set(\"medPlace4[\"+6+\"]\", f)\n}\n\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 890,
-        "y": 1160,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "861f9464.872d58",
-        "type": "function",
-        "z": "1b1ce8e2.cd3017",
-        "name": "[MED5] Create medPlace Array",
-        "func": "var medplace5 = global.set(\"medPlace5\", [0,0,0,0,0,0,0])\n\nvar t = 1\nvar f = 0\n\nif(msg.payload.medPlace5_1 == true){\n    global.set(\"medPlace5[\"+0+\"]\", t)\n}else{\n    global.set(\"medPlace5[\"+0+\"]\", f)\n}\n\nif(msg.payload.medPlace5_2 == true){\n    global.set(\"medPlace5[\"+1+\"]\", t)\n}else{\n    global.set(\"medPlace5[\"+1+\"]\", f)\n}\n\nif(msg.payload.medPlace5_3 == true){\n    global.set(\"medPlace5[\"+2+\"]\", t)\n}else{\n    global.set(\"medPlace5[\"+2+\"]\", f)\n}\n\nif(msg.payload.medPlace5_4 == true){\n    global.set(\"medPlace5[\"+3+\"]\", t)\n}else{\n    global.set(\"medPlace5[\"+3+\"]\", f)\n}\n\nif(msg.payload.medPlace5_5 == true){\n    global.set(\"medPlace5[\"+4+\"]\", t)\n}else{\n    global.set(\"medPlace5[\"+4+\"]\", f)\n}\n\nif(msg.payload.medPlace5_6 == true){\n    global.set(\"medPlace5[\"+5+\"]\", t)\n}else{\n    global.set(\"medPlace5[\"+5+\"]\", f)\n}\n\nif(msg.payload.medPlace5_7 == true){\n    global.set(\"medPlace5[\"+6+\"]\", t)\n}else{\n    global.set(\"medPlace5[\"+6+\"]\", f)\n}\n\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 890,
-        "y": 1300,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "96c2bec4.a63bb",
-        "type": "function",
-        "z": "1b1ce8e2.cd3017",
-        "name": "[MED6] Create medPlace Array",
-        "func": "var medplace6 = global.set(\"medPlace6\", [0,0,0,0,0,0,0])\n\nvar t = 1\nvar f = 0\n\nif(msg.payload.medPlace6_1 == true){\n    global.set(\"medPlace6[\"+0+\"]\", t)\n}else{\n    global.set(\"medPlace6[\"+0+\"]\", f)\n}\n\nif(msg.payload.medPlace6_2 == true){\n    global.set(\"medPlace6[\"+1+\"]\", t)\n}else{\n    global.set(\"medPlace6[\"+1+\"]\", f)\n}\n\nif(msg.payload.medPlace6_3 == true){\n    global.set(\"medPlace6[\"+2+\"]\", t)\n}else{\n    global.set(\"medPlace6[\"+2+\"]\", f)\n}\n\nif(msg.payload.medPlace6_4 == true){\n    global.set(\"medPlace6[\"+3+\"]\", t)\n}else{\n    global.set(\"medPlace6[\"+3+\"]\", f)\n}\n\nif(msg.payload.medPlace6_5 == true){\n    global.set(\"medPlace6[\"+4+\"]\", t)\n}else{\n    global.set(\"medPlace6[\"+4+\"]\", f)\n}\n\nif(msg.payload.medPlace6_6 == true){\n    global.set(\"medPlace6[\"+5+\"]\", t)\n}else{\n    global.set(\"medPlace6[\"+5+\"]\", f)\n}\n\nif(msg.payload.medPlace6_7 == true){\n    global.set(\"medPlace6[\"+6+\"]\", t)\n}else{\n    global.set(\"medPlace6[\"+6+\"]\", f)\n}\n\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 890,
-        "y": 1440,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "48e9d6b1.20fed8",
-        "type": "function",
-        "z": "1b1ce8e2.cd3017",
-        "name": "[MED7] Create medPlace Array",
-        "func": "var medplace7 = global.set(\"medPlace7\", [0,0,0,0,0,0,0])\n\nvar t = 1\nvar f = 0\n\nif(msg.payload.medPlace7_1 == true){\n    global.set(\"medPlace7[\"+0+\"]\", t)\n}else{\n    global.set(\"medPlace7[\"+0+\"]\", f)\n}\n\nif(msg.payload.medPlace7_2 == true){\n    global.set(\"medPlace7[\"+1+\"]\", t)\n}else{\n    global.set(\"medPlace7[\"+1+\"]\", f)\n}\n\nif(msg.payload.medPlace7_3 == true){\n    global.set(\"medPlace7[\"+2+\"]\", t)\n}else{\n    global.set(\"medPlace7[\"+2+\"]\", f)\n}\n\nif(msg.payload.medPlace7_4 == true){\n    global.set(\"medPlace7[\"+3+\"]\", t)\n}else{\n    global.set(\"medPlace7[\"+3+\"]\", f)\n}\n\nif(msg.payload.medPlace7_5 == true){\n    global.set(\"medPlace7[\"+4+\"]\", t)\n}else{\n    global.set(\"medPlace7[\"+4+\"]\", f)\n}\n\nif(msg.payload.medPlace7_6 == true){\n    global.set(\"medPlace7[\"+5+\"]\", t)\n}else{\n    global.set(\"medPlace7[\"+5+\"]\", f)\n}\n\nif(msg.payload.medPlace7_7 == true){\n    global.set(\"medPlace7[\"+6+\"]\", t)\n}else{\n    global.set(\"medPlace7[\"+6+\"]\", f)\n}\n\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 890,
-        "y": 1580,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "c12eea3e.4aaba8",
-        "type": "function",
-        "z": "1b1ce8e2.cd3017",
-        "name": "[MED1] Change Date Format",
-        "func": "var meddate = global.get(\"medStartDate1\")\nif(meddate!=null){\n    var datesplit1 = meddate.split(\"T\")\n    var datesplit2 = datesplit1[0].split(\"-\")\n    for (var i=0; i<3; i++){\n    datesplit2[i] = parseInt(datesplit2[i], 10)\n    }\n    global.set(\"medDate1\", datesplit2)\n}else{\n    global.set(\"medDate1\", [0, 0, 0])\n}",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1180,
-        "y": 240,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "3d16ab6a.668fb4",
-        "type": "function",
-        "z": "1b1ce8e2.cd3017",
-        "name": "[MED1] Change Time Format",
-        "func": "var medtime = msg.payload\n\nif(medtime!=null){\n    var timesplit1 = medtime.split(\"T\")\n    var timesplit2 = timesplit1[1].split(\":\")\n    timesplit2.splice(2) \n    for (var i=0; i<2; i++){\n    timesplit2[i] = parseInt(timesplit2[i], 10)\n    }\n    global.set(\"medTime1\", timesplit2)\n}else{\n    global.set(\"medTime1\", [0,0,0])\n}\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1340,
-        "y": 80,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "3132748d.828fdc",
-        "type": "function",
-        "z": "1b1ce8e2.cd3017",
-        "name": "[MED2] Change Date Format",
-        "func": "var meddate = global.get(\"medStartDate2\")\nif(meddate!=null){\n    var datesplit1 = meddate.split(\"T\")\n    var datesplit2 = datesplit1[0].split(\"-\")\n    for (var i=0; i<3; i++){\n    datesplit2[i] = parseInt(datesplit2[i], 10)\n    }\n    global.set(\"medDate2\", datesplit2)\n}else{\n    global.set(\"medDate2\", [0, 0, 0])\n}",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 1280,
-        "y": 900,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "ef57cb28.41b6f8",
-        "type": "function",
-        "z": "1b1ce8e2.cd3017",
-        "name": "[MED2] Change Time Format",
-        "func": "var medtime = msg.payload\n\nif(medtime!=null){\n    var timesplit1 = medtime.split(\"T\")\n    var timesplit2 = timesplit1[1].split(\":\")\n    timesplit2.splice(2) \n    for (var i=0; i<2; i++){\n    timesplit2[i] = parseInt(timesplit2[i], 10)\n    }\n    global.set(\"medTime2\", timesplit2)\n}else{\n    global.set(\"medTime2\", [0,0,0])\n}\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 1280,
-        "y": 860,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "ab42a4ea.a3a5d8",
-        "type": "function",
-        "z": "1b1ce8e2.cd3017",
-        "name": "[MED3] Change Date Format",
-        "func": "var meddate = global.get(\"medStartDate3\")\nif(meddate!=null){\n    var datesplit1 = meddate.split(\"T\")\n    var datesplit2 = datesplit1[0].split(\"-\")\n    for (var i=0; i<3; i++){\n    datesplit2[i] = parseInt(datesplit2[i], 10)\n    }\n    global.set(\"medDate3\", datesplit2)\n}else{\n    global.set(\"medDate3\", [0, 0, 0])\n}",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 1280,
-        "y": 1060,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "288b52da.13b31e",
-        "type": "function",
-        "z": "1b1ce8e2.cd3017",
-        "name": "[MED3] Change Time Format",
-        "func": "var medtime = msg.payload\n\nif(medtime!=null){\n    var timesplit1 = medtime.split(\"T\")\n    var timesplit2 = timesplit1[1].split(\":\")\n    timesplit2.splice(2) \n    for (var i=0; i<2; i++){\n    timesplit2[i] = parseInt(timesplit2[i], 10)\n    }\n    global.set(\"medTime3\", timesplit2)\n}else{\n    global.set(\"medTime3\", [0,0,0])\n}\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 1280,
-        "y": 1000,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "4f800199.43ec8",
-        "type": "function",
-        "z": "1b1ce8e2.cd3017",
-        "name": "[MED4] Change Date Format",
-        "func": "var meddate = global.get(\"medStartDate4\")\nif(meddate!=null){\n    var datesplit1 = meddate.split(\"T\")\n    var datesplit2 = datesplit1[0].split(\"-\")\n    for (var i=0; i<3; i++){\n    datesplit2[i] = parseInt(datesplit2[i], 10)\n    }\n    global.set(\"medDate4\", datesplit2)\n}else{\n    global.set(\"medDate4\", [0, 0, 0])\n}",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 1280,
-        "y": 1200,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "558c7c65.b8ace4",
-        "type": "function",
-        "z": "1b1ce8e2.cd3017",
-        "name": "[MED4] Change Time Format",
-        "func": "var medtime = msg.payload\n\nif(medtime!=null){\n    var timesplit1 = medtime.split(\"T\")\n    var timesplit2 = timesplit1[1].split(\":\")\n    timesplit2.splice(2) \n    for (var i=0; i<2; i++){\n    timesplit2[i] = parseInt(timesplit2[i], 10)\n    }\n    global.set(\"medTime4\", timesplit2)\n}else{\n    global.set(\"medTime4\", [0,0,0])\n}\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 1280,
-        "y": 1140,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "80cee24.f930a2",
-        "type": "function",
-        "z": "1b1ce8e2.cd3017",
-        "name": "[MED5] Change Date Format",
-        "func": "var meddate = global.get(\"medStartDate5\")\nif(meddate!=null){\n    var datesplit1 = meddate.split(\"T\")\n    var datesplit2 = datesplit1[0].split(\"-\")\n    for (var i=0; i<3; i++){\n    datesplit2[i] = parseInt(datesplit2[i], 10)\n    }\n    global.set(\"medDate5\", datesplit2)\n}else{\n    global.set(\"medDate5\", [0, 0, 0])\n}",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 1280,
+        "x": 850,
         "y": 1340,
         "wires": [
             []
         ]
     },
     {
-        "id": "a83d43eb.d3c19",
+        "id": "0a46c482fe4342ce",
         "type": "function",
-        "z": "1b1ce8e2.cd3017",
-        "name": "[MED5] Change Time Format",
-        "func": "var medtime = msg.payload\n\nif(medtime!=null){\n    var timesplit1 = medtime.split(\"T\")\n    var timesplit2 = timesplit1[1].split(\":\")\n    timesplit2.splice(2) \n    for (var i=0; i<2; i++){\n    timesplit2[i] = parseInt(timesplit2[i], 10)\n    }\n    global.set(\"medTime5\", timesplit2)\n}else{\n    global.set(\"medTime5\", [0,0,0])\n}\n",
+        "z": "e6a504baa2efc0c0",
+        "name": "[MED4] Create medPlace Array",
+        "func": "var medplace4 = global.set(\"medPlace4\", [0,0,0,0,0,0,0])\n\nvar t = 1\nvar f = 0\n\nif(msg.payload.medPlace4_1 == true){\n    global.set(\"medPlace4[\"+0+\"]\", t)\n}else{\n    global.set(\"medPlace4[\"+0+\"]\", f)\n}\n\nif(msg.payload.medPlace4_2 == true){\n    global.set(\"medPlace4[\"+1+\"]\", t)\n}else{\n    global.set(\"medPlace4[\"+1+\"]\", f)\n}\n\nif(msg.payload.medPlace4_3 == true){\n    global.set(\"medPlace4[\"+2+\"]\", t)\n}else{\n    global.set(\"medPlace4[\"+2+\"]\", f)\n}\n\nif(msg.payload.medPlace4_4 == true){\n    global.set(\"medPlace4[\"+3+\"]\", t)\n}else{\n    global.set(\"medPlace4[\"+3+\"]\", f)\n}\n\nif(msg.payload.medPlace4_5 == true){\n    global.set(\"medPlace4[\"+4+\"]\", t)\n}else{\n    global.set(\"medPlace4[\"+4+\"]\", f)\n}\n\nif(msg.payload.medPlace4_6 == true){\n    global.set(\"medPlace4[\"+5+\"]\", t)\n}else{\n    global.set(\"medPlace4[\"+5+\"]\", f)\n}\n\nif(msg.payload.medPlace4_7 == true){\n    global.set(\"medPlace4[\"+6+\"]\", t)\n}else{\n    global.set(\"medPlace4[\"+6+\"]\", f)\n}\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
-        "x": 1280,
-        "y": 1280,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "328daf99.32c93",
-        "type": "function",
-        "z": "1b1ce8e2.cd3017",
-        "name": "[MED6] Change Date Format",
-        "func": "var meddate = global.get(\"medStartDate6\")\nif(meddate!=null){\n    var datesplit1 = meddate.split(\"T\")\n    var datesplit2 = datesplit1[0].split(\"-\")\n    for (var i=0; i<3; i++){\n    datesplit2[i] = parseInt(datesplit2[i], 10)\n    }\n    global.set(\"medDate6\", datesplit2)\n}else{\n    global.set(\"medDate6\", [0, 0, 0])\n}",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 1280,
+        "x": 850,
         "y": 1480,
         "wires": [
             []
         ]
     },
     {
-        "id": "c3050a49.0806d8",
+        "id": "12bb1a05315cdf7c",
         "type": "function",
-        "z": "1b1ce8e2.cd3017",
-        "name": "[MED6] Change Time Format",
-        "func": "var medtime = msg.payload\n\nif(medtime!=null){\n    var timesplit1 = medtime.split(\"T\")\n    var timesplit2 = timesplit1[1].split(\":\")\n    timesplit2.splice(2) \n    for (var i=0; i<2; i++){\n    timesplit2[i] = parseInt(timesplit2[i], 10)\n    }\n    global.set(\"medTime6\", timesplit2)\n}else{\n    global.set(\"medTime6\", [0,0,0])\n}\n",
+        "z": "e6a504baa2efc0c0",
+        "name": "[MED5] Create medPlace Array",
+        "func": "var medplace5 = global.set(\"medPlace5\", [0,0,0,0,0,0,0])\n\nvar t = 1\nvar f = 0\n\nif(msg.payload.medPlace5_1 == true){\n    global.set(\"medPlace5[\"+0+\"]\", t)\n}else{\n    global.set(\"medPlace5[\"+0+\"]\", f)\n}\n\nif(msg.payload.medPlace5_2 == true){\n    global.set(\"medPlace5[\"+1+\"]\", t)\n}else{\n    global.set(\"medPlace5[\"+1+\"]\", f)\n}\n\nif(msg.payload.medPlace5_3 == true){\n    global.set(\"medPlace5[\"+2+\"]\", t)\n}else{\n    global.set(\"medPlace5[\"+2+\"]\", f)\n}\n\nif(msg.payload.medPlace5_4 == true){\n    global.set(\"medPlace5[\"+3+\"]\", t)\n}else{\n    global.set(\"medPlace5[\"+3+\"]\", f)\n}\n\nif(msg.payload.medPlace5_5 == true){\n    global.set(\"medPlace5[\"+4+\"]\", t)\n}else{\n    global.set(\"medPlace5[\"+4+\"]\", f)\n}\n\nif(msg.payload.medPlace5_6 == true){\n    global.set(\"medPlace5[\"+5+\"]\", t)\n}else{\n    global.set(\"medPlace5[\"+5+\"]\", f)\n}\n\nif(msg.payload.medPlace5_7 == true){\n    global.set(\"medPlace5[\"+6+\"]\", t)\n}else{\n    global.set(\"medPlace5[\"+6+\"]\", f)\n}\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
-        "x": 1280,
-        "y": 1420,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "6325bf0.6edb34",
-        "type": "function",
-        "z": "1b1ce8e2.cd3017",
-        "name": "[MED7] Change Date Format",
-        "func": "var meddate = global.get(\"medStartDate7\")\nif(meddate!=null){\n    var datesplit1 = meddate.split(\"T\")\n    var datesplit2 = datesplit1[0].split(\"-\")\n    for (var i=0; i<3; i++){\n    datesplit2[i] = parseInt(datesplit2[i], 10)\n    }\n    global.set(\"medDate7\", datesplit2)\n}else{\n    global.set(\"medDate7\", [0, 0, 0])\n}",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 1280,
+        "x": 850,
         "y": 1620,
         "wires": [
             []
         ]
     },
     {
-        "id": "cdd43411.f83a18",
+        "id": "deca04628302a43f",
         "type": "function",
-        "z": "1b1ce8e2.cd3017",
+        "z": "e6a504baa2efc0c0",
+        "name": "[MED6] Create medPlace Array",
+        "func": "var medplace6 = global.set(\"medPlace6\", [0,0,0,0,0,0,0])\n\nvar t = 1\nvar f = 0\n\nif(msg.payload.medPlace6_1 == true){\n    global.set(\"medPlace6[\"+0+\"]\", t)\n}else{\n    global.set(\"medPlace6[\"+0+\"]\", f)\n}\n\nif(msg.payload.medPlace6_2 == true){\n    global.set(\"medPlace6[\"+1+\"]\", t)\n}else{\n    global.set(\"medPlace6[\"+1+\"]\", f)\n}\n\nif(msg.payload.medPlace6_3 == true){\n    global.set(\"medPlace6[\"+2+\"]\", t)\n}else{\n    global.set(\"medPlace6[\"+2+\"]\", f)\n}\n\nif(msg.payload.medPlace6_4 == true){\n    global.set(\"medPlace6[\"+3+\"]\", t)\n}else{\n    global.set(\"medPlace6[\"+3+\"]\", f)\n}\n\nif(msg.payload.medPlace6_5 == true){\n    global.set(\"medPlace6[\"+4+\"]\", t)\n}else{\n    global.set(\"medPlace6[\"+4+\"]\", f)\n}\n\nif(msg.payload.medPlace6_6 == true){\n    global.set(\"medPlace6[\"+5+\"]\", t)\n}else{\n    global.set(\"medPlace6[\"+5+\"]\", f)\n}\n\nif(msg.payload.medPlace6_7 == true){\n    global.set(\"medPlace6[\"+6+\"]\", t)\n}else{\n    global.set(\"medPlace6[\"+6+\"]\", f)\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 850,
+        "y": 1760,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a688b197ebba8789",
+        "type": "function",
+        "z": "e6a504baa2efc0c0",
+        "name": "[MED7] Create medPlace Array",
+        "func": "var medplace7 = global.set(\"medPlace7\", [0,0,0,0,0,0,0])\n\nvar t = 1\nvar f = 0\n\nif(msg.payload.medPlace7_1 == true){\n    global.set(\"medPlace7[\"+0+\"]\", t)\n}else{\n    global.set(\"medPlace7[\"+0+\"]\", f)\n}\n\nif(msg.payload.medPlace7_2 == true){\n    global.set(\"medPlace7[\"+1+\"]\", t)\n}else{\n    global.set(\"medPlace7[\"+1+\"]\", f)\n}\n\nif(msg.payload.medPlace7_3 == true){\n    global.set(\"medPlace7[\"+2+\"]\", t)\n}else{\n    global.set(\"medPlace7[\"+2+\"]\", f)\n}\n\nif(msg.payload.medPlace7_4 == true){\n    global.set(\"medPlace7[\"+3+\"]\", t)\n}else{\n    global.set(\"medPlace7[\"+3+\"]\", f)\n}\n\nif(msg.payload.medPlace7_5 == true){\n    global.set(\"medPlace7[\"+4+\"]\", t)\n}else{\n    global.set(\"medPlace7[\"+4+\"]\", f)\n}\n\nif(msg.payload.medPlace7_6 == true){\n    global.set(\"medPlace7[\"+5+\"]\", t)\n}else{\n    global.set(\"medPlace7[\"+5+\"]\", f)\n}\n\nif(msg.payload.medPlace7_7 == true){\n    global.set(\"medPlace7[\"+6+\"]\", t)\n}else{\n    global.set(\"medPlace7[\"+6+\"]\", f)\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 850,
+        "y": 1900,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5513dc8d6efa0efc",
+        "type": "function",
+        "z": "e6a504baa2efc0c0",
+        "name": "[MED3] Change Date Format",
+        "func": "var meddate = global.get(\"medStartDate3\")\nif(meddate!=null){\n    var datesplit1 = meddate.split(\"T\")\n    var datesplit2 = datesplit1[0].split(\"-\")\n    for (var i=0; i<3; i++){\n    datesplit2[i] = parseInt(datesplit2[i], 10)\n    }\n    global.set(\"medDate3\", datesplit2)\n}else{\n    global.set(\"medDate3\", [0, 0, 0])\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1240,
+        "y": 1380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "74c30c596dbf173f",
+        "type": "function",
+        "z": "e6a504baa2efc0c0",
+        "name": "[MED3] Change Time Format",
+        "func": "var medtime = msg.payload\n\nif(medtime!=null){\n    var timesplit1 = medtime.split(\"T\")\n    var timesplit2 = timesplit1[1].split(\":\")\n    timesplit2.splice(2) \n    for (var i=0; i<2; i++){\n    timesplit2[i] = parseInt(timesplit2[i], 10)\n    }\n    global.set(\"medTime3\", timesplit2)\n}else{\n    global.set(\"medTime3\", [0,0,0])\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1240,
+        "y": 1320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "16731e9a5a012df2",
+        "type": "function",
+        "z": "e6a504baa2efc0c0",
+        "name": "[MED4] Change Date Format",
+        "func": "var meddate = global.get(\"medStartDate4\")\nif(meddate!=null){\n    var datesplit1 = meddate.split(\"T\")\n    var datesplit2 = datesplit1[0].split(\"-\")\n    for (var i=0; i<3; i++){\n    datesplit2[i] = parseInt(datesplit2[i], 10)\n    }\n    global.set(\"medDate4\", datesplit2)\n}else{\n    global.set(\"medDate4\", [0, 0, 0])\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1240,
+        "y": 1520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "dc547d457b0c2315",
+        "type": "function",
+        "z": "e6a504baa2efc0c0",
+        "name": "[MED4] Change Time Format",
+        "func": "var medtime = msg.payload\n\nif(medtime!=null){\n    var timesplit1 = medtime.split(\"T\")\n    var timesplit2 = timesplit1[1].split(\":\")\n    timesplit2.splice(2) \n    for (var i=0; i<2; i++){\n    timesplit2[i] = parseInt(timesplit2[i], 10)\n    }\n    global.set(\"medTime4\", timesplit2)\n}else{\n    global.set(\"medTime4\", [0,0,0])\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1240,
+        "y": 1460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "07a4b490e436cc71",
+        "type": "function",
+        "z": "e6a504baa2efc0c0",
+        "name": "[MED5] Change Date Format",
+        "func": "var meddate = global.get(\"medStartDate5\")\nif(meddate!=null){\n    var datesplit1 = meddate.split(\"T\")\n    var datesplit2 = datesplit1[0].split(\"-\")\n    for (var i=0; i<3; i++){\n    datesplit2[i] = parseInt(datesplit2[i], 10)\n    }\n    global.set(\"medDate5\", datesplit2)\n}else{\n    global.set(\"medDate5\", [0, 0, 0])\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1240,
+        "y": 1660,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b9bcc5fa1a6a7eb9",
+        "type": "function",
+        "z": "e6a504baa2efc0c0",
+        "name": "[MED5] Change Time Format",
+        "func": "var medtime = msg.payload\n\nif(medtime!=null){\n    var timesplit1 = medtime.split(\"T\")\n    var timesplit2 = timesplit1[1].split(\":\")\n    timesplit2.splice(2) \n    for (var i=0; i<2; i++){\n    timesplit2[i] = parseInt(timesplit2[i], 10)\n    }\n    global.set(\"medTime5\", timesplit2)\n}else{\n    global.set(\"medTime5\", [0,0,0])\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1240,
+        "y": 1600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5dd43c435d388ed2",
+        "type": "function",
+        "z": "e6a504baa2efc0c0",
+        "name": "[MED6] Change Date Format",
+        "func": "var meddate = global.get(\"medStartDate6\")\nif(meddate!=null){\n    var datesplit1 = meddate.split(\"T\")\n    var datesplit2 = datesplit1[0].split(\"-\")\n    for (var i=0; i<3; i++){\n    datesplit2[i] = parseInt(datesplit2[i], 10)\n    }\n    global.set(\"medDate6\", datesplit2)\n}else{\n    global.set(\"medDate6\", [0, 0, 0])\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1240,
+        "y": 1800,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7a68070896408f2d",
+        "type": "function",
+        "z": "e6a504baa2efc0c0",
+        "name": "[MED6] Change Time Format",
+        "func": "var medtime = msg.payload\n\nif(medtime!=null){\n    var timesplit1 = medtime.split(\"T\")\n    var timesplit2 = timesplit1[1].split(\":\")\n    timesplit2.splice(2) \n    for (var i=0; i<2; i++){\n    timesplit2[i] = parseInt(timesplit2[i], 10)\n    }\n    global.set(\"medTime6\", timesplit2)\n}else{\n    global.set(\"medTime6\", [0,0,0])\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1240,
+        "y": 1740,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c238e8223aabb4d6",
+        "type": "function",
+        "z": "e6a504baa2efc0c0",
+        "name": "[MED7] Change Date Format",
+        "func": "var meddate = global.get(\"medStartDate7\")\nif(meddate!=null){\n    var datesplit1 = meddate.split(\"T\")\n    var datesplit2 = datesplit1[0].split(\"-\")\n    for (var i=0; i<3; i++){\n    datesplit2[i] = parseInt(datesplit2[i], 10)\n    }\n    global.set(\"medDate7\", datesplit2)\n}else{\n    global.set(\"medDate7\", [0, 0, 0])\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1240,
+        "y": 1940,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9422140fea052501",
+        "type": "function",
+        "z": "e6a504baa2efc0c0",
         "name": "[MED7] Change Time Format",
         "func": "var medtime = msg.payload\n\nif(medtime!=null){\n    var timesplit1 = medtime.split(\"T\")\n    var timesplit2 = timesplit1[1].split(\":\")\n    timesplit2.splice(2) \n    for (var i=0; i<2; i++){\n    timesplit2[i] = parseInt(timesplit2[i], 10)\n    }\n    global.set(\"medTime7\", timesplit2)\n}else{\n    global.set(\"medTime7\", [0,0,0])\n}\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
-        "x": 1280,
-        "y": 1560,
+        "x": 1240,
+        "y": 1880,
         "wires": [
             []
         ]
     },
     {
-        "id": "6a878037.18bd7",
+        "id": "62c1199a89536997",
         "type": "ui_form",
-        "z": "1b1ce8e2.cd3017",
+        "z": "e6a504baa2efc0c0",
         "name": "",
-        "label": "Medicamento 1",
+        "label": "Compartimento 1",
         "group": "9cabde5c.717f7",
         "order": 1,
         "width": 0,
@@ -2008,7 +2116,7 @@
                 "rows": null
             },
             {
-                "label": "Quantidade de comprimidos no compartimento ",
+                "label": "Quantidade de comprimidos no compartimento",
                 "value": "dosMed1",
                 "type": "number",
                 "required": false,
@@ -2017,50 +2125,8 @@
             {
                 "label": "Compartimento 1",
                 "value": "medPlace1_1",
-                "type": "checkbox",
-                "required": false,
-                "rows": null
-            },
-            {
-                "label": "Compartimento 2",
-                "value": "medPlace1_2",
-                "type": "checkbox",
-                "required": false,
-                "rows": null
-            },
-            {
-                "label": "Compartimento 3",
-                "value": "medPlace1_3",
-                "type": "checkbox",
-                "required": false,
-                "rows": null
-            },
-            {
-                "label": "Compartimento 4",
-                "value": "medPlace1_4",
-                "type": "checkbox",
-                "required": false,
-                "rows": null
-            },
-            {
-                "label": "Compartimento 5",
-                "value": "medPlace1_5",
-                "type": "checkbox",
-                "required": false,
-                "rows": null
-            },
-            {
-                "label": "Compartimento 6",
-                "value": "medPlace1_6",
-                "type": "checkbox",
-                "required": false,
-                "rows": null
-            },
-            {
-                "label": "Compartimento 7",
-                "value": "medPlace1_7",
-                "type": "checkbox",
-                "required": false,
+                "type": "switch",
+                "required": true,
                 "rows": null
             }
         ],
@@ -2070,13 +2136,7 @@
             "medStartTime1": "",
             "medFreq1": "",
             "dosMed1": "",
-            "medPlace1_1": false,
-            "medPlace1_2": false,
-            "medPlace1_3": false,
-            "medPlace1_4": false,
-            "medPlace1_5": false,
-            "medPlace1_6": false,
-            "medPlace1_7": false
+            "medPlace1_1": false
         },
         "payload": "",
         "submit": "Enviar",
@@ -2085,227 +2145,18 @@
         "topicType": "msg",
         "splitLayout": "",
         "className": "",
-        "x": 600,
+        "x": 610,
         "y": 160,
         "wires": [
             [
-                "76f1b272.d0d9ac",
-                "702c9c1a.d692c4",
-                "9da39be.092b268"
+                "8407d4e3127f5363"
             ]
         ]
     },
     {
-        "id": "9c9bb0e9.2b7e3",
+        "id": "9639d0274b94465d",
         "type": "debug",
-        "z": "1b1ce8e2.cd3017",
-        "name": "h",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1310,
-        "y": 40,
-        "wires": []
-    },
-    {
-        "id": "9da39be.092b268",
-        "type": "moment",
-        "z": "1b1ce8e2.cd3017",
-        "name": "",
-        "topic": "",
-        "input": "payload.medStartTime1",
-        "inputType": "msg",
-        "inTz": "Africa/Abidjan",
-        "adjAmount": "3",
-        "adjType": "hours",
-        "adjDir": "subtract",
-        "format": "",
-        "locale": "pt-BR",
-        "output": "payload",
-        "outputType": "msg",
-        "outTz": "America/Sao_Paulo",
-        "x": 840,
-        "y": 100,
-        "wires": [
-            [
-                "3d16ab6a.668fb4",
-                "9c9bb0e9.2b7e3"
-            ]
-        ]
-    },
-    {
-        "id": "10948f0c.9a0521",
-        "type": "moment",
-        "z": "1b1ce8e2.cd3017",
-        "name": "",
-        "topic": "",
-        "input": "payload.medStartTime2",
-        "inputType": "msg",
-        "inTz": "Africa/Abidjan",
-        "adjAmount": "3",
-        "adjType": "hours",
-        "adjDir": "subtract",
-        "format": "",
-        "locale": "pt-BR",
-        "output": "payload",
-        "outputType": "msg",
-        "outTz": "America/Sao_Paulo",
-        "x": 860,
-        "y": 820,
-        "wires": [
-            [
-                "ef57cb28.41b6f8"
-            ]
-        ]
-    },
-    {
-        "id": "85d31014.3300d",
-        "type": "moment",
-        "z": "1b1ce8e2.cd3017",
-        "name": "",
-        "topic": "",
-        "input": "payload.medStartTime3",
-        "inputType": "msg",
-        "inTz": "Africa/Abidjan",
-        "adjAmount": "3",
-        "adjType": "hours",
-        "adjDir": "subtract",
-        "format": "",
-        "locale": "pt-BR",
-        "output": "payload",
-        "outputType": "msg",
-        "outTz": "America/Sao_Paulo",
-        "x": 860,
-        "y": 980,
-        "wires": [
-            [
-                "288b52da.13b31e"
-            ]
-        ]
-    },
-    {
-        "id": "9dc8b411.80fa58",
-        "type": "moment",
-        "z": "1b1ce8e2.cd3017",
-        "name": "",
-        "topic": "",
-        "input": "payload.medStartTime4",
-        "inputType": "msg",
-        "inTz": "Africa/Abidjan",
-        "adjAmount": "3",
-        "adjType": "hours",
-        "adjDir": "subtract",
-        "format": "",
-        "locale": "pt-BR",
-        "output": "payload",
-        "outputType": "msg",
-        "outTz": "America/Sao_Paulo",
-        "x": 860,
-        "y": 1120,
-        "wires": [
-            [
-                "558c7c65.b8ace4"
-            ]
-        ]
-    },
-    {
-        "id": "7167fcd3.8741f4",
-        "type": "moment",
-        "z": "1b1ce8e2.cd3017",
-        "name": "",
-        "topic": "",
-        "input": "payload.medStartTime5",
-        "inputType": "msg",
-        "inTz": "Africa/Abidjan",
-        "adjAmount": "3",
-        "adjType": "hours",
-        "adjDir": "subtract",
-        "format": "",
-        "locale": "en-US",
-        "output": "payload",
-        "outputType": "msg",
-        "outTz": "America/Sao_Paulo",
-        "x": 860,
-        "y": 1260,
-        "wires": [
-            [
-                "a83d43eb.d3c19"
-            ]
-        ]
-    },
-    {
-        "id": "d93fd66b.4891e8",
-        "type": "moment",
-        "z": "1b1ce8e2.cd3017",
-        "name": "",
-        "topic": "",
-        "input": "payload.medStartTime6",
-        "inputType": "msg",
-        "inTz": "Africa/Abidjan",
-        "adjAmount": "3",
-        "adjType": "hours",
-        "adjDir": "subtract",
-        "format": "",
-        "locale": "en-US",
-        "output": "payload",
-        "outputType": "msg",
-        "outTz": "America/Sao_Paulo",
-        "x": 860,
-        "y": 1400,
-        "wires": [
-            [
-                "c3050a49.0806d8"
-            ]
-        ]
-    },
-    {
-        "id": "e6f9d09d.5c62a",
-        "type": "moment",
-        "z": "1b1ce8e2.cd3017",
-        "name": "",
-        "topic": "",
-        "input": "payload.medStartTime7",
-        "inputType": "msg",
-        "inTz": "Africa/Abidjan",
-        "adjAmount": "3",
-        "adjType": "hours",
-        "adjDir": "subtract",
-        "format": "",
-        "locale": "en-US",
-        "output": "payload",
-        "outputType": "msg",
-        "outTz": "America/Sao_Paulo",
-        "x": 860,
-        "y": 1540,
-        "wires": [
-            [
-                "cdd43411.f83a18"
-            ]
-        ]
-    },
-    {
-        "id": "6c4456e49364c1f4",
-        "type": "mysql",
-        "z": "1b1ce8e2.cd3017",
-        "mydb": "059998258fe85c80",
-        "name": "",
-        "x": 1990,
-        "y": 580,
-        "wires": [
-            [
-                "35683c32c158e288"
-            ]
-        ]
-    },
-    {
-        "id": "35683c32c158e288",
-        "type": "debug",
-        "z": "1b1ce8e2.cd3017",
+        "z": "e6a504baa2efc0c0",
         "name": "",
         "active": true,
         "tosidebar": true,
@@ -2314,14 +2165,14 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2210,
-        "y": 580,
+        "x": 2130,
+        "y": 380,
         "wires": []
     },
     {
-        "id": "f5a7ddf42ddc335f",
+        "id": "12e2253907f46188",
         "type": "debug",
-        "z": "1b1ce8e2.cd3017",
+        "z": "e6a504baa2efc0c0",
         "name": "",
         "active": true,
         "tosidebar": true,
@@ -2331,14 +2182,14 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1110,
-        "y": 180,
+        "x": 1130,
+        "y": 140,
         "wires": []
     },
     {
-        "id": "05fb4dcada77c2b6",
+        "id": "4f34cf6f184638d3",
         "type": "debug",
-        "z": "1b1ce8e2.cd3017",
+        "z": "e6a504baa2efc0c0",
         "name": "",
         "active": false,
         "tosidebar": true,
@@ -2352,9 +2203,9 @@
         "wires": []
     },
     {
-        "id": "1ad8a7aabbda29af",
+        "id": "a0622bbfcafd0b80",
         "type": "string",
-        "z": "1b1ce8e2.cd3017",
+        "z": "e6a504baa2efc0c0",
         "name": "Nome_medicamento",
         "methods": [
             {
@@ -2366,18 +2217,18 @@
         "propout": "payload.medName1",
         "object": "msg",
         "objectout": "msg",
-        "x": 1260,
-        "y": 340,
+        "x": 1320,
+        "y": 180,
         "wires": [
             [
-                "4badb01726867e46"
+                "0844bbd9932386b3"
             ]
         ]
     },
     {
-        "id": "6f5147afc48c13fb",
+        "id": "df6e951b9853f843",
         "type": "string",
-        "z": "1b1ce8e2.cd3017",
+        "z": "e6a504baa2efc0c0",
         "name": "Data_início_tratamento",
         "methods": [
             {
@@ -2389,18 +2240,18 @@
         "propout": "payload.medStartDate1",
         "object": "msg",
         "objectout": "msg",
-        "x": 1310,
-        "y": 520,
+        "x": 1470,
+        "y": 300,
         "wires": [
             [
-                "ee22a9c7e3301ae7"
+                "44713f510255e781"
             ]
         ]
     },
     {
-        "id": "4badb01726867e46",
+        "id": "0844bbd9932386b3",
         "type": "string",
-        "z": "1b1ce8e2.cd3017",
+        "z": "e6a504baa2efc0c0",
         "name": "Frequencia",
         "methods": [
             {
@@ -2412,18 +2263,18 @@
         "propout": "payload.medFreq1",
         "object": "msg",
         "objectout": "msg",
-        "x": 1230,
-        "y": 380,
+        "x": 1290,
+        "y": 220,
         "wires": [
             [
-                "a89203ec4f459a8e"
+                "d476d45c68972de5"
             ]
         ]
     },
     {
-        "id": "a89203ec4f459a8e",
+        "id": "d476d45c68972de5",
         "type": "string",
-        "z": "1b1ce8e2.cd3017",
+        "z": "e6a504baa2efc0c0",
         "name": "Dosagem",
         "methods": [
             {
@@ -2435,18 +2286,18 @@
         "propout": "payload.dosMed1",
         "object": "msg",
         "objectout": "msg",
-        "x": 1200,
-        "y": 420,
+        "x": 1280,
+        "y": 260,
         "wires": [
             [
-                "4604860a3518ddde"
+                "0ba7cdbde59b5144"
             ]
         ]
     },
     {
-        "id": "d299f53f703d3bf2",
+        "id": "a75b07530cc294e8",
         "type": "string",
-        "z": "1b1ce8e2.cd3017",
+        "z": "e6a504baa2efc0c0",
         "name": "Hora_início_tratamento",
         "methods": [
             {
@@ -2458,18 +2309,19 @@
         "propout": "medStartTime1",
         "object": "msg",
         "objectout": "msg",
-        "x": 1290,
-        "y": 580,
+        "x": 1450,
+        "y": 340,
         "wires": [
             [
-                "e2eb66e9dd9304aa"
+                "c78f6a2c22aa473a",
+                "b185a5c16d8a8b7a"
             ]
         ]
     },
     {
-        "id": "1710ad77e3b0c916",
+        "id": "cf1d3b5ea450389d",
         "type": "delay",
-        "z": "1b1ce8e2.cd3017",
+        "z": "e6a504baa2efc0c0",
         "name": "",
         "pauseType": "delay",
         "timeout": "4",
@@ -2483,37 +2335,37 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 1080,
-        "y": 340,
+        "x": 1120,
+        "y": 180,
         "wires": [
             [
-                "1ad8a7aabbda29af"
+                "a0622bbfcafd0b80"
             ]
         ]
     },
     {
-        "id": "e2eb66e9dd9304aa",
+        "id": "c78f6a2c22aa473a",
         "type": "function",
-        "z": "1b1ce8e2.cd3017",
+        "z": "e6a504baa2efc0c0",
         "name": "",
-        "func": "msg.payload = `INSERT INTO Tcc.Cadastro_Medicamento(paciente_id, Nome_medicamento, Data_inicio_tratamento,Hora_inicio_tratamento,Frequencia,Qtd_comprimidos_compartimento,Compartimento)\n    SELECT  *\n    FROM (SELECT '1' AS paciente_id,\n    \"${msg.payload.medName1}\" AS Nome_medicamento,\n    \"${msg.payload.medStartDate1}\" AS Data_inicio_tratamento,\n    \"${msg.medStartTime1}\" AS Hora_inicio_tratamento,\n    ${msg.payload.medFreq1} AS Frequencia,\n    ${msg.payload.dosMed1} AS Qtd_comprimidos_compartimento,\n    '4' AS Compartimento) AS temp\n    WHERE NOT EXISTS (SELECT paciente_id,Compartimento\n                      FROM Tcc.Cadastro_Medicamento AS med\n                      WHERE med.paciente_id = '1' AND med.Compartimento = '4'\n                     )\n\tLIMIT 1;'\n                     \n\t\t\t\t\t`\nreturn msg;",
+        "func": "msg.payload = `INSERT INTO Tcc.Cadastro_Medicamento(paciente_id, Nome_medicamento, Data_inicio_tratamento,Hora_inicio_tratamento,Frequencia,Qtd_comprimidos_compartimento,Compartimento)\n    SELECT  *\n    FROM (SELECT '1' AS paciente_id,\n    \"${msg.payload.medName1}\" AS Nome_medicamento,\n    \"${msg.payload.medStartDate1}\" AS Data_inicio_tratamento,\n    \"${msg.medStartTime1}\" AS Hora_inicio_tratamento,\n    ${msg.payload.medFreq1} AS Frequencia,\n    ${msg.payload.dosMed1} AS Qtd_comprimidos_compartimento,\n    '1' AS Compartimento) AS temp\n    WHERE NOT EXISTS (SELECT paciente_id,Compartimento\n                      FROM Tcc.Cadastro_Medicamento AS med\n                      WHERE med.paciente_id = '1' AND med.Compartimento = '1'\n                     )\n\tLIMIT 1;'\n                     \n\t\t\t\t\t`\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1580,
-        "y": 580,
+        "x": 1640,
+        "y": 340,
         "wires": [
             [
-                "6832b3bf90138162"
+                "5aaa4f02816e4df7"
             ]
         ]
     },
     {
-        "id": "1bd92bb04a332853",
+        "id": "d4da3b436e9b39c9",
         "type": "debug",
-        "z": "1b1ce8e2.cd3017",
+        "z": "e6a504baa2efc0c0",
         "name": "",
         "active": true,
         "tosidebar": true,
@@ -2523,14 +2375,14 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1940,
-        "y": 540,
+        "x": 1960,
+        "y": 280,
         "wires": []
     },
     {
-        "id": "6832b3bf90138162",
+        "id": "5aaa4f02816e4df7",
         "type": "string",
-        "z": "1b1ce8e2.cd3017",
+        "z": "e6a504baa2efc0c0",
         "name": "",
         "methods": [
             {
@@ -2542,88 +2394,19 @@
         "propout": "topic",
         "object": "msg",
         "objectout": "msg",
-        "x": 1770,
-        "y": 580,
+        "x": 1790,
+        "y": 340,
         "wires": [
             [
-                "6c4456e49364c1f4",
-                "1bd92bb04a332853"
+                "d4da3b436e9b39c9",
+                "b318e9c9e22a54d6"
             ]
         ]
     },
     {
-        "id": "03e36ddcfa2de67b",
-        "type": "moment",
-        "z": "1b1ce8e2.cd3017",
-        "name": "",
-        "topic": "",
-        "input": "payload.medStartTime1",
-        "inputType": "msg",
-        "inTz": "Africa/Abidjan",
-        "adjAmount": "3",
-        "adjType": "hours",
-        "adjDir": "subtract",
-        "format": "HH:mm",
-        "locale": "pt-BR",
-        "output": "payload.medStartTime1",
-        "outputType": "msg",
-        "outTz": "America/Sao_Paulo",
-        "x": 1040,
-        "y": 580,
-        "wires": [
-            [
-                "d299f53f703d3bf2",
-                "2a5b03bfecbaddd9"
-            ]
-        ]
-    },
-    {
-        "id": "343204f8067bbc8f",
-        "type": "debug",
-        "z": "1b1ce8e2.cd3017",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": true,
-        "complete": "payload.medStartDate1",
-        "targetType": "msg",
-        "statusVal": "Date",
-        "statusType": "auto",
-        "x": 1300,
-        "y": 680,
-        "wires": []
-    },
-    {
-        "id": "39828b14ec5a64f5",
-        "type": "moment",
-        "z": "1b1ce8e2.cd3017",
-        "name": "",
-        "topic": "",
-        "input": "payload.medStartDate1",
-        "inputType": "msg",
-        "inTz": "Africa/Abidjan",
-        "adjAmount": "3",
-        "adjType": "hours",
-        "adjDir": "subtract",
-        "format": "YYYY-MM-DD",
-        "locale": "pt-BR",
-        "output": "payload.medStartDate1",
-        "outputType": "msg",
-        "outTz": "America/Sao_Paulo",
-        "x": 1060,
-        "y": 520,
-        "wires": [
-            [
-                "6f5147afc48c13fb",
-                "343204f8067bbc8f"
-            ]
-        ]
-    },
-    {
-        "id": "4604860a3518ddde",
+        "id": "0ba7cdbde59b5144",
         "type": "delay",
-        "z": "1b1ce8e2.cd3017",
+        "z": "e6a504baa2efc0c0",
         "name": "",
         "pauseType": "delay",
         "timeout": "3",
@@ -2637,18 +2420,18 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 880,
-        "y": 520,
+        "x": 980,
+        "y": 300,
         "wires": [
             [
-                "39828b14ec5a64f5"
+                "945f79cf9cc61f7f"
             ]
         ]
     },
     {
-        "id": "ee22a9c7e3301ae7",
+        "id": "44713f510255e781",
         "type": "delay",
-        "z": "1b1ce8e2.cd3017",
+        "z": "e6a504baa2efc0c0",
         "name": "",
         "pauseType": "delay",
         "timeout": "4",
@@ -2662,42 +2445,461 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 860,
-        "y": 580,
+        "x": 980,
+        "y": 340,
         "wires": [
             [
-                "03e36ddcfa2de67b"
+                "697b01e3d8502d33"
             ]
         ]
     },
     {
-        "id": "2a5b03bfecbaddd9",
+        "id": "b463b26a397ec145",
         "type": "debug",
-        "z": "1b1ce8e2.cd3017",
+        "z": "e6a504baa2efc0c0",
         "name": "",
         "active": true,
         "tosidebar": true,
         "console": false,
-        "tostatus": true,
-        "complete": "payload.medStartTime1",
-        "targetType": "msg",
-        "statusVal": "payload.medStartTime1",
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
         "statusType": "auto",
-        "x": 1300,
-        "y": 640,
+        "x": 410,
+        "y": 280,
         "wires": []
     },
     {
-        "id": "2f0296ff.b8c79a",
-        "type": "tab",
-        "label": "Dashboard",
-        "disabled": false,
-        "info": ""
+        "id": "b318e9c9e22a54d6",
+        "type": "mysql",
+        "z": "e6a504baa2efc0c0",
+        "mydb": "059998258fe85c80",
+        "name": "",
+        "x": 1970,
+        "y": 380,
+        "wires": [
+            [
+                "9639d0274b94465d"
+            ]
+        ]
     },
     {
-        "id": "716d0fb1.119fd",
+        "id": "b185a5c16d8a8b7a",
+        "type": "debug",
+        "z": "e6a504baa2efc0c0",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1850,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "945f79cf9cc61f7f",
+        "type": "moment",
+        "z": "e6a504baa2efc0c0",
+        "name": "",
+        "topic": "",
+        "input": "payload.medStartDate1",
+        "inputType": "msg",
+        "inTz": "Africa/Abidjan",
+        "adjAmount": "3",
+        "adjType": "hours",
+        "adjDir": "add",
+        "format": "YYYY-MM-DD",
+        "locale": "pt-BR",
+        "output": "payload.medStartDate1",
+        "outputType": "msg",
+        "outTz": "America/Sao_Paulo",
+        "x": 1200,
+        "y": 300,
+        "wires": [
+            [
+                "df6e951b9853f843"
+            ]
+        ]
+    },
+    {
+        "id": "697b01e3d8502d33",
+        "type": "moment",
+        "z": "e6a504baa2efc0c0",
+        "name": "",
+        "topic": "",
+        "input": "payload.medStartTime1",
+        "inputType": "msg",
+        "inTz": "Africa/Abidjan",
+        "adjAmount": "2",
+        "adjType": "hours",
+        "adjDir": "add",
+        "format": "HH:mm",
+        "locale": "pt-BR",
+        "output": "payload.medStartTime1",
+        "outputType": "msg",
+        "outTz": "America/Sao_Paulo",
+        "x": 1200,
+        "y": 340,
+        "wires": [
+            [
+                "a75b07530cc294e8",
+                "1752782e0f1feb68"
+            ]
+        ]
+    },
+    {
+        "id": "1752782e0f1feb68",
+        "type": "debug",
+        "z": "e6a504baa2efc0c0",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1390,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "605eefe5e4dcba30",
+        "type": "string",
+        "z": "e6a504baa2efc0c0",
+        "name": "Nome_medicamento",
+        "methods": [
+            {
+                "name": "toString",
+                "params": []
+            }
+        ],
+        "prop": "payload.medName1",
+        "propout": "payload.medName1",
+        "object": "msg",
+        "objectout": "msg",
+        "x": 1440,
+        "y": 480,
+        "wires": [
+            [
+                "bfdaa15b0eafabc2"
+            ]
+        ]
+    },
+    {
+        "id": "a20aa33a3619573a",
+        "type": "string",
+        "z": "e6a504baa2efc0c0",
+        "name": "Data_início_tratamento",
+        "methods": [
+            {
+                "name": "toString",
+                "params": []
+            }
+        ],
+        "prop": "payload.medStartDate1",
+        "propout": "payload.medStartDate1",
+        "object": "msg",
+        "objectout": "msg",
+        "x": 1590,
+        "y": 600,
+        "wires": [
+            [
+                "3e0d680da5c008d2",
+                "6d5bb210dcf39b40"
+            ]
+        ]
+    },
+    {
+        "id": "bfdaa15b0eafabc2",
+        "type": "string",
+        "z": "e6a504baa2efc0c0",
+        "name": "Frequencia",
+        "methods": [
+            {
+                "name": "toString",
+                "params": []
+            }
+        ],
+        "prop": "payload.medFreq1",
+        "propout": "payload.medFreq1",
+        "object": "msg",
+        "objectout": "msg",
+        "x": 1410,
+        "y": 520,
+        "wires": [
+            [
+                "03807912f41211ae"
+            ]
+        ]
+    },
+    {
+        "id": "03807912f41211ae",
+        "type": "string",
+        "z": "e6a504baa2efc0c0",
+        "name": "Dosagem",
+        "methods": [
+            {
+                "name": "toInteger",
+                "params": []
+            }
+        ],
+        "prop": "payload.dosMed1",
+        "propout": "payload.dosMed1",
+        "object": "msg",
+        "objectout": "msg",
+        "x": 1400,
+        "y": 560,
+        "wires": [
+            [
+                "fbedd114ce282c69"
+            ]
+        ]
+    },
+    {
+        "id": "d88b45791b772cc5",
+        "type": "string",
+        "z": "e6a504baa2efc0c0",
+        "name": "Hora_início_tratamento",
+        "methods": [
+            {
+                "name": "toString",
+                "params": []
+            }
+        ],
+        "prop": "payload.medStartTime1",
+        "propout": "medStartTime1",
+        "object": "msg",
+        "objectout": "msg",
+        "x": 1570,
+        "y": 640,
+        "wires": [
+            [
+                "c2688ddc26b54dfc"
+            ]
+        ]
+    },
+    {
+        "id": "b285d15b351cba37",
+        "type": "delay",
+        "z": "e6a504baa2efc0c0",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "4",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1240,
+        "y": 480,
+        "wires": [
+            [
+                "605eefe5e4dcba30"
+            ]
+        ]
+    },
+    {
+        "id": "c2688ddc26b54dfc",
+        "type": "function",
+        "z": "e6a504baa2efc0c0",
+        "name": "",
+        "func": "msg.payload = `INSERT INTO Tcc.Cadastro_Medicamento(paciente_id, Nome_medicamento, Data_inicio_tratamento,Hora_inicio_tratamento,Frequencia,Qtd_comprimidos_compartimento,Compartimento)\n    SELECT  *\n    FROM (SELECT '1' AS paciente_id,\n    \"${msg.payload.medName1}\" AS Nome_medicamento,\n    \"${msg.payload.medStartDate1}\" AS Data_inicio_tratamento,\n    \"${msg.medStartTime1}\" AS Hora_inicio_tratamento,\n    ${msg.payload.medFreq1} AS Frequencia,\n    ${msg.payload.dosMed1} AS Qtd_comprimidos_compartimento,\n    '2' AS Compartimento) AS temp\n    WHERE NOT EXISTS (SELECT paciente_id,Compartimento\n                      FROM Tcc.Cadastro_Medicamento AS med\n                      WHERE med.paciente_id = '1' AND med.Compartimento = '2'\n                     )\n\tLIMIT 1;'\n                     \n\t\t\t\t\t`\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1760,
+        "y": 640,
+        "wires": [
+            [
+                "4e7e9e9058180a48"
+            ]
+        ]
+    },
+    {
+        "id": "da7a339d4c9b7a38",
+        "type": "debug",
+        "z": "e6a504baa2efc0c0",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "topic",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2060,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "4e7e9e9058180a48",
+        "type": "string",
+        "z": "e6a504baa2efc0c0",
+        "name": "",
+        "methods": [
+            {
+                "name": "toString",
+                "params": []
+            }
+        ],
+        "prop": "payload",
+        "propout": "topic",
+        "object": "msg",
+        "objectout": "msg",
+        "x": 1910,
+        "y": 640,
+        "wires": [
+            [
+                "da7a339d4c9b7a38",
+                "0d0afa73c5bca4f5"
+            ]
+        ]
+    },
+    {
+        "id": "fbedd114ce282c69",
+        "type": "delay",
+        "z": "e6a504baa2efc0c0",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "3",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1100,
+        "y": 660,
+        "wires": [
+            [
+                "7cdc3df2e6cc52bf"
+            ]
+        ]
+    },
+    {
+        "id": "3e0d680da5c008d2",
+        "type": "delay",
+        "z": "e6a504baa2efc0c0",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "4",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1100,
+        "y": 700,
+        "wires": [
+            [
+                "2bb79018564d26bb"
+            ]
+        ]
+    },
+    {
+        "id": "0d0afa73c5bca4f5",
+        "type": "mysql",
+        "z": "e6a504baa2efc0c0",
+        "mydb": "059998258fe85c80",
+        "name": "",
+        "x": 2070,
+        "y": 680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6d5bb210dcf39b40",
+        "type": "debug",
+        "z": "e6a504baa2efc0c0",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1830,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "7cdc3df2e6cc52bf",
+        "type": "moment",
+        "z": "e6a504baa2efc0c0",
+        "name": "",
+        "topic": "",
+        "input": "payload.medStartDate1",
+        "inputType": "msg",
+        "inTz": "Africa/Abidjan",
+        "adjAmount": "3",
+        "adjType": "hours",
+        "adjDir": "add",
+        "format": "YYYY-MM-DD",
+        "locale": "pt-BR",
+        "output": "payload.medStartDate1",
+        "outputType": "msg",
+        "outTz": "America/Sao_Paulo",
+        "x": 1320,
+        "y": 600,
+        "wires": [
+            [
+                "a20aa33a3619573a"
+            ]
+        ]
+    },
+    {
+        "id": "2bb79018564d26bb",
+        "type": "moment",
+        "z": "e6a504baa2efc0c0",
+        "name": "",
+        "topic": "",
+        "input": "payload.medStartTime1",
+        "inputType": "msg",
+        "inTz": "Africa/Abidjan",
+        "adjAmount": "3",
+        "adjType": "hours",
+        "adjDir": "add",
+        "format": "HH:mm",
+        "locale": "pt-BR",
+        "output": "payload.medStartTime1",
+        "outputType": "msg",
+        "outTz": "America/Sao_Paulo",
+        "x": 1320,
+        "y": 640,
+        "wires": [
+            [
+                "d88b45791b772cc5"
+            ]
+        ]
+    },
+    {
+        "id": "7047a52c80442cbc",
         "type": "ui_text",
-        "z": "2f0296ff.b8c79a",
+        "z": "46666654041163aa",
         "group": "90559693.85cfa8",
         "order": 1,
         "width": 0,
@@ -2707,31 +2909,31 @@
         "format": "{{msg.payload[0].Nome_medicamento | uppercase}}",
         "layout": "col-center",
         "className": "",
-        "x": 690,
-        "y": 460,
+        "x": 710,
+        "y": 280,
         "wires": []
     },
     {
-        "id": "258e37cd.8fbe98",
+        "id": "ebb8db745ceb1a79",
         "type": "ui_text",
-        "z": "2f0296ff.b8c79a",
+        "z": "46666654041163aa",
         "group": "90559693.85cfa8",
         "order": 2,
         "width": 0,
         "height": 0,
         "name": "",
         "label": "Data de início:",
-        "format": "{{msg.payload[1].Data_inicio_tratamento | date : 'dd/MM/yyyy'}}",
+        "format": "{{msg.payload[0].Data_inicio_tratamento | date : 'dd/MM/yyyy'}}",
         "layout": "col-center",
         "className": "",
-        "x": 720,
-        "y": 500,
+        "x": 740,
+        "y": 320,
         "wires": []
     },
     {
-        "id": "55baed2a.d3dde4",
+        "id": "aad2806fa7da1bbf",
         "type": "ui_text",
-        "z": "2f0296ff.b8c79a",
+        "z": "46666654041163aa",
         "group": "90559693.85cfa8",
         "order": 3,
         "width": 0,
@@ -2741,41 +2943,14 @@
         "format": "{{msg.payload[0].Hora_inicio_tratamento | date:'HH:mm'}}",
         "layout": "col-center",
         "className": "",
-        "x": 720,
-        "y": 540,
+        "x": 740,
+        "y": 360,
         "wires": []
     },
     {
-        "id": "dc3bfd9.b8a64",
-        "type": "inject",
-        "z": "2f0296ff.b8c79a",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "5",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "lastSyncBox",
-        "payloadType": "global",
-        "x": 200,
-        "y": 140,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "f3f35c00.9ef65",
+        "id": "1df54a04af2c99a5",
         "type": "ui_button",
-        "z": "2f0296ff.b8c79a",
+        "z": "46666654041163aa",
         "name": "",
         "group": "46e64040.1f32b",
         "order": 6,
@@ -2792,16 +2967,16 @@
         "payloadType": "str",
         "topic": "1",
         "topicType": "str",
-        "x": 120,
-        "y": 280,
+        "x": 180,
+        "y": 240,
         "wires": [
             []
         ]
     },
     {
-        "id": "3105c99f.39a4f6",
+        "id": "4f330494d67156ee",
         "type": "inject",
-        "z": "2f0296ff.b8c79a",
+        "z": "46666654041163aa",
         "name": "",
         "props": [
             {
@@ -2823,31 +2998,31 @@
         "y": 80,
         "wires": [
             [
-                "cbff1612.47c6d8"
+                "caf25ae44e07206a"
             ]
         ]
     },
     {
-        "id": "cbff1612.47c6d8",
+        "id": "caf25ae44e07206a",
         "type": "ui_text",
-        "z": "2f0296ff.b8c79a",
+        "z": "46666654041163aa",
         "group": "46e64040.1f32b",
         "order": 1,
         "width": "0",
         "height": "0",
         "name": "",
-        "label": "Olá, ",
+        "label": "Olá,  Seja Bem vindo ao Dashbord",
         "format": "{{msg.payload}}",
-        "layout": "row-left",
+        "layout": "row-center",
         "className": "",
-        "x": 350,
+        "x": 440,
         "y": 80,
         "wires": []
     },
     {
-        "id": "4c67076d.eee448",
+        "id": "ffe503bc4fc6ec77",
         "type": "ui_text",
-        "z": "2f0296ff.b8c79a",
+        "z": "46666654041163aa",
         "group": "90559693.85cfa8",
         "order": 7,
         "width": 0,
@@ -2856,14 +3031,14 @@
         "label": "Último horário consumido:",
         "format": "{{msg.payload}}",
         "layout": "col-center",
-        "x": 750,
-        "y": 740,
+        "x": 770,
+        "y": 540,
         "wires": []
     },
     {
-        "id": "53d97467.442d6c",
+        "id": "e9c618c95112dab8",
         "type": "ui_text",
-        "z": "2f0296ff.b8c79a",
+        "z": "46666654041163aa",
         "group": "90559693.85cfa8",
         "order": 8,
         "width": 0,
@@ -2872,14 +3047,14 @@
         "label": "Próximo horário:",
         "format": "{{msg.payload | date:'HH:mm d/M/yyyy'}}",
         "layout": "col-center",
-        "x": 720,
-        "y": 800,
+        "x": 740,
+        "y": 580,
         "wires": []
     },
     {
-        "id": "bd112115.6ee29",
+        "id": "738c90f33c9c6f89",
         "type": "comment",
-        "z": "2f0296ff.b8c79a",
+        "z": "46666654041163aa",
         "name": "General Group",
         "info": "",
         "x": 160,
@@ -2887,83 +3062,9 @@
         "wires": []
     },
     {
-        "id": "3944334d.e529ac",
-        "type": "change",
-        "z": "2f0296ff.b8c79a",
-        "name": "Set to zero all user and tutor info",
-        "rules": [
-            {
-                "t": "set",
-                "p": "userCell",
-                "pt": "global",
-                "to": "",
-                "tot": "num"
-            },
-            {
-                "t": "set",
-                "p": "userName",
-                "pt": "global",
-                "to": "",
-                "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "userMail",
-                "pt": "global",
-                "to": "",
-                "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "userTelegramOp",
-                "pt": "global",
-                "to": "false",
-                "tot": "bool"
-            },
-            {
-                "t": "set",
-                "p": "tutorName",
-                "pt": "global",
-                "to": "",
-                "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "tutorCell",
-                "pt": "global",
-                "to": "",
-                "tot": "num"
-            },
-            {
-                "t": "set",
-                "p": "tutorTelegramOp",
-                "pt": "global",
-                "to": "false",
-                "tot": "bool"
-            },
-            {
-                "t": "set",
-                "p": "tutorMail",
-                "pt": "global",
-                "to": "",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 490,
-        "y": 380,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "e9daff9e.98702",
+        "id": "008ad9c0d6fc8565",
         "type": "ui_text",
-        "z": "2f0296ff.b8c79a",
+        "z": "46666654041163aa",
         "group": "90559693.85cfa8",
         "order": 5,
         "width": 0,
@@ -2973,221 +3074,82 @@
         "format": "{{msg.payload[0].Qtd_comprimidos_compartimento}}",
         "layout": "col-center",
         "className": "",
-        "x": 820,
-        "y": 580,
+        "x": 840,
+        "y": 400,
         "wires": []
     },
     {
-        "id": "525b27f6.3ebbd8",
+        "id": "5d692c777dfa11e9",
         "type": "ui_text",
-        "z": "2f0296ff.b8c79a",
-        "d": true,
+        "z": "46666654041163aa",
         "group": "7e158bed.eb3f54",
         "order": 1,
         "width": 0,
         "height": 0,
         "name": "",
         "label": "Nome:",
-        "format": "{{msg.payload | uppercase}}",
+        "format": "{{msg.payload[0].Nome_medicamento | uppercase}}",
         "layout": "col-center",
         "className": "",
-        "x": 630,
-        "y": 940,
+        "x": 710,
+        "y": 640,
         "wires": []
     },
     {
-        "id": "7ac34a57.d1b7b4",
-        "type": "inject",
-        "z": "2f0296ff.b8c79a",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "5",
-        "crontab": "",
-        "once": true,
-        "onceDelay": "1",
-        "topic": "",
-        "payload": "medName2",
-        "payloadType": "global",
-        "x": 190,
-        "y": 940,
-        "wires": [
-            [
-                "525b27f6.3ebbd8"
-            ]
-        ]
-    },
-    {
-        "id": "7e785aae.41ce54",
+        "id": "69c3225215723067",
         "type": "ui_text",
-        "z": "2f0296ff.b8c79a",
+        "z": "46666654041163aa",
         "group": "7e158bed.eb3f54",
         "order": 2,
         "width": 0,
         "height": 0,
         "name": "",
         "label": "Data de início:",
-        "format": "{{msg.payload | date : 'dd/MM/yyyy'}}",
+        "format": "{{msg.payload[0].Data_inicio_tratamento | date : 'dd/MM/yyyy'}}",
         "layout": "col-center",
-        "x": 660,
-        "y": 980,
+        "className": "",
+        "x": 740,
+        "y": 680,
         "wires": []
     },
     {
-        "id": "8cbde910.813968",
-        "type": "inject",
-        "z": "2f0296ff.b8c79a",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "5",
-        "crontab": "",
-        "once": true,
-        "onceDelay": "1",
-        "topic": "",
-        "payload": "medStartDate2",
-        "payloadType": "global",
-        "x": 200,
-        "y": 980,
-        "wires": [
-            [
-                "7e785aae.41ce54"
-            ]
-        ]
-    },
-    {
-        "id": "e7b3902b.05021",
+        "id": "c0e9ec7a7c526244",
         "type": "ui_text",
-        "z": "2f0296ff.b8c79a",
+        "z": "46666654041163aa",
         "group": "7e158bed.eb3f54",
         "order": 3,
         "width": 0,
         "height": 0,
         "name": "",
         "label": "Hora de início: ",
-        "format": "{{msg.payload | date:'HH:mm'}}",
+        "format": "{{msg.payload[0].Hora_inicio_tratamento | date:'HH:mm'}}",
         "layout": "col-center",
-        "x": 660,
-        "y": 1020,
+        "className": "",
+        "x": 740,
+        "y": 720,
         "wires": []
     },
     {
-        "id": "11f73ef6.e0eda1",
-        "type": "inject",
-        "z": "2f0296ff.b8c79a",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "5",
-        "crontab": "",
-        "once": true,
-        "onceDelay": "1",
-        "topic": "",
-        "payload": "medStartTime2",
-        "payloadType": "global",
-        "x": 210,
-        "y": 1020,
-        "wires": [
-            [
-                "e7b3902b.05021"
-            ]
-        ]
-    },
-    {
-        "id": "972a24c3.46b848",
+        "id": "ebe4852df0eafe49",
         "type": "ui_text",
-        "z": "2f0296ff.b8c79a",
+        "z": "46666654041163aa",
         "group": "7e158bed.eb3f54",
         "order": 6,
         "width": 0,
         "height": 0,
         "name": "",
         "label": "Último horário consumido:",
-        "format": "{{msg.payload | date:'HH:mm d/M/yyyy'}}",
-        "layout": "col-center",
-        "x": 690,
-        "y": 1100,
+        "format": "",
+        "layout": "row-center",
+        "className": "",
+        "x": 770,
+        "y": 1020,
         "wires": []
     },
     {
-        "id": "58f4c1bc.fa3cc",
-        "type": "inject",
-        "z": "2f0296ff.b8c79a",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "5",
-        "crontab": "",
-        "once": true,
-        "onceDelay": "1",
-        "topic": "",
-        "payload": "okmed2",
-        "payloadType": "global",
-        "x": 180,
-        "y": 1100,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "945192b7.89ced",
-        "type": "inject",
-        "z": "2f0296ff.b8c79a",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "5",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "nextmed2",
-        "payloadType": "global",
-        "x": 190,
-        "y": 1140,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "b9b710ea.6a941",
+        "id": "5b10b8a0d9f506f2",
         "type": "ui_text",
-        "z": "2f0296ff.b8c79a",
+        "z": "46666654041163aa",
         "group": "7e158bed.eb3f54",
         "order": 7,
         "width": 0,
@@ -3196,104 +3158,48 @@
         "label": "Próximo horário:",
         "format": "{{msg.payload | date:'HH:mm d/M/yyyy'}}",
         "layout": "col-center",
-        "x": 660,
-        "y": 1140,
+        "x": 740,
+        "y": 960,
         "wires": []
     },
     {
-        "id": "b3f2633c.75fd1",
+        "id": "267738bcc70ea473",
         "type": "ui_text",
-        "z": "2f0296ff.b8c79a",
+        "z": "46666654041163aa",
         "group": "7e158bed.eb3f54",
         "order": 4,
         "width": 0,
         "height": 0,
         "name": "",
-        "label": "Dosagem por horário:",
-        "format": "{{msg.payload}}",
+        "label": "Quantidade de comprimidos no compartimento:",
+        "format": "{{msg.payload[0].Qtd_comprimidos_compartimento}}",
         "layout": "col-center",
-        "x": 680,
-        "y": 1060,
+        "className": "",
+        "x": 840,
+        "y": 760,
         "wires": []
     },
     {
-        "id": "49811e88.3f4f9",
-        "type": "inject",
-        "z": "2f0296ff.b8c79a",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "5",
-        "crontab": "",
-        "once": true,
-        "onceDelay": "1",
-        "topic": "",
-        "payload": "dosMed2",
-        "payloadType": "global",
-        "x": 190,
-        "y": 1060,
-        "wires": [
-            [
-                "b3f2633c.75fd1"
-            ]
-        ]
-    },
-    {
-        "id": "edd6233b.622c1",
-        "type": "inject",
-        "z": "2f0296ff.b8c79a",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "5",
-        "crontab": "",
-        "once": true,
-        "onceDelay": "1",
-        "topic": "",
-        "payload": "medFreq2",
-        "payloadType": "global",
-        "x": 190,
-        "y": 1180,
-        "wires": [
-            [
-                "ca01b9bb.6b2a18"
-            ]
-        ]
-    },
-    {
-        "id": "ca01b9bb.6b2a18",
+        "id": "d5ac0db8117788a2",
         "type": "ui_text",
-        "z": "2f0296ff.b8c79a",
+        "z": "46666654041163aa",
         "group": "7e158bed.eb3f54",
         "order": 3,
         "width": 0,
         "height": 0,
         "name": "",
         "label": "Frequência (h):",
-        "format": "{{msg.payload}}",
+        "format": "{{msg.payload[0].Frequencia}}",
         "layout": "col-center",
-        "x": 660,
-        "y": 1180,
+        "className": "",
+        "x": 740,
+        "y": 800,
         "wires": []
     },
     {
-        "id": "502c09ac.56f048",
+        "id": "99d12e73a92e101e",
         "type": "ui_text",
-        "z": "2f0296ff.b8c79a",
+        "z": "46666654041163aa",
         "group": "90559693.85cfa8",
         "order": 4,
         "width": 0,
@@ -3303,14 +3209,14 @@
         "format": "{{msg.payload[0].Frequencia}}",
         "layout": "col-center",
         "className": "",
-        "x": 720,
-        "y": 620,
+        "x": 740,
+        "y": 440,
         "wires": []
     },
     {
-        "id": "cc9861a6.c79de",
+        "id": "0549e89d846c97e2",
         "type": "ui_dropdown",
-        "z": "2f0296ff.b8c79a",
+        "z": "46666654041163aa",
         "name": "",
         "label": "Ver:",
         "tooltip": "Selecione o número de medicamentos para visualização",
@@ -3367,31 +3273,31 @@
         "topic": "topic",
         "topicType": "msg",
         "className": "",
-        "x": 70,
-        "y": 200,
+        "x": 130,
+        "y": 140,
         "wires": [
             [
-                "c6b70e6.65253f",
-                "7b83031ea47b9b09"
+                "d0f6f12022d086c8",
+                "4642a74e53efd578"
             ]
         ]
     },
     {
-        "id": "b24be65e.4d3488",
+        "id": "3cd94c54e740c4ab",
         "type": "ui_ui_control",
-        "z": "2f0296ff.b8c79a",
+        "z": "46666654041163aa",
         "name": "",
         "events": "all",
         "x": 640,
-        "y": 200,
+        "y": 140,
         "wires": [
             []
         ]
     },
     {
-        "id": "c6b70e6.65253f",
+        "id": "d0f6f12022d086c8",
         "type": "function",
-        "z": "2f0296ff.b8c79a",
+        "z": "46666654041163aa",
         "name": "",
         "func": "qtd = msg.payload;\n\nif (qtd==0){\n    msg.payload = {\"group\": {\"hide\": [\"Dashboard_Medicação_1\",\"Dashboard_Medicação_2\",\"Dashboard_Medicação_3\",\"Dashboard_Medicação_4\", \"Dashboard_Medicação_5\",\"Dashboard_Medicação_6\", \"Dashboard_Medicação_7\"]}}\n    return msg;\n}else if (qtd == 1){\n    msg.payload = {\"group\": {\"hide\": [\"Dashboard_Medicação_2\",\"Dashboard_Medicação_3\",\"Dashboard_Medicação_4\", \"Dashboard_Medicação_5\",\"Dashboard_Medicação_6\", \"Dashboard_Medicação_7\"], \"show\": [\"Dashboard_Medicação_1\"]}}\n    return msg;\n}else if(qtd==2){\n    msg.payload = {\"group\": {\"hide\": [\"Dashboard_Medicação_3\",\"Dashboard_Medicação_4\", \"Dashboard_Medicação_5\",\"Dashboard_Medicação_6\", \"Dashboard_Medicação_7\"], \"show\": [\"Dashboard_Medicação_1\", \"Dashboard_Medicação_2\"]}}\n    return msg;\n}else if(qtd==3){\n    msg.payload = {\"group\": {\"hide\": [\"Dashboard_Medicação_4\", \"Dashboard_Medicação_5\",\"Dashboard_Medicação_6\", \"Dashboard_Medicação_7\"], \"show\": [\"Dashboard_Medicação_1\", \"Dashboard_Medicação_2\", \"Dashboard_Medicação_3\"]}}\n    return msg;\n}else if(qtd==4){\n    msg.payload = {\"group\": {\"hide\": [\"Dashboard_Medicação_5\",\"Dashboard_Medicação_6\", \"Dashboard_Medicação_7\"], \"show\": [\"Dashboard_Medicação_1\", \"Dashboard_Medicação_2\", \"Dashboard_Medicação_3\",\"Dashboard_Medicação_4\"]}}\n    return msg;\n}else if(qtd==5){\n    msg.payload = {\"group\": {\"hide\": [\"Dashboard_Medicação_6\", \"Dashboard_Medicação_7\"], \"show\": [\"Dashboard_Medicação_1\", \"Dashboard_Medicação_2\", \"Dashboard_Medicação_3\",\"Dashboard_Medicação_4\", \"Dashboard_Medicação_5\"]}}\n    return msg;\n}else if(qtd==6){\n    msg.payload = {\"group\": {\"hide\": [\"Dashboard_Medicação_7\"], \"show\": [\"Dashboard_Medicação_1\",\"Dashboard_Medicação_2\",\"Dashboard_Medicação_3\",\"Dashboard_Medicação_4\", \"Dashboard_Medicação_5\",\"Dashboard_Medicação_6\"]}}\n    return msg;\n}else if(qtd==7){\n    msg.payload = {\"group\": {\"show\": [\"Dashboard_Medicação_1\",\"Dashboard_Medicação_2\",\"Dashboard_Medicação_3\",\"Dashboard_Medicação_4\", \"Dashboard_Medicação_5\",\"Dashboard_Medicação_6\", \"Dashboard_Medicação_7\"]}}\n    return msg;\n}\n\n        \n      \n\n     \n\n    ",
         "outputs": 1,
@@ -3400,106 +3306,61 @@
         "finalize": "",
         "libs": [],
         "x": 420,
-        "y": 200,
+        "y": 140,
         "wires": [
             [
-                "b24be65e.4d3488"
+                "3cd94c54e740c4ab"
             ]
         ]
     },
     {
-        "id": "2e6d3cb7.743b44",
+        "id": "4e5e972ef098efe5",
         "type": "ui_text",
-        "z": "2f0296ff.b8c79a",
+        "z": "46666654041163aa",
         "group": "90559693.85cfa8",
         "order": 0,
         "width": 0,
         "height": 0,
         "name": "",
         "label": "Compartimentos:",
-        "format": "{{msg.payload[0].Compartimentos}}",
+        "format": "{{msg.payload[0].Compartimento}}",
         "layout": "col-center",
         "className": "",
-        "x": 730,
-        "y": 680,
+        "x": 750,
+        "y": 480,
         "wires": []
     },
     {
-        "id": "4a7e33a4.6ae78c",
-        "type": "inject",
-        "z": "2f0296ff.b8c79a",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "5",
-        "crontab": "",
-        "once": true,
-        "onceDelay": "1",
-        "topic": "",
-        "payload": "medPlace2",
-        "payloadType": "global",
-        "x": 190,
-        "y": 1220,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "5b4bc69b.523ec8",
+        "id": "337361192bd84f7e",
         "type": "ui_text",
-        "z": "2f0296ff.b8c79a",
+        "z": "46666654041163aa",
         "group": "7e158bed.eb3f54",
         "order": 0,
         "width": 0,
         "height": 0,
         "name": "",
         "label": "Compartimentos:",
-        "format": "{{msg.payload}}",
+        "format": "{{msg.payload[0].Compartimento}}",
         "layout": "col-center",
-        "x": 670,
-        "y": 1220,
+        "className": "",
+        "x": 750,
+        "y": 880,
         "wires": []
     },
     {
-        "id": "d5ed539c.a87d4",
+        "id": "67d9b3c63b089f7c",
         "type": "comment",
-        "z": "2f0296ff.b8c79a",
+        "z": "46666654041163aa",
         "name": "Med 1",
         "info": "",
         "x": 130,
-        "y": 420,
+        "y": 320,
         "wires": []
     },
     {
-        "id": "da92586da559e921",
-        "type": "mysql",
-        "z": "2f0296ff.b8c79a",
-        "mydb": "059998258fe85c80",
-        "name": "",
-        "x": 350,
-        "y": 560,
-        "wires": [
-            [
-                "483381cfa8707356",
-                "716d0fb1.119fd",
-                "258e37cd.8fbe98",
-                "55baed2a.d3dde4",
-                "502c09ac.56f048",
-                "e9daff9e.98702"
-            ]
-        ]
-    },
-    {
-        "id": "483381cfa8707356",
+        "id": "e108d244a107c75f",
         "type": "debug",
-        "z": "2f0296ff.b8c79a",
+        "z": "46666654041163aa",
         "name": "",
         "active": true,
         "tosidebar": true,
@@ -3509,14 +3370,14 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 490,
-        "y": 440,
+        "x": 510,
+        "y": 260,
         "wires": []
     },
     {
-        "id": "2a803c5ea5cd31cd",
+        "id": "cb3898f8ad903a79",
         "type": "inject",
-        "z": "2f0296ff.b8c79a",
+        "z": "46666654041163aa",
         "name": "",
         "props": [
             {
@@ -3534,33 +3395,18 @@
         "topic": "SELECT * FROM Tcc.Cadastro_medicamento WHERE Compartimento = 1;",
         "payload": "medicamento",
         "payloadType": "str",
-        "x": 150,
-        "y": 560,
+        "x": 170,
+        "y": 380,
         "wires": [
             [
-                "da92586da559e921"
+                "47c86143b3e0d1be"
             ]
         ]
     },
     {
-        "id": "72eaa90ba0dfe64e",
-        "type": "mysql",
-        "z": "2f0296ff.b8c79a",
-        "mydb": "059998258fe85c80",
-        "name": "",
-        "x": 350,
-        "y": 680,
-        "wires": [
-            [
-                "46055bd2779e045c",
-                "2e6d3cb7.743b44"
-            ]
-        ]
-    },
-    {
-        "id": "93fb064fa1c47e57",
+        "id": "c027896d22230bad",
         "type": "inject",
-        "z": "2f0296ff.b8c79a",
+        "z": "46666654041163aa",
         "name": "",
         "props": [
             {
@@ -3575,38 +3421,21 @@
         "crontab": "",
         "once": false,
         "onceDelay": 0.1,
-        "topic": "SELECT  paciente_id, group_concat( DISTINCT Compartimento     ORDER BY Compartimento DESC SEPARATOR ' ' ) as Compartimentos FROM tcc.medicamento GROUP BY Nome_medicamento;",
+        "topic": "SELECT Nome_medicamento,group_concat(`Compartimento`) as Compartimento  FROM Tcc.Cadastro_medicamento WHERE Nome_medicamento LIKE '%Neusa%' GROUP BY  Nome_medicamento;",
         "payload": "Compartimento",
         "payloadType": "str",
-        "x": 140,
-        "y": 680,
+        "x": 160,
+        "y": 520,
         "wires": [
             [
-                "72eaa90ba0dfe64e"
+                "5ed3c4fe73ca921a"
             ]
         ]
     },
     {
-        "id": "46055bd2779e045c",
+        "id": "4642a74e53efd578",
         "type": "debug",
-        "z": "2f0296ff.b8c79a",
-        "name": "Compartimento",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload[0].Compartimentos",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 500,
-        "y": 640,
-        "wires": []
-    },
-    {
-        "id": "7b83031ea47b9b09",
-        "type": "debug",
-        "z": "2f0296ff.b8c79a",
+        "z": "46666654041163aa",
         "name": "ver",
         "active": true,
         "tosidebar": true,
@@ -3616,146 +3445,229 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 190,
-        "y": 240,
+        "x": 250,
+        "y": 180,
         "wires": []
     },
     {
-        "id": "a3a8f60e.4747a8",
-        "type": "ui_group",
-        "name": "CadastroMed2",
-        "tab": "f44ad2a3.2331b",
-        "order": 3,
-        "disp": false,
-        "width": "6",
-        "collapse": false
+        "id": "47c86143b3e0d1be",
+        "type": "mysql",
+        "z": "46666654041163aa",
+        "mydb": "059998258fe85c80",
+        "name": "",
+        "x": 370,
+        "y": 380,
+        "wires": [
+            [
+                "e108d244a107c75f",
+                "7047a52c80442cbc",
+                "ebb8db745ceb1a79",
+                "aad2806fa7da1bbf",
+                "99d12e73a92e101e",
+                "008ad9c0d6fc8565"
+            ]
+        ]
     },
     {
-        "id": "c0c4f2d.99e0b1",
-        "type": "ui_group",
-        "name": "Selecione n.º de medicamentos",
-        "tab": "f44ad2a3.2331b",
-        "order": 1,
-        "disp": true,
-        "width": "6",
-        "collapse": false
+        "id": "5ed3c4fe73ca921a",
+        "type": "mysql",
+        "z": "46666654041163aa",
+        "mydb": "059998258fe85c80",
+        "name": "",
+        "x": 370,
+        "y": 520,
+        "wires": [
+            [
+                "4e5e972ef098efe5",
+                "8179f90c9553726c"
+            ]
+        ]
     },
     {
-        "id": "49ce15cd.8c285c",
-        "type": "ui_group",
-        "name": "CadastroMed3",
-        "tab": "f44ad2a3.2331b",
-        "order": 4,
-        "disp": false,
-        "width": "6",
-        "collapse": false
+        "id": "4fce73e3cce04176",
+        "type": "moment",
+        "z": "46666654041163aa",
+        "name": "",
+        "topic": "",
+        "input": "payload.medStartTime6",
+        "inputType": "msg",
+        "inTz": "Africa/Abidjan",
+        "adjAmount": "3",
+        "adjType": "hours",
+        "adjDir": "subtract",
+        "format": "",
+        "locale": "en-US",
+        "output": "payload",
+        "outputType": "msg",
+        "outTz": "America/Sao_Paulo",
+        "x": 860,
+        "y": 1400,
+        "wires": [
+            []
+        ]
     },
     {
-        "id": "ab7eb3dd.ce18e",
-        "type": "ui_group",
-        "name": "CadastroMed4",
-        "tab": "f44ad2a3.2331b",
-        "order": 5,
-        "disp": false,
-        "width": "6",
-        "collapse": false
+        "id": "ed1d5370bda4b1b7",
+        "type": "moment",
+        "z": "46666654041163aa",
+        "name": "",
+        "topic": "",
+        "input": "payload.medStartTime7",
+        "inputType": "msg",
+        "inTz": "Africa/Abidjan",
+        "adjAmount": "3",
+        "adjType": "hours",
+        "adjDir": "subtract",
+        "format": "",
+        "locale": "en-US",
+        "output": "payload",
+        "outputType": "msg",
+        "outTz": "America/Sao_Paulo",
+        "x": 860,
+        "y": 1540,
+        "wires": [
+            []
+        ]
     },
     {
-        "id": "74b0a92c.8c4be8",
-        "type": "ui_group",
-        "name": "CadastroMed5",
-        "tab": "f44ad2a3.2331b",
-        "order": 6,
-        "disp": false,
-        "width": "6",
-        "collapse": false
+        "id": "8179f90c9553726c",
+        "type": "debug",
+        "z": "46666654041163aa",
+        "name": "Return",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload[0].Compartimento",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 510,
+        "y": 480,
+        "wires": []
     },
     {
-        "id": "65ee5774.da5698",
-        "type": "ui_group",
-        "name": "CadastroMed6",
-        "tab": "f44ad2a3.2331b",
-        "order": 7,
-        "disp": false,
-        "width": "6",
-        "collapse": false
+        "id": "6e3b6d2f5b65de74",
+        "type": "inject",
+        "z": "46666654041163aa",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "SELECT * FROM Tcc.Cadastro_medicamento WHERE Compartimento = 2;",
+        "payload": "medicamento",
+        "payloadType": "str",
+        "x": 170,
+        "y": 680,
+        "wires": [
+            [
+                "f16fd705b7748fdc"
+            ]
+        ]
     },
     {
-        "id": "c12a1ba1.28b078",
-        "type": "ui_group",
-        "name": "CadastroMed7",
-        "tab": "f44ad2a3.2331b",
-        "order": 8,
-        "disp": false,
-        "width": "6",
-        "collapse": false
+        "id": "62e08eac2deb9d7a",
+        "type": "inject",
+        "z": "46666654041163aa",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "SELECT Nome_medicamento,group_concat(`Compartimento`) as Compartimento  FROM Tcc.Cadastro_medicamento WHERE Nome_medicamento LIKE '%Dipirona%' GROUP BY  Nome_medicamento;",
+        "payload": "Compartimento",
+        "payloadType": "str",
+        "x": 160,
+        "y": 820,
+        "wires": [
+            [
+                "7cb9d276d19d0863"
+            ]
+        ]
     },
     {
-        "id": "9cabde5c.717f7",
-        "type": "ui_group",
-        "name": "CadastroMed1",
-        "tab": "f44ad2a3.2331b",
-        "order": 2,
-        "disp": false,
-        "width": "6",
-        "collapse": false
+        "id": "f16fd705b7748fdc",
+        "type": "mysql",
+        "z": "46666654041163aa",
+        "mydb": "059998258fe85c80",
+        "name": "",
+        "x": 370,
+        "y": 680,
+        "wires": [
+            [
+                "5d692c777dfa11e9",
+                "69c3225215723067",
+                "c0e9ec7a7c526244",
+                "3a75d314e8ee00b6",
+                "d5ac0db8117788a2",
+                "267738bcc70ea473"
+            ]
+        ]
     },
     {
-        "id": "059998258fe85c80",
-        "type": "MySQLdatabase",
-        "name": "Tcc- Azure",
-        "host": "primysql.mysql.database.azure.com",
-        "port": "3306",
-        "db": "Tcc",
-        "tz": "",
-        "charset": "UTF8"
+        "id": "7cb9d276d19d0863",
+        "type": "mysql",
+        "z": "46666654041163aa",
+        "mydb": "059998258fe85c80",
+        "name": "",
+        "x": 370,
+        "y": 820,
+        "wires": [
+            [
+                "337361192bd84f7e",
+                "cc5272a080969467"
+            ]
+        ]
     },
     {
-        "id": "90559693.85cfa8",
-        "type": "ui_group",
-        "name": "Medicação 1",
-        "tab": "e3277e2c.a85d8",
-        "order": 2,
-        "disp": true,
-        "width": "6",
-        "collapse": false
+        "id": "3a75d314e8ee00b6",
+        "type": "debug",
+        "z": "46666654041163aa",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 550,
+        "y": 620,
+        "wires": []
     },
     {
-        "id": "46e64040.1f32b",
-        "type": "ui_group",
-        "name": "Informações Gerais",
-        "tab": "e3277e2c.a85d8",
-        "order": 1,
-        "disp": true,
-        "width": "6",
-        "collapse": false
-    },
-    {
-        "id": "7e158bed.eb3f54",
-        "type": "ui_group",
-        "name": "Medicação 2",
-        "tab": "e3277e2c.a85d8",
-        "order": 3,
-        "disp": true,
-        "width": "6",
-        "collapse": false
-    },
-    {
-        "id": "f44ad2a3.2331b",
-        "type": "ui_tab",
-        "name": "Medicamentos",
-        "icon": "fa-medkit",
-        "order": 4,
-        "disabled": false,
-        "hidden": false
-    },
-    {
-        "id": "e3277e2c.a85d8",
-        "type": "ui_tab",
-        "name": "Dashboard",
-        "icon": "fa-bar-chart",
-        "order": 5,
-        "disabled": false,
-        "hidden": false
+        "id": "cc5272a080969467",
+        "type": "debug",
+        "z": "46666654041163aa",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 510,
+        "y": 780,
+        "wires": []
     }
 ]
