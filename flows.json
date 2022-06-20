@@ -1,15 +1,15 @@
 [
     {
-        "id": "e6a504baa2efc0c0",
+        "id": "06f3eaa7a038e5a3",
         "type": "tab",
-        "label": "Cadastro Medicamentos",
+        "label": "Dashboard",
         "disabled": false,
         "info": ""
     },
     {
-        "id": "46666654041163aa",
+        "id": "e6a504baa2efc0c0",
         "type": "tab",
-        "label": "Dashboard",
+        "label": "Cadastro Medicamentos",
         "disabled": false,
         "info": ""
     },
@@ -250,6 +250,1728 @@
         "db": "Tcc",
         "tz": "",
         "charset": "UTF8"
+    },
+    {
+        "id": "e717d8bf416ba071",
+        "type": "ui_group",
+        "name": "Medicação 3",
+        "tab": "e3277e2c.a85d8",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "e813bc9db0a312bd",
+        "type": "ui_group",
+        "name": "Medicação 4",
+        "tab": "e3277e2c.a85d8",
+        "order": 5,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "ef7c24a7750fc901",
+        "type": "ui_group",
+        "name": "Medicação 5",
+        "tab": "e3277e2c.a85d8",
+        "order": 6,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "28a6c4c7108df25a",
+        "type": "ui_group",
+        "name": "Medicação 6",
+        "tab": "e3277e2c.a85d8",
+        "order": 7,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "b9882f87b254d91a",
+        "type": "ui_group",
+        "name": "Medicação 7",
+        "tab": "e3277e2c.a85d8",
+        "order": 8,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "8c129df80ecc4c55",
+        "type": "ui_text",
+        "z": "06f3eaa7a038e5a3",
+        "group": "90559693.85cfa8",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Nome:",
+        "format": "{{msg.payload[0].Nome_medicamento | uppercase}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 870,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "a36c874fc7c7d5da",
+        "type": "ui_text",
+        "z": "06f3eaa7a038e5a3",
+        "group": "90559693.85cfa8",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Data de início:",
+        "format": "{{msg.payload[0].Data_inicio_tratamento | date : 'dd/MM/yyyy'}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 900,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "404d51609a9f2537",
+        "type": "ui_text",
+        "z": "06f3eaa7a038e5a3",
+        "group": "90559693.85cfa8",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Hora de início: ",
+        "format": "{{msg.payload[0].Hora_inicio_tratamento | date:'HH:mm'}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 900,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "4f2a73c7251b3558",
+        "type": "ui_button",
+        "z": "06f3eaa7a038e5a3",
+        "name": "",
+        "group": "46e64040.1f32b",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "label": "Recadastrar Remédios",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "1",
+        "payloadType": "str",
+        "topic": "1",
+        "topicType": "str",
+        "x": 180,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ef5c88db6ab0a953",
+        "type": "inject",
+        "z": "06f3eaa7a038e5a3",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "userName",
+        "payloadType": "global",
+        "x": 190,
+        "y": 80,
+        "wires": [
+            [
+                "5d7f67b0c51b4502"
+            ]
+        ]
+    },
+    {
+        "id": "5d7f67b0c51b4502",
+        "type": "ui_text",
+        "z": "06f3eaa7a038e5a3",
+        "group": "46e64040.1f32b",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "name": "",
+        "label": "Olá,  Seja Bem vindo ao Dashbord",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "x": 440,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "add6043a771f1156",
+        "type": "ui_text",
+        "z": "06f3eaa7a038e5a3",
+        "group": "90559693.85cfa8",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Último horário consumido:",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "x": 930,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "58bf494a90151756",
+        "type": "ui_text",
+        "z": "06f3eaa7a038e5a3",
+        "group": "90559693.85cfa8",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Próximo horário:",
+        "format": "{{msg.payload | date:'HH:mm d/M/yyyy'}}",
+        "layout": "col-center",
+        "x": 900,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "fefc7d95ecaeb585",
+        "type": "comment",
+        "z": "06f3eaa7a038e5a3",
+        "name": "General Group",
+        "info": "",
+        "x": 160,
+        "y": 20,
+        "wires": []
+    },
+    {
+        "id": "5772c8709127cc53",
+        "type": "ui_text",
+        "z": "06f3eaa7a038e5a3",
+        "group": "90559693.85cfa8",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Quantidade de comprimidos no compartimento:",
+        "format": "{{msg.payload[0].Qtd_comprimidos_compartimento}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 1000,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "abb4c4bd2293ccb0",
+        "type": "ui_text",
+        "z": "06f3eaa7a038e5a3",
+        "group": "7e158bed.eb3f54",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Nome:",
+        "format": "{{msg.payload[0].Nome_medicamento | uppercase}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 890,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "466b72bf47d7c02e",
+        "type": "ui_text",
+        "z": "06f3eaa7a038e5a3",
+        "group": "7e158bed.eb3f54",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Data de início:",
+        "format": "{{msg.payload[0].Data_inicio_tratamento | date : 'dd/MM/yyyy'}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 920,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "ac8f7aa687c333ab",
+        "type": "ui_text",
+        "z": "06f3eaa7a038e5a3",
+        "group": "7e158bed.eb3f54",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Hora de início: ",
+        "format": "{{msg.payload[0].Hora_inicio_tratamento | date:'HH:mm'}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 920,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "17eb0d6e2c99b67e",
+        "type": "ui_text",
+        "z": "06f3eaa7a038e5a3",
+        "group": "7e158bed.eb3f54",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Último horário consumido:",
+        "format": "",
+        "layout": "row-center",
+        "className": "",
+        "x": 950,
+        "y": 1080,
+        "wires": []
+    },
+    {
+        "id": "93ba31aeaec1c5e6",
+        "type": "ui_text",
+        "z": "06f3eaa7a038e5a3",
+        "group": "7e158bed.eb3f54",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Quantidade de comprimidos no compartimento:",
+        "format": "{{msg.payload[0].Qtd_comprimidos_compartimento}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 1020,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "8edf3d43bc604c11",
+        "type": "ui_text",
+        "z": "06f3eaa7a038e5a3",
+        "group": "7e158bed.eb3f54",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Frequência (h):",
+        "format": "{{msg.payload[0].Frequencia}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 920,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "72e73d0443d6e57c",
+        "type": "ui_text",
+        "z": "06f3eaa7a038e5a3",
+        "group": "90559693.85cfa8",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Frequência (h):",
+        "format": "{{msg.payload[0].Frequencia}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 900,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "f66a6a69c918435e",
+        "type": "ui_dropdown",
+        "z": "06f3eaa7a038e5a3",
+        "name": "",
+        "label": "Ver:",
+        "tooltip": "Selecione o número de medicamentos para visualização",
+        "place": "Selecione",
+        "group": "46e64040.1f32b",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "0",
+                "value": "0",
+                "type": "str"
+            },
+            {
+                "label": "1",
+                "value": "1",
+                "type": "str"
+            },
+            {
+                "label": "2",
+                "value": "2",
+                "type": "str"
+            },
+            {
+                "label": "3",
+                "value": "3",
+                "type": "str"
+            },
+            {
+                "label": "4",
+                "value": "4",
+                "type": "str"
+            },
+            {
+                "label": "5",
+                "value": "5",
+                "type": "str"
+            },
+            {
+                "label": "6",
+                "value": "6",
+                "type": "str"
+            },
+            {
+                "label": "7",
+                "value": "7",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 70,
+        "y": 400,
+        "wires": [
+            [
+                "3ad52f614484971c",
+                "c39991cd72eaa06e",
+                "52ed230d6e779cc3",
+                "97821c760d2027e8"
+            ]
+        ]
+    },
+    {
+        "id": "373de148cb1cfa54",
+        "type": "ui_ui_control",
+        "z": "06f3eaa7a038e5a3",
+        "name": "",
+        "events": "all",
+        "x": 480,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3ad52f614484971c",
+        "type": "function",
+        "z": "06f3eaa7a038e5a3",
+        "name": "",
+        "func": "qtd = msg.payload;\n\nif (qtd==0){\n    msg.payload = {\"group\": {\"hide\": [\"Dashboard_Medicação_1\",\"Dashboard_Medicação_2\",\"Dashboard_Medicação_3\",\"Dashboard_Medicação_4\", \"Dashboard_Medicação_5\",\"Dashboard_Medicação_6\", \"Dashboard_Medicação_7\"]}}\n    return msg;\n}else if (qtd == 1){\n    msg.payload = {\"group\": {\"hide\": [\"Dashboard_Medicação_2\",\"Dashboard_Medicação_3\",\"Dashboard_Medicação_4\", \"Dashboard_Medicação_5\",\"Dashboard_Medicação_6\", \"Dashboard_Medicação_7\"], \"show\": [\"Dashboard_Medicação_1\"]}}\n    return msg;\n}else if(qtd==2){\n    msg.payload = { \"group\": { \"hide\": [\"Dashboard_Medicação_1\",\"Dashboard_Medicação_3\",\"Dashboard_Medicação_4\", \"Dashboard_Medicação_5\",\"Dashboard_Medicação_6\", \"Dashboard_Medicação_7\"], \"show\": [ \"Dashboard_Medicação_2\"]}}\n    return msg;\n}else if(qtd==3){\n    msg.payload = { \"group\": { \"hide\": [\"Dashboard_Medicação_1\", \"Dashboard_Medicação_2\",\"Dashboard_Medicação_4\", \"Dashboard_Medicação_5\",\"Dashboard_Medicação_6\", \"Dashboard_Medicação_7\"], \"show\": [ \"Dashboard_Medicação_3\"]}}\n    return msg;\n}else if(qtd==4){\n    msg.payload = { \"group\": { \"hide\": [\"Dashboard_Medicação_1\", \"Dashboard_Medicação_2\", \"Dashboard_Medicação_3\",\"Dashboard_Medicação_5\",\"Dashboard_Medicação_6\", \"Dashboard_Medicação_7\"], \"show\": [\"Dashboard_Medicação_4\"]}}\n    return msg;\n}else if(qtd==5){\n    msg.payload = { \"group\": { \"hide\": [\"Dashboard_Medicação_1\", \"Dashboard_Medicação_2\", \"Dashboard_Medicação_3\", \"Dashboard_Medicação_4\", \"Dashboard_Medicação_6\", \"Dashboard_Medicação_7\"], \"show\": [\"Dashboard_Medicação_5\"]}}\n    return msg;\n}else if(qtd==6){\n    msg.payload = { \"group\": { \"hide\": [\"Dashboard_Medicação_1\", \"Dashboard_Medicação_2\", \"Dashboard_Medicação_3\", \"Dashboard_Medicação_4\", \"Dashboard_Medicação_5\",\"Dashboard_Medicação_7\"], \"show\": [\"Dashboard_Medicação_6\"]}}\n    return msg;\n}else if(qtd==7){\n    msg.payload = { \"group\": { \"hide\": [\"Dashboard_Medicação_1\", \"Dashboard_Medicação_2\", \"Dashboard_Medicação_3\", \"Dashboard_Medicação_4\", \"Dashboard_Medicação_5\", \"Dashboard_Medicação_7\"],\"show\": [\"Dashboard_Medicação_7\"]}}\n    return msg;\n}\n\n        \n      \n\n     \n\n    ",
+        "outputs": 1,
+        "noerr": 9,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 320,
+        "wires": [
+            [
+                "373de148cb1cfa54"
+            ]
+        ]
+    },
+    {
+        "id": "73b1cb020aec34ba",
+        "type": "ui_text",
+        "z": "06f3eaa7a038e5a3",
+        "group": "90559693.85cfa8",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Compartimentos:",
+        "format": "{{msg.payload[0].Compartimento}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 910,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "40b9789fab0a5a42",
+        "type": "ui_text",
+        "z": "06f3eaa7a038e5a3",
+        "group": "7e158bed.eb3f54",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Compartimentos:",
+        "format": "{{msg.payload[0].Compartimento}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 930,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "38ebbe2f62606629",
+        "type": "comment",
+        "z": "06f3eaa7a038e5a3",
+        "name": "Med 1",
+        "info": "",
+        "x": 510,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "ea6f8367d4b87f80",
+        "type": "debug",
+        "z": "06f3eaa7a038e5a3",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 890,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "0c46de9e5bc94fe0",
+        "type": "inject",
+        "z": "06f3eaa7a038e5a3",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "SELECT Nome_medicamento,group_concat(`Compartimento`) as Compartimento  FROM Tcc.Cadastro_medicamento WHERE Nome_medicamento LIKE '%Neusa%' GROUP BY  Nome_medicamento;",
+        "payload": "Compartimento",
+        "payloadType": "str",
+        "x": 100,
+        "y": 560,
+        "wires": [
+            [
+                "3cd2429bb0b139a0"
+            ]
+        ]
+    },
+    {
+        "id": "c39991cd72eaa06e",
+        "type": "debug",
+        "z": "06f3eaa7a038e5a3",
+        "name": "ver",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 290,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "5661c2ad6100d010",
+        "type": "debug",
+        "z": "06f3eaa7a038e5a3",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 910,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "1156836d6c02b903",
+        "type": "mysql",
+        "z": "06f3eaa7a038e5a3",
+        "mydb": "059998258fe85c80",
+        "name": "",
+        "x": 530,
+        "y": 440,
+        "wires": [
+            [
+                "ea6f8367d4b87f80",
+                "8c129df80ecc4c55",
+                "a36c874fc7c7d5da",
+                "404d51609a9f2537",
+                "72e73d0443d6e57c",
+                "5772c8709127cc53"
+            ]
+        ]
+    },
+    {
+        "id": "3cd2429bb0b139a0",
+        "type": "mysql",
+        "z": "06f3eaa7a038e5a3",
+        "mydb": "059998258fe85c80",
+        "name": "",
+        "x": 530,
+        "y": 560,
+        "wires": [
+            [
+                "73b1cb020aec34ba"
+            ]
+        ]
+    },
+    {
+        "id": "131dd1fc084d47c9",
+        "type": "mysql",
+        "z": "06f3eaa7a038e5a3",
+        "mydb": "059998258fe85c80",
+        "name": "",
+        "x": 530,
+        "y": 840,
+        "wires": [
+            [
+                "abb4c4bd2293ccb0",
+                "466b72bf47d7c02e",
+                "ac8f7aa687c333ab",
+                "5661c2ad6100d010",
+                "8edf3d43bc604c11",
+                "93ba31aeaec1c5e6"
+            ]
+        ]
+    },
+    {
+        "id": "32dec86ef945686c",
+        "type": "mysql",
+        "z": "06f3eaa7a038e5a3",
+        "mydb": "059998258fe85c80",
+        "name": "",
+        "x": 530,
+        "y": 940,
+        "wires": [
+            [
+                "40b9789fab0a5a42"
+            ]
+        ]
+    },
+    {
+        "id": "2d6a5c3fa847440f",
+        "type": "inject",
+        "z": "06f3eaa7a038e5a3",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "SELECT * FROM Tcc.Cadastro_medicamento WHERE Compartimento = 1;",
+        "payload": "medicamento",
+        "payloadType": "str",
+        "x": 90,
+        "y": 520,
+        "wires": [
+            [
+                "1156836d6c02b903"
+            ]
+        ]
+    },
+    {
+        "id": "97821c760d2027e8",
+        "type": "function",
+        "z": "06f3eaa7a038e5a3",
+        "name": "",
+        "func": "qtd = msg.payload;\n\nif (qtd == 0) {\n    msg.topic = \"\"\n    return msg;\n} else if (qtd == 1) {\n    msg.topic = \"SELECT * FROM Tcc.Cadastro_medicamento WHERE Compartimento = 1\";\n    return msg;\n} else if (qtd == 2) {\n    msg.topic1 = \"SELECT * FROM Tcc.Cadastro_medicamento WHERE Compartimento = 1\";\n    msg.topic2 = \"SELECT * FROM Tcc.Cadastro_medicamento WHERE Compartimento = 2\";\n    return msg;\n} else if (qtd == 3) {\n    msg.topic = \"SELECT * FROM Tcc.Cadastro_medicamento WHERE Compartimento = 3\";\n    return msg;\n} else if (qtd == 4) {\n    msg.topic = \"SELECT * FROM Tcc.Cadastro_medicamento WHERE Compartimento = 4\";\n    return msg;\n} else if (qtd == 5) {\n    msg.topic = \"SELECT * FROM Tcc.Cadastro_medicamento WHERE Compartimento = 5\";\n    return msg;\n} else if (qtd == 6) {\n    msg.topic = \"SELECT * FROM Tcc.Cadastro_medicamento WHERE Compartimento = 6\";\n    return msg;\n} else if (qtd == 7) {\n    msg.topic = \"SELECT * FROM Tcc.Cadastro_medicamento WHERE Compartimento = 7\";\n    return msg;\n}\n\n\n\n\n\n\n",
+        "outputs": 1,
+        "noerr": 9,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 620,
+        "wires": [
+            [
+                "3cd2429bb0b139a0",
+                "32dec86ef945686c"
+            ]
+        ]
+    },
+    {
+        "id": "52ed230d6e779cc3",
+        "type": "function",
+        "z": "06f3eaa7a038e5a3",
+        "name": "",
+        "func": "qtd = msg.payload;\n\nif (qtd == 0) {\n    msg.topic = \"\"\n    return msg;\n} else if (qtd == 1) {\n    msg.topic = \"SELECT * FROM Tcc.Cadastro_medicamento WHERE Compartimento = 1\";\n    return msg;\n} else if (qtd == 2) {\n    msg.topic = \"SELECT * FROM Tcc.Cadastro_medicamento WHERE Compartimento = 2\";\n    return msg;\n} else if (qtd == 3) {\n    msg.topic = \"SELECT * FROM Tcc.Cadastro_medicamento WHERE Compartimento = 3\";\n    return msg;\n} else if (qtd == 4) {\n    msg.topic = \"SELECT * FROM Tcc.Cadastro_medicamento WHERE Compartimento = 4\";\n    return msg;\n} else if (qtd == 5) {\n    msg.topic = \"SELECT * FROM Tcc.Cadastro_medicamento WHERE Compartimento = 5\";\n    return msg;\n} else if (qtd == 6) {\n    msg.topic = \"SELECT * FROM Tcc.Cadastro_medicamento WHERE Compartimento = 6\";\n    return msg;\n} else if (qtd == 7) {\n    msg.topic = \"SELECT * FROM Tcc.Cadastro_medicamento WHERE Compartimento = 7\";\n    return msg;\n}\n\n\n\n\n\n\n",
+        "outputs": 1,
+        "noerr": 9,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 400,
+        "wires": [
+            [
+                "1156836d6c02b903",
+                "131dd1fc084d47c9",
+                "8d94bc3bc7e28381",
+                "13fc533c3534d93f",
+                "407fb6c012ebdd71",
+                "094d3afa771ef353",
+                "800d5ab6b3049544"
+            ]
+        ]
+    },
+    {
+        "id": "0d522b4303e3b1a0",
+        "type": "ui_text",
+        "z": "06f3eaa7a038e5a3",
+        "group": "7e158bed.eb3f54",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Próximo horário:",
+        "format": "{{msg.payload | date:'HH:mm d/M/yyyy'}}",
+        "layout": "col-center",
+        "x": 920,
+        "y": 1040,
+        "wires": []
+    },
+    {
+        "id": "0d2172d0cc9de5c2",
+        "type": "ui_text",
+        "z": "06f3eaa7a038e5a3",
+        "group": "e717d8bf416ba071",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Nome:",
+        "format": "{{msg.payload[0].Nome_medicamento | uppercase}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 890,
+        "y": 1160,
+        "wires": []
+    },
+    {
+        "id": "4506f01c8f277868",
+        "type": "ui_text",
+        "z": "06f3eaa7a038e5a3",
+        "group": "e717d8bf416ba071",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Data de início:",
+        "format": "{{msg.payload[0].Data_inicio_tratamento | date : 'dd/MM/yyyy'}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 920,
+        "y": 1200,
+        "wires": []
+    },
+    {
+        "id": "45c0a8712e1f3830",
+        "type": "ui_text",
+        "z": "06f3eaa7a038e5a3",
+        "group": "e717d8bf416ba071",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Hora de início: ",
+        "format": "{{msg.payload[0].Hora_inicio_tratamento | date:'HH:mm'}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 920,
+        "y": 1240,
+        "wires": []
+    },
+    {
+        "id": "6e2d2bb9f4a2d906",
+        "type": "ui_text",
+        "z": "06f3eaa7a038e5a3",
+        "group": "e717d8bf416ba071",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Último horário consumido:",
+        "format": "",
+        "layout": "row-center",
+        "className": "",
+        "x": 950,
+        "y": 1440,
+        "wires": []
+    },
+    {
+        "id": "d45159f587e7aa94",
+        "type": "ui_text",
+        "z": "06f3eaa7a038e5a3",
+        "group": "e717d8bf416ba071",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Quantidade de comprimidos no compartimento:",
+        "format": "{{msg.payload[0].Qtd_comprimidos_compartimento}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 1020,
+        "y": 1280,
+        "wires": []
+    },
+    {
+        "id": "d3c45096a6fc9453",
+        "type": "ui_text",
+        "z": "06f3eaa7a038e5a3",
+        "group": "e717d8bf416ba071",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Frequência (h):",
+        "format": "{{msg.payload[0].Frequencia}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 920,
+        "y": 1320,
+        "wires": []
+    },
+    {
+        "id": "c875407c1ef3ef5a",
+        "type": "ui_text",
+        "z": "06f3eaa7a038e5a3",
+        "group": "e717d8bf416ba071",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Compartimentos:",
+        "format": "{{msg.payload[0].Compartimento}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 930,
+        "y": 1360,
+        "wires": []
+    },
+    {
+        "id": "4d864b621dcceac1",
+        "type": "debug",
+        "z": "06f3eaa7a038e5a3",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 910,
+        "y": 1120,
+        "wires": []
+    },
+    {
+        "id": "8d94bc3bc7e28381",
+        "type": "mysql",
+        "z": "06f3eaa7a038e5a3",
+        "mydb": "059998258fe85c80",
+        "name": "",
+        "x": 530,
+        "y": 1200,
+        "wires": [
+            [
+                "0d2172d0cc9de5c2",
+                "4506f01c8f277868",
+                "45c0a8712e1f3830",
+                "4d864b621dcceac1",
+                "d3c45096a6fc9453",
+                "d45159f587e7aa94"
+            ]
+        ]
+    },
+    {
+        "id": "b428fe833eea935a",
+        "type": "mysql",
+        "z": "06f3eaa7a038e5a3",
+        "mydb": "059998258fe85c80",
+        "name": "",
+        "x": 530,
+        "y": 1300,
+        "wires": [
+            [
+                "c875407c1ef3ef5a"
+            ]
+        ]
+    },
+    {
+        "id": "d9910d462e61c984",
+        "type": "ui_text",
+        "z": "06f3eaa7a038e5a3",
+        "group": "e717d8bf416ba071",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Próximo horário:",
+        "format": "{{msg.payload | date:'HH:mm d/M/yyyy'}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 920,
+        "y": 1400,
+        "wires": []
+    },
+    {
+        "id": "47ae1d1f3bbf5b4e",
+        "type": "ui_text",
+        "z": "06f3eaa7a038e5a3",
+        "group": "e813bc9db0a312bd",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Nome:",
+        "format": "{{msg.payload[0].Nome_medicamento | uppercase}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 890,
+        "y": 1520,
+        "wires": []
+    },
+    {
+        "id": "55b8b76445488e4b",
+        "type": "ui_text",
+        "z": "06f3eaa7a038e5a3",
+        "group": "e813bc9db0a312bd",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Data de início:",
+        "format": "{{msg.payload[0].Data_inicio_tratamento | date : 'dd/MM/yyyy'}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 920,
+        "y": 1560,
+        "wires": []
+    },
+    {
+        "id": "80ee70680ea98dcd",
+        "type": "ui_text",
+        "z": "06f3eaa7a038e5a3",
+        "group": "e813bc9db0a312bd",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Hora de início: ",
+        "format": "{{msg.payload[0].Hora_inicio_tratamento | date:'HH:mm'}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 920,
+        "y": 1600,
+        "wires": []
+    },
+    {
+        "id": "33967ee1906171e1",
+        "type": "ui_text",
+        "z": "06f3eaa7a038e5a3",
+        "group": "e813bc9db0a312bd",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Último horário consumido:",
+        "format": "",
+        "layout": "row-center",
+        "className": "",
+        "x": 950,
+        "y": 1800,
+        "wires": []
+    },
+    {
+        "id": "69d832940b3f481a",
+        "type": "ui_text",
+        "z": "06f3eaa7a038e5a3",
+        "group": "e813bc9db0a312bd",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Quantidade de comprimidos no compartimento:",
+        "format": "{{msg.payload[0].Qtd_comprimidos_compartimento}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 1020,
+        "y": 1640,
+        "wires": []
+    },
+    {
+        "id": "67b93e0ad240d7d5",
+        "type": "ui_text",
+        "z": "06f3eaa7a038e5a3",
+        "group": "e813bc9db0a312bd",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Frequência (h):",
+        "format": "{{msg.payload[0].Frequencia}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 920,
+        "y": 1680,
+        "wires": []
+    },
+    {
+        "id": "6a901e17956f2795",
+        "type": "ui_text",
+        "z": "06f3eaa7a038e5a3",
+        "group": "e813bc9db0a312bd",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Compartimentos:",
+        "format": "{{msg.payload[0].Compartimento}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 930,
+        "y": 1720,
+        "wires": []
+    },
+    {
+        "id": "082653d1ea514c0b",
+        "type": "debug",
+        "z": "06f3eaa7a038e5a3",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 910,
+        "y": 1480,
+        "wires": []
+    },
+    {
+        "id": "13fc533c3534d93f",
+        "type": "mysql",
+        "z": "06f3eaa7a038e5a3",
+        "mydb": "059998258fe85c80",
+        "name": "",
+        "x": 530,
+        "y": 1560,
+        "wires": [
+            [
+                "47ae1d1f3bbf5b4e",
+                "55b8b76445488e4b",
+                "80ee70680ea98dcd",
+                "082653d1ea514c0b",
+                "67b93e0ad240d7d5",
+                "69d832940b3f481a"
+            ]
+        ]
+    },
+    {
+        "id": "a8acdaa8e83c01b4",
+        "type": "mysql",
+        "z": "06f3eaa7a038e5a3",
+        "mydb": "059998258fe85c80",
+        "name": "",
+        "x": 530,
+        "y": 1660,
+        "wires": [
+            [
+                "6a901e17956f2795"
+            ]
+        ]
+    },
+    {
+        "id": "22c5dfd6570796dd",
+        "type": "ui_text",
+        "z": "06f3eaa7a038e5a3",
+        "group": "e813bc9db0a312bd",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Próximo horário:",
+        "format": "{{msg.payload | date:'HH:mm d/M/yyyy'}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 920,
+        "y": 1760,
+        "wires": []
+    },
+    {
+        "id": "df904da21c327748",
+        "type": "ui_text",
+        "z": "06f3eaa7a038e5a3",
+        "group": "ef7c24a7750fc901",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Nome:",
+        "format": "{{msg.payload[0].Nome_medicamento | uppercase}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 890,
+        "y": 1900,
+        "wires": []
+    },
+    {
+        "id": "932f8afaeef7d9d2",
+        "type": "ui_text",
+        "z": "06f3eaa7a038e5a3",
+        "group": "ef7c24a7750fc901",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Data de início:",
+        "format": "{{msg.payload[0].Data_inicio_tratamento | date : 'dd/MM/yyyy'}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 920,
+        "y": 1940,
+        "wires": []
+    },
+    {
+        "id": "c2014b4d7fa0749b",
+        "type": "ui_text",
+        "z": "06f3eaa7a038e5a3",
+        "group": "ef7c24a7750fc901",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Hora de início: ",
+        "format": "{{msg.payload[0].Hora_inicio_tratamento | date:'HH:mm'}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 920,
+        "y": 1980,
+        "wires": []
+    },
+    {
+        "id": "0686b42d52764cd3",
+        "type": "ui_text",
+        "z": "06f3eaa7a038e5a3",
+        "group": "ef7c24a7750fc901",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Último horário consumido:",
+        "format": "",
+        "layout": "row-center",
+        "className": "",
+        "x": 950,
+        "y": 2180,
+        "wires": []
+    },
+    {
+        "id": "50bf633a3580baa3",
+        "type": "ui_text",
+        "z": "06f3eaa7a038e5a3",
+        "group": "ef7c24a7750fc901",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Quantidade de comprimidos no compartimento:",
+        "format": "{{msg.payload[0].Qtd_comprimidos_compartimento}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 1020,
+        "y": 2020,
+        "wires": []
+    },
+    {
+        "id": "f75885b222e5e3ef",
+        "type": "ui_text",
+        "z": "06f3eaa7a038e5a3",
+        "group": "ef7c24a7750fc901",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Frequência (h):",
+        "format": "{{msg.payload[0].Frequencia}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 920,
+        "y": 2060,
+        "wires": []
+    },
+    {
+        "id": "9e76c3153ca6a1c4",
+        "type": "ui_text",
+        "z": "06f3eaa7a038e5a3",
+        "group": "ef7c24a7750fc901",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Compartimentos:",
+        "format": "{{msg.payload[0].Compartimento}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 930,
+        "y": 2100,
+        "wires": []
+    },
+    {
+        "id": "b87e081ce6bfc81d",
+        "type": "debug",
+        "z": "06f3eaa7a038e5a3",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 910,
+        "y": 1860,
+        "wires": []
+    },
+    {
+        "id": "407fb6c012ebdd71",
+        "type": "mysql",
+        "z": "06f3eaa7a038e5a3",
+        "mydb": "059998258fe85c80",
+        "name": "",
+        "x": 530,
+        "y": 1940,
+        "wires": [
+            [
+                "df904da21c327748",
+                "932f8afaeef7d9d2",
+                "c2014b4d7fa0749b",
+                "b87e081ce6bfc81d",
+                "f75885b222e5e3ef",
+                "50bf633a3580baa3"
+            ]
+        ]
+    },
+    {
+        "id": "dbecc3d04f3990d7",
+        "type": "mysql",
+        "z": "06f3eaa7a038e5a3",
+        "mydb": "059998258fe85c80",
+        "name": "",
+        "x": 530,
+        "y": 2040,
+        "wires": [
+            [
+                "9e76c3153ca6a1c4"
+            ]
+        ]
+    },
+    {
+        "id": "a54340ec5a3c0937",
+        "type": "ui_text",
+        "z": "06f3eaa7a038e5a3",
+        "group": "ef7c24a7750fc901",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Próximo horário:",
+        "format": "{{msg.payload | date:'HH:mm d/M/yyyy'}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 920,
+        "y": 2140,
+        "wires": []
+    },
+    {
+        "id": "05c7a875cf6978b4",
+        "type": "ui_text",
+        "z": "06f3eaa7a038e5a3",
+        "group": "28a6c4c7108df25a",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Nome:",
+        "format": "{{msg.payload[0].Nome_medicamento | uppercase}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 890,
+        "y": 2260,
+        "wires": []
+    },
+    {
+        "id": "d07492b0c229c2ad",
+        "type": "ui_text",
+        "z": "06f3eaa7a038e5a3",
+        "group": "28a6c4c7108df25a",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Data de início:",
+        "format": "{{msg.payload[0].Data_inicio_tratamento | date : 'dd/MM/yyyy'}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 920,
+        "y": 2300,
+        "wires": []
+    },
+    {
+        "id": "3dc3f60ea69344e4",
+        "type": "ui_text",
+        "z": "06f3eaa7a038e5a3",
+        "group": "28a6c4c7108df25a",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Hora de início: ",
+        "format": "{{msg.payload[0].Hora_inicio_tratamento | date:'HH:mm'}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 920,
+        "y": 2340,
+        "wires": []
+    },
+    {
+        "id": "bfeeac6d6cebd74f",
+        "type": "ui_text",
+        "z": "06f3eaa7a038e5a3",
+        "group": "28a6c4c7108df25a",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Último horário consumido:",
+        "format": "",
+        "layout": "row-center",
+        "className": "",
+        "x": 950,
+        "y": 2540,
+        "wires": []
+    },
+    {
+        "id": "844e53283a253ecc",
+        "type": "ui_text",
+        "z": "06f3eaa7a038e5a3",
+        "group": "28a6c4c7108df25a",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Quantidade de comprimidos no compartimento:",
+        "format": "{{msg.payload[0].Qtd_comprimidos_compartimento}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 1020,
+        "y": 2380,
+        "wires": []
+    },
+    {
+        "id": "d5484ee7f2a1b936",
+        "type": "ui_text",
+        "z": "06f3eaa7a038e5a3",
+        "group": "28a6c4c7108df25a",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Frequência (h):",
+        "format": "{{msg.payload[0].Frequencia}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 920,
+        "y": 2420,
+        "wires": []
+    },
+    {
+        "id": "05d5fca007f276e7",
+        "type": "ui_text",
+        "z": "06f3eaa7a038e5a3",
+        "group": "28a6c4c7108df25a",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Compartimentos:",
+        "format": "{{msg.payload[0].Compartimento}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 930,
+        "y": 2460,
+        "wires": []
+    },
+    {
+        "id": "2768fa16c7f7658c",
+        "type": "debug",
+        "z": "06f3eaa7a038e5a3",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 910,
+        "y": 2220,
+        "wires": []
+    },
+    {
+        "id": "094d3afa771ef353",
+        "type": "mysql",
+        "z": "06f3eaa7a038e5a3",
+        "mydb": "059998258fe85c80",
+        "name": "",
+        "x": 530,
+        "y": 2300,
+        "wires": [
+            [
+                "05c7a875cf6978b4",
+                "d07492b0c229c2ad",
+                "3dc3f60ea69344e4",
+                "2768fa16c7f7658c",
+                "d5484ee7f2a1b936",
+                "844e53283a253ecc"
+            ]
+        ]
+    },
+    {
+        "id": "c8b7c74c8d736221",
+        "type": "mysql",
+        "z": "06f3eaa7a038e5a3",
+        "mydb": "059998258fe85c80",
+        "name": "",
+        "x": 530,
+        "y": 2400,
+        "wires": [
+            [
+                "05d5fca007f276e7"
+            ]
+        ]
+    },
+    {
+        "id": "7092b6608010f2e8",
+        "type": "ui_text",
+        "z": "06f3eaa7a038e5a3",
+        "group": "28a6c4c7108df25a",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Próximo horário:",
+        "format": "{{msg.payload | date:'HH:mm d/M/yyyy'}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 920,
+        "y": 2500,
+        "wires": []
+    },
+    {
+        "id": "c5d4248b6a6d2472",
+        "type": "comment",
+        "z": "06f3eaa7a038e5a3",
+        "name": "Med 2",
+        "info": "",
+        "x": 510,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "bd781cb8d94625f4",
+        "type": "comment",
+        "z": "06f3eaa7a038e5a3",
+        "name": "Med 3",
+        "info": "",
+        "x": 510,
+        "y": 1140,
+        "wires": []
+    },
+    {
+        "id": "3472132dea52ca6a",
+        "type": "comment",
+        "z": "06f3eaa7a038e5a3",
+        "name": "Med   4",
+        "info": "",
+        "x": 510,
+        "y": 1500,
+        "wires": []
+    },
+    {
+        "id": "db67e73c182183e4",
+        "type": "comment",
+        "z": "06f3eaa7a038e5a3",
+        "name": "Med 5",
+        "info": "",
+        "x": 510,
+        "y": 1880,
+        "wires": []
+    },
+    {
+        "id": "1ee4e9a257764f7d",
+        "type": "comment",
+        "z": "06f3eaa7a038e5a3",
+        "name": "Med 6",
+        "info": "",
+        "x": 510,
+        "y": 2260,
+        "wires": []
+    },
+    {
+        "id": "0e325ae4372bf75b",
+        "type": "ui_text",
+        "z": "06f3eaa7a038e5a3",
+        "group": "b9882f87b254d91a",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Nome:",
+        "format": "{{msg.payload[0].Nome_medicamento | uppercase}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 890,
+        "y": 2620,
+        "wires": []
+    },
+    {
+        "id": "81eaacf378b62f34",
+        "type": "ui_text",
+        "z": "06f3eaa7a038e5a3",
+        "group": "b9882f87b254d91a",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Data de início:",
+        "format": "{{msg.payload[0].Data_inicio_tratamento | date : 'dd/MM/yyyy'}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 920,
+        "y": 2660,
+        "wires": []
+    },
+    {
+        "id": "9007d42536bb54e4",
+        "type": "ui_text",
+        "z": "06f3eaa7a038e5a3",
+        "group": "28a6c4c7108df25a",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Hora de início: ",
+        "format": "{{msg.payload[0].Hora_inicio_tratamento | date:'HH:mm'}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 920,
+        "y": 2700,
+        "wires": []
+    },
+    {
+        "id": "31940e2186ef0023",
+        "type": "ui_text",
+        "z": "06f3eaa7a038e5a3",
+        "group": "b9882f87b254d91a",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Último horário consumido:",
+        "format": "",
+        "layout": "row-center",
+        "className": "",
+        "x": 950,
+        "y": 2900,
+        "wires": []
+    },
+    {
+        "id": "c13594f7733fbec5",
+        "type": "ui_text",
+        "z": "06f3eaa7a038e5a3",
+        "group": "b9882f87b254d91a",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Quantidade de comprimidos no compartimento:",
+        "format": "{{msg.payload[0].Qtd_comprimidos_compartimento}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 1020,
+        "y": 2740,
+        "wires": []
+    },
+    {
+        "id": "9e0c01a8719f3455",
+        "type": "ui_text",
+        "z": "06f3eaa7a038e5a3",
+        "group": "b9882f87b254d91a",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Frequência (h):",
+        "format": "{{msg.payload[0].Frequencia}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 920,
+        "y": 2780,
+        "wires": []
+    },
+    {
+        "id": "90a4ea9a65b0a762",
+        "type": "ui_text",
+        "z": "06f3eaa7a038e5a3",
+        "group": "b9882f87b254d91a",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Compartimentos:",
+        "format": "{{msg.payload[0].Compartimento}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 930,
+        "y": 2820,
+        "wires": []
+    },
+    {
+        "id": "8f4478e5bfd93797",
+        "type": "debug",
+        "z": "06f3eaa7a038e5a3",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 910,
+        "y": 2580,
+        "wires": []
+    },
+    {
+        "id": "800d5ab6b3049544",
+        "type": "mysql",
+        "z": "06f3eaa7a038e5a3",
+        "mydb": "059998258fe85c80",
+        "name": "",
+        "x": 530,
+        "y": 2660,
+        "wires": [
+            [
+                "0e325ae4372bf75b",
+                "81eaacf378b62f34",
+                "9007d42536bb54e4",
+                "8f4478e5bfd93797",
+                "9e0c01a8719f3455",
+                "c13594f7733fbec5"
+            ]
+        ]
+    },
+    {
+        "id": "81b6364abb079cfe",
+        "type": "mysql",
+        "z": "06f3eaa7a038e5a3",
+        "mydb": "059998258fe85c80",
+        "name": "",
+        "x": 530,
+        "y": 2760,
+        "wires": [
+            [
+                "90a4ea9a65b0a762"
+            ]
+        ]
+    },
+    {
+        "id": "398c416fc89cd4ef",
+        "type": "ui_text",
+        "z": "06f3eaa7a038e5a3",
+        "group": "b9882f87b254d91a",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Próximo horário:",
+        "format": "{{msg.payload | date:'HH:mm d/M/yyyy'}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 920,
+        "y": 2860,
+        "wires": []
+    },
+    {
+        "id": "79b0c313d929f37f",
+        "type": "comment",
+        "z": "06f3eaa7a038e5a3",
+        "name": "Med 7",
+        "info": "",
+        "x": 510,
+        "y": 2620,
+        "wires": []
     },
     {
         "id": "79d319bb80a3013d",
@@ -2810,8 +4532,8 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 1100,
-        "y": 700,
+        "x": 1120,
+        "y": 720,
         "wires": [
             [
                 "2bb79018564d26bb"
@@ -2895,779 +4617,5 @@
                 "d88b45791b772cc5"
             ]
         ]
-    },
-    {
-        "id": "7047a52c80442cbc",
-        "type": "ui_text",
-        "z": "46666654041163aa",
-        "group": "90559693.85cfa8",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "Nome:",
-        "format": "{{msg.payload[0].Nome_medicamento | uppercase}}",
-        "layout": "col-center",
-        "className": "",
-        "x": 710,
-        "y": 280,
-        "wires": []
-    },
-    {
-        "id": "ebb8db745ceb1a79",
-        "type": "ui_text",
-        "z": "46666654041163aa",
-        "group": "90559693.85cfa8",
-        "order": 2,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "Data de início:",
-        "format": "{{msg.payload[0].Data_inicio_tratamento | date : 'dd/MM/yyyy'}}",
-        "layout": "col-center",
-        "className": "",
-        "x": 740,
-        "y": 320,
-        "wires": []
-    },
-    {
-        "id": "aad2806fa7da1bbf",
-        "type": "ui_text",
-        "z": "46666654041163aa",
-        "group": "90559693.85cfa8",
-        "order": 3,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "Hora de início: ",
-        "format": "{{msg.payload[0].Hora_inicio_tratamento | date:'HH:mm'}}",
-        "layout": "col-center",
-        "className": "",
-        "x": 740,
-        "y": 360,
-        "wires": []
-    },
-    {
-        "id": "1df54a04af2c99a5",
-        "type": "ui_button",
-        "z": "46666654041163aa",
-        "name": "",
-        "group": "46e64040.1f32b",
-        "order": 6,
-        "width": 0,
-        "height": 0,
-        "passthru": true,
-        "label": "Recadastrar Remédios",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "",
-        "payload": "1",
-        "payloadType": "str",
-        "topic": "1",
-        "topicType": "str",
-        "x": 180,
-        "y": 240,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "4f330494d67156ee",
-        "type": "inject",
-        "z": "46666654041163aa",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "5",
-        "crontab": "",
-        "once": true,
-        "onceDelay": "1",
-        "topic": "",
-        "payload": "userName",
-        "payloadType": "global",
-        "x": 190,
-        "y": 80,
-        "wires": [
-            [
-                "caf25ae44e07206a"
-            ]
-        ]
-    },
-    {
-        "id": "caf25ae44e07206a",
-        "type": "ui_text",
-        "z": "46666654041163aa",
-        "group": "46e64040.1f32b",
-        "order": 1,
-        "width": "0",
-        "height": "0",
-        "name": "",
-        "label": "Olá,  Seja Bem vindo ao Dashbord",
-        "format": "{{msg.payload}}",
-        "layout": "row-center",
-        "className": "",
-        "x": 440,
-        "y": 80,
-        "wires": []
-    },
-    {
-        "id": "ffe503bc4fc6ec77",
-        "type": "ui_text",
-        "z": "46666654041163aa",
-        "group": "90559693.85cfa8",
-        "order": 7,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "Último horário consumido:",
-        "format": "{{msg.payload}}",
-        "layout": "col-center",
-        "x": 770,
-        "y": 540,
-        "wires": []
-    },
-    {
-        "id": "e9c618c95112dab8",
-        "type": "ui_text",
-        "z": "46666654041163aa",
-        "group": "90559693.85cfa8",
-        "order": 8,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "Próximo horário:",
-        "format": "{{msg.payload | date:'HH:mm d/M/yyyy'}}",
-        "layout": "col-center",
-        "x": 740,
-        "y": 580,
-        "wires": []
-    },
-    {
-        "id": "738c90f33c9c6f89",
-        "type": "comment",
-        "z": "46666654041163aa",
-        "name": "General Group",
-        "info": "",
-        "x": 160,
-        "y": 20,
-        "wires": []
-    },
-    {
-        "id": "008ad9c0d6fc8565",
-        "type": "ui_text",
-        "z": "46666654041163aa",
-        "group": "90559693.85cfa8",
-        "order": 5,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "Quantidade de comprimidos no compartimento:",
-        "format": "{{msg.payload[0].Qtd_comprimidos_compartimento}}",
-        "layout": "col-center",
-        "className": "",
-        "x": 840,
-        "y": 400,
-        "wires": []
-    },
-    {
-        "id": "5d692c777dfa11e9",
-        "type": "ui_text",
-        "z": "46666654041163aa",
-        "group": "7e158bed.eb3f54",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "Nome:",
-        "format": "{{msg.payload[0].Nome_medicamento | uppercase}}",
-        "layout": "col-center",
-        "className": "",
-        "x": 710,
-        "y": 640,
-        "wires": []
-    },
-    {
-        "id": "69c3225215723067",
-        "type": "ui_text",
-        "z": "46666654041163aa",
-        "group": "7e158bed.eb3f54",
-        "order": 2,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "Data de início:",
-        "format": "{{msg.payload[0].Data_inicio_tratamento | date : 'dd/MM/yyyy'}}",
-        "layout": "col-center",
-        "className": "",
-        "x": 740,
-        "y": 680,
-        "wires": []
-    },
-    {
-        "id": "c0e9ec7a7c526244",
-        "type": "ui_text",
-        "z": "46666654041163aa",
-        "group": "7e158bed.eb3f54",
-        "order": 3,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "Hora de início: ",
-        "format": "{{msg.payload[0].Hora_inicio_tratamento | date:'HH:mm'}}",
-        "layout": "col-center",
-        "className": "",
-        "x": 740,
-        "y": 720,
-        "wires": []
-    },
-    {
-        "id": "ebe4852df0eafe49",
-        "type": "ui_text",
-        "z": "46666654041163aa",
-        "group": "7e158bed.eb3f54",
-        "order": 6,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "Último horário consumido:",
-        "format": "",
-        "layout": "row-center",
-        "className": "",
-        "x": 770,
-        "y": 1020,
-        "wires": []
-    },
-    {
-        "id": "5b10b8a0d9f506f2",
-        "type": "ui_text",
-        "z": "46666654041163aa",
-        "group": "7e158bed.eb3f54",
-        "order": 7,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "Próximo horário:",
-        "format": "{{msg.payload | date:'HH:mm d/M/yyyy'}}",
-        "layout": "col-center",
-        "x": 740,
-        "y": 960,
-        "wires": []
-    },
-    {
-        "id": "267738bcc70ea473",
-        "type": "ui_text",
-        "z": "46666654041163aa",
-        "group": "7e158bed.eb3f54",
-        "order": 4,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "Quantidade de comprimidos no compartimento:",
-        "format": "{{msg.payload[0].Qtd_comprimidos_compartimento}}",
-        "layout": "col-center",
-        "className": "",
-        "x": 840,
-        "y": 760,
-        "wires": []
-    },
-    {
-        "id": "d5ac0db8117788a2",
-        "type": "ui_text",
-        "z": "46666654041163aa",
-        "group": "7e158bed.eb3f54",
-        "order": 3,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "Frequência (h):",
-        "format": "{{msg.payload[0].Frequencia}}",
-        "layout": "col-center",
-        "className": "",
-        "x": 740,
-        "y": 800,
-        "wires": []
-    },
-    {
-        "id": "99d12e73a92e101e",
-        "type": "ui_text",
-        "z": "46666654041163aa",
-        "group": "90559693.85cfa8",
-        "order": 4,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "Frequência (h):",
-        "format": "{{msg.payload[0].Frequencia}}",
-        "layout": "col-center",
-        "className": "",
-        "x": 740,
-        "y": 440,
-        "wires": []
-    },
-    {
-        "id": "0549e89d846c97e2",
-        "type": "ui_dropdown",
-        "z": "46666654041163aa",
-        "name": "",
-        "label": "Ver:",
-        "tooltip": "Selecione o número de medicamentos para visualização",
-        "place": "Selecione",
-        "group": "46e64040.1f32b",
-        "order": 3,
-        "width": 0,
-        "height": 0,
-        "passthru": true,
-        "multiple": false,
-        "options": [
-            {
-                "label": "0",
-                "value": "0",
-                "type": "str"
-            },
-            {
-                "label": "1",
-                "value": "1",
-                "type": "str"
-            },
-            {
-                "label": "2",
-                "value": "2",
-                "type": "str"
-            },
-            {
-                "label": "3",
-                "value": "3",
-                "type": "str"
-            },
-            {
-                "label": "4",
-                "value": "4",
-                "type": "str"
-            },
-            {
-                "label": "5",
-                "value": "5",
-                "type": "str"
-            },
-            {
-                "label": "6",
-                "value": "6",
-                "type": "str"
-            },
-            {
-                "label": "7",
-                "value": "7",
-                "type": "str"
-            }
-        ],
-        "payload": "",
-        "topic": "topic",
-        "topicType": "msg",
-        "className": "",
-        "x": 130,
-        "y": 140,
-        "wires": [
-            [
-                "d0f6f12022d086c8",
-                "4642a74e53efd578"
-            ]
-        ]
-    },
-    {
-        "id": "3cd94c54e740c4ab",
-        "type": "ui_ui_control",
-        "z": "46666654041163aa",
-        "name": "",
-        "events": "all",
-        "x": 640,
-        "y": 140,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "d0f6f12022d086c8",
-        "type": "function",
-        "z": "46666654041163aa",
-        "name": "",
-        "func": "qtd = msg.payload;\n\nif (qtd==0){\n    msg.payload = {\"group\": {\"hide\": [\"Dashboard_Medicação_1\",\"Dashboard_Medicação_2\",\"Dashboard_Medicação_3\",\"Dashboard_Medicação_4\", \"Dashboard_Medicação_5\",\"Dashboard_Medicação_6\", \"Dashboard_Medicação_7\"]}}\n    return msg;\n}else if (qtd == 1){\n    msg.payload = {\"group\": {\"hide\": [\"Dashboard_Medicação_2\",\"Dashboard_Medicação_3\",\"Dashboard_Medicação_4\", \"Dashboard_Medicação_5\",\"Dashboard_Medicação_6\", \"Dashboard_Medicação_7\"], \"show\": [\"Dashboard_Medicação_1\"]}}\n    return msg;\n}else if(qtd==2){\n    msg.payload = {\"group\": {\"hide\": [\"Dashboard_Medicação_3\",\"Dashboard_Medicação_4\", \"Dashboard_Medicação_5\",\"Dashboard_Medicação_6\", \"Dashboard_Medicação_7\"], \"show\": [\"Dashboard_Medicação_1\", \"Dashboard_Medicação_2\"]}}\n    return msg;\n}else if(qtd==3){\n    msg.payload = {\"group\": {\"hide\": [\"Dashboard_Medicação_4\", \"Dashboard_Medicação_5\",\"Dashboard_Medicação_6\", \"Dashboard_Medicação_7\"], \"show\": [\"Dashboard_Medicação_1\", \"Dashboard_Medicação_2\", \"Dashboard_Medicação_3\"]}}\n    return msg;\n}else if(qtd==4){\n    msg.payload = {\"group\": {\"hide\": [\"Dashboard_Medicação_5\",\"Dashboard_Medicação_6\", \"Dashboard_Medicação_7\"], \"show\": [\"Dashboard_Medicação_1\", \"Dashboard_Medicação_2\", \"Dashboard_Medicação_3\",\"Dashboard_Medicação_4\"]}}\n    return msg;\n}else if(qtd==5){\n    msg.payload = {\"group\": {\"hide\": [\"Dashboard_Medicação_6\", \"Dashboard_Medicação_7\"], \"show\": [\"Dashboard_Medicação_1\", \"Dashboard_Medicação_2\", \"Dashboard_Medicação_3\",\"Dashboard_Medicação_4\", \"Dashboard_Medicação_5\"]}}\n    return msg;\n}else if(qtd==6){\n    msg.payload = {\"group\": {\"hide\": [\"Dashboard_Medicação_7\"], \"show\": [\"Dashboard_Medicação_1\",\"Dashboard_Medicação_2\",\"Dashboard_Medicação_3\",\"Dashboard_Medicação_4\", \"Dashboard_Medicação_5\",\"Dashboard_Medicação_6\"]}}\n    return msg;\n}else if(qtd==7){\n    msg.payload = {\"group\": {\"show\": [\"Dashboard_Medicação_1\",\"Dashboard_Medicação_2\",\"Dashboard_Medicação_3\",\"Dashboard_Medicação_4\", \"Dashboard_Medicação_5\",\"Dashboard_Medicação_6\", \"Dashboard_Medicação_7\"]}}\n    return msg;\n}\n\n        \n      \n\n     \n\n    ",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 420,
-        "y": 140,
-        "wires": [
-            [
-                "3cd94c54e740c4ab"
-            ]
-        ]
-    },
-    {
-        "id": "4e5e972ef098efe5",
-        "type": "ui_text",
-        "z": "46666654041163aa",
-        "group": "90559693.85cfa8",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "Compartimentos:",
-        "format": "{{msg.payload[0].Compartimento}}",
-        "layout": "col-center",
-        "className": "",
-        "x": 750,
-        "y": 480,
-        "wires": []
-    },
-    {
-        "id": "337361192bd84f7e",
-        "type": "ui_text",
-        "z": "46666654041163aa",
-        "group": "7e158bed.eb3f54",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "Compartimentos:",
-        "format": "{{msg.payload[0].Compartimento}}",
-        "layout": "col-center",
-        "className": "",
-        "x": 750,
-        "y": 880,
-        "wires": []
-    },
-    {
-        "id": "67d9b3c63b089f7c",
-        "type": "comment",
-        "z": "46666654041163aa",
-        "name": "Med 1",
-        "info": "",
-        "x": 130,
-        "y": 320,
-        "wires": []
-    },
-    {
-        "id": "e108d244a107c75f",
-        "type": "debug",
-        "z": "46666654041163aa",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 510,
-        "y": 260,
-        "wires": []
-    },
-    {
-        "id": "cb3898f8ad903a79",
-        "type": "inject",
-        "z": "46666654041163aa",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "SELECT * FROM Tcc.Cadastro_medicamento WHERE Compartimento = 1;",
-        "payload": "medicamento",
-        "payloadType": "str",
-        "x": 170,
-        "y": 380,
-        "wires": [
-            [
-                "47c86143b3e0d1be"
-            ]
-        ]
-    },
-    {
-        "id": "c027896d22230bad",
-        "type": "inject",
-        "z": "46666654041163aa",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "SELECT Nome_medicamento,group_concat(`Compartimento`) as Compartimento  FROM Tcc.Cadastro_medicamento WHERE Nome_medicamento LIKE '%Neusa%' GROUP BY  Nome_medicamento;",
-        "payload": "Compartimento",
-        "payloadType": "str",
-        "x": 160,
-        "y": 520,
-        "wires": [
-            [
-                "5ed3c4fe73ca921a"
-            ]
-        ]
-    },
-    {
-        "id": "4642a74e53efd578",
-        "type": "debug",
-        "z": "46666654041163aa",
-        "name": "ver",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 250,
-        "y": 180,
-        "wires": []
-    },
-    {
-        "id": "47c86143b3e0d1be",
-        "type": "mysql",
-        "z": "46666654041163aa",
-        "mydb": "059998258fe85c80",
-        "name": "",
-        "x": 370,
-        "y": 380,
-        "wires": [
-            [
-                "e108d244a107c75f",
-                "7047a52c80442cbc",
-                "ebb8db745ceb1a79",
-                "aad2806fa7da1bbf",
-                "99d12e73a92e101e",
-                "008ad9c0d6fc8565"
-            ]
-        ]
-    },
-    {
-        "id": "5ed3c4fe73ca921a",
-        "type": "mysql",
-        "z": "46666654041163aa",
-        "mydb": "059998258fe85c80",
-        "name": "",
-        "x": 370,
-        "y": 520,
-        "wires": [
-            [
-                "4e5e972ef098efe5",
-                "8179f90c9553726c"
-            ]
-        ]
-    },
-    {
-        "id": "4fce73e3cce04176",
-        "type": "moment",
-        "z": "46666654041163aa",
-        "name": "",
-        "topic": "",
-        "input": "payload.medStartTime6",
-        "inputType": "msg",
-        "inTz": "Africa/Abidjan",
-        "adjAmount": "3",
-        "adjType": "hours",
-        "adjDir": "subtract",
-        "format": "",
-        "locale": "en-US",
-        "output": "payload",
-        "outputType": "msg",
-        "outTz": "America/Sao_Paulo",
-        "x": 860,
-        "y": 1400,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "ed1d5370bda4b1b7",
-        "type": "moment",
-        "z": "46666654041163aa",
-        "name": "",
-        "topic": "",
-        "input": "payload.medStartTime7",
-        "inputType": "msg",
-        "inTz": "Africa/Abidjan",
-        "adjAmount": "3",
-        "adjType": "hours",
-        "adjDir": "subtract",
-        "format": "",
-        "locale": "en-US",
-        "output": "payload",
-        "outputType": "msg",
-        "outTz": "America/Sao_Paulo",
-        "x": 860,
-        "y": 1540,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "8179f90c9553726c",
-        "type": "debug",
-        "z": "46666654041163aa",
-        "name": "Return",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload[0].Compartimento",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 510,
-        "y": 480,
-        "wires": []
-    },
-    {
-        "id": "6e3b6d2f5b65de74",
-        "type": "inject",
-        "z": "46666654041163aa",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "SELECT * FROM Tcc.Cadastro_medicamento WHERE Compartimento = 2;",
-        "payload": "medicamento",
-        "payloadType": "str",
-        "x": 170,
-        "y": 680,
-        "wires": [
-            [
-                "f16fd705b7748fdc"
-            ]
-        ]
-    },
-    {
-        "id": "62e08eac2deb9d7a",
-        "type": "inject",
-        "z": "46666654041163aa",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "SELECT Nome_medicamento,group_concat(`Compartimento`) as Compartimento  FROM Tcc.Cadastro_medicamento WHERE Nome_medicamento LIKE '%Dipirona%' GROUP BY  Nome_medicamento;",
-        "payload": "Compartimento",
-        "payloadType": "str",
-        "x": 160,
-        "y": 820,
-        "wires": [
-            [
-                "7cb9d276d19d0863"
-            ]
-        ]
-    },
-    {
-        "id": "f16fd705b7748fdc",
-        "type": "mysql",
-        "z": "46666654041163aa",
-        "mydb": "059998258fe85c80",
-        "name": "",
-        "x": 370,
-        "y": 680,
-        "wires": [
-            [
-                "5d692c777dfa11e9",
-                "69c3225215723067",
-                "c0e9ec7a7c526244",
-                "3a75d314e8ee00b6",
-                "d5ac0db8117788a2",
-                "267738bcc70ea473"
-            ]
-        ]
-    },
-    {
-        "id": "7cb9d276d19d0863",
-        "type": "mysql",
-        "z": "46666654041163aa",
-        "mydb": "059998258fe85c80",
-        "name": "",
-        "x": 370,
-        "y": 820,
-        "wires": [
-            [
-                "337361192bd84f7e",
-                "cc5272a080969467"
-            ]
-        ]
-    },
-    {
-        "id": "3a75d314e8ee00b6",
-        "type": "debug",
-        "z": "46666654041163aa",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 550,
-        "y": 620,
-        "wires": []
-    },
-    {
-        "id": "cc5272a080969467",
-        "type": "debug",
-        "z": "46666654041163aa",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 510,
-        "y": 780,
-        "wires": []
     }
 ]
