@@ -33,6 +33,7 @@
         "node-red-node-ui-table": "latest",
         "node-red-contrib-simple-queue":"latest",
         "node-red-contrib-cron-plus":"latest",
+        "node-red-node-mysql":"latest"
         "node-red-contrib-uuid":"latest",
         "node-red-contrib-actionflows":"latest",
         "node-red-contrib-mongodb4":"latest",
