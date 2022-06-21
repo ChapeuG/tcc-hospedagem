@@ -21,5 +21,9 @@
     "2bb8dfa0.48854": {
         "user": "${ATLAS_USERNAME}",
         "password": "${ATLAS_PASSWORD}"
+    },
+    "059998258fe85c80": {
+        "user": "PRI",
+        "password": "Tcc17062022"
     }
 }
