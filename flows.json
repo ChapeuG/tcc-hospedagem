@@ -813,7 +813,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 290,
-        "y": 240,
+        "y": 220,
         "wires": []
     },
     {
@@ -943,7 +943,12 @@
         "wires": [
             [
                 "3cd2429bb0b139a0",
-                "32dec86ef945686c"
+                "32dec86ef945686c",
+                "b428fe833eea935a",
+                "a8acdaa8e83c01b4",
+                "dbecc3d04f3990d7",
+                "c8b7c74c8d736221",
+                "81b6364abb079cfe"
             ]
         ]
     },
@@ -2304,8 +2309,8 @@
         "topic": "topic",
         "topicType": "msg",
         "splitLayout": "",
-        "x": 580,
-        "y": 1380,
+        "x": 600,
+        "y": 580,
         "wires": [
             [
                 "a3a0ea2b15c6abd6",
@@ -2429,8 +2434,8 @@
         "topic": "topic",
         "topicType": "msg",
         "splitLayout": "",
-        "x": 580,
-        "y": 1520,
+        "x": 600,
+        "y": 720,
         "wires": [
             [
                 "294779edad3ff617",
@@ -2554,8 +2559,8 @@
         "topic": "topic",
         "topicType": "msg",
         "splitLayout": "",
-        "x": 580,
-        "y": 1660,
+        "x": 600,
+        "y": 860,
         "wires": [
             [
                 "7047cafa919f90a5",
@@ -2679,8 +2684,8 @@
         "topic": "topic",
         "topicType": "msg",
         "splitLayout": "",
-        "x": 580,
-        "y": 1800,
+        "x": 600,
+        "y": 1000,
         "wires": [
             [
                 "4acff92875535c29",
@@ -2804,8 +2809,8 @@
         "topic": "topic",
         "topicType": "msg",
         "splitLayout": "",
-        "x": 580,
-        "y": 1940,
+        "x": 600,
+        "y": 1140,
         "wires": [
             [
                 "d29489c4f7704423",
@@ -3118,11 +3123,11 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 850,
-        "y": 1380,
+        "x": 870,
+        "y": 580,
         "wires": [
             [
-                "5513dc8d6efa0efc"
+                "268d05a34cef0c1f"
             ]
         ]
     },
@@ -3222,11 +3227,11 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 850,
-        "y": 1520,
+        "x": 870,
+        "y": 720,
         "wires": [
             [
-                "16731e9a5a012df2"
+                "f2df5c4630add2e4"
             ]
         ]
     },
@@ -3326,11 +3331,11 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 850,
-        "y": 1660,
+        "x": 870,
+        "y": 860,
         "wires": [
             [
-                "07a4b490e436cc71"
+                "9d10ee4d644d0fba"
             ]
         ]
     },
@@ -3430,11 +3435,11 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 850,
-        "y": 1800,
+        "x": 870,
+        "y": 1000,
         "wires": [
             [
-                "5dd43c435d388ed2"
+                "b6a09d34938c0abc"
             ]
         ]
     },
@@ -3534,11 +3539,11 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 850,
-        "y": 1940,
+        "x": 870,
+        "y": 1140,
         "wires": [
             [
-                "c238e8223aabb4d6"
+                "bea4adac6eff4df0"
             ]
         ]
     },
@@ -3568,8 +3573,8 @@
         "noerr": 0,
         "initialize": "",
         "finalize": "",
-        "x": 850,
-        "y": 1340,
+        "x": 870,
+        "y": 540,
         "wires": [
             []
         ]
@@ -3584,8 +3589,8 @@
         "noerr": 0,
         "initialize": "",
         "finalize": "",
-        "x": 850,
-        "y": 1480,
+        "x": 870,
+        "y": 680,
         "wires": [
             []
         ]
@@ -3600,8 +3605,8 @@
         "noerr": 0,
         "initialize": "",
         "finalize": "",
-        "x": 850,
-        "y": 1620,
+        "x": 870,
+        "y": 820,
         "wires": [
             []
         ]
@@ -3616,8 +3621,8 @@
         "noerr": 0,
         "initialize": "",
         "finalize": "",
-        "x": 850,
-        "y": 1760,
+        "x": 870,
+        "y": 960,
         "wires": [
             []
         ]
@@ -3632,168 +3637,8 @@
         "noerr": 0,
         "initialize": "",
         "finalize": "",
-        "x": 850,
-        "y": 1900,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "5513dc8d6efa0efc",
-        "type": "function",
-        "z": "e6a504baa2efc0c0",
-        "name": "[MED3] Change Date Format",
-        "func": "var meddate = global.get(\"medStartDate3\")\nif(meddate!=null){\n    var datesplit1 = meddate.split(\"T\")\n    var datesplit2 = datesplit1[0].split(\"-\")\n    for (var i=0; i<3; i++){\n    datesplit2[i] = parseInt(datesplit2[i], 10)\n    }\n    global.set(\"medDate3\", datesplit2)\n}else{\n    global.set(\"medDate3\", [0, 0, 0])\n}",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 1240,
-        "y": 1380,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "74c30c596dbf173f",
-        "type": "function",
-        "z": "e6a504baa2efc0c0",
-        "name": "[MED3] Change Time Format",
-        "func": "var medtime = msg.payload\n\nif(medtime!=null){\n    var timesplit1 = medtime.split(\"T\")\n    var timesplit2 = timesplit1[1].split(\":\")\n    timesplit2.splice(2) \n    for (var i=0; i<2; i++){\n    timesplit2[i] = parseInt(timesplit2[i], 10)\n    }\n    global.set(\"medTime3\", timesplit2)\n}else{\n    global.set(\"medTime3\", [0,0,0])\n}\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 1240,
-        "y": 1320,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "16731e9a5a012df2",
-        "type": "function",
-        "z": "e6a504baa2efc0c0",
-        "name": "[MED4] Change Date Format",
-        "func": "var meddate = global.get(\"medStartDate4\")\nif(meddate!=null){\n    var datesplit1 = meddate.split(\"T\")\n    var datesplit2 = datesplit1[0].split(\"-\")\n    for (var i=0; i<3; i++){\n    datesplit2[i] = parseInt(datesplit2[i], 10)\n    }\n    global.set(\"medDate4\", datesplit2)\n}else{\n    global.set(\"medDate4\", [0, 0, 0])\n}",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 1240,
-        "y": 1520,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "dc547d457b0c2315",
-        "type": "function",
-        "z": "e6a504baa2efc0c0",
-        "name": "[MED4] Change Time Format",
-        "func": "var medtime = msg.payload\n\nif(medtime!=null){\n    var timesplit1 = medtime.split(\"T\")\n    var timesplit2 = timesplit1[1].split(\":\")\n    timesplit2.splice(2) \n    for (var i=0; i<2; i++){\n    timesplit2[i] = parseInt(timesplit2[i], 10)\n    }\n    global.set(\"medTime4\", timesplit2)\n}else{\n    global.set(\"medTime4\", [0,0,0])\n}\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 1240,
-        "y": 1460,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "07a4b490e436cc71",
-        "type": "function",
-        "z": "e6a504baa2efc0c0",
-        "name": "[MED5] Change Date Format",
-        "func": "var meddate = global.get(\"medStartDate5\")\nif(meddate!=null){\n    var datesplit1 = meddate.split(\"T\")\n    var datesplit2 = datesplit1[0].split(\"-\")\n    for (var i=0; i<3; i++){\n    datesplit2[i] = parseInt(datesplit2[i], 10)\n    }\n    global.set(\"medDate5\", datesplit2)\n}else{\n    global.set(\"medDate5\", [0, 0, 0])\n}",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 1240,
-        "y": 1660,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "b9bcc5fa1a6a7eb9",
-        "type": "function",
-        "z": "e6a504baa2efc0c0",
-        "name": "[MED5] Change Time Format",
-        "func": "var medtime = msg.payload\n\nif(medtime!=null){\n    var timesplit1 = medtime.split(\"T\")\n    var timesplit2 = timesplit1[1].split(\":\")\n    timesplit2.splice(2) \n    for (var i=0; i<2; i++){\n    timesplit2[i] = parseInt(timesplit2[i], 10)\n    }\n    global.set(\"medTime5\", timesplit2)\n}else{\n    global.set(\"medTime5\", [0,0,0])\n}\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 1240,
-        "y": 1600,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "5dd43c435d388ed2",
-        "type": "function",
-        "z": "e6a504baa2efc0c0",
-        "name": "[MED6] Change Date Format",
-        "func": "var meddate = global.get(\"medStartDate6\")\nif(meddate!=null){\n    var datesplit1 = meddate.split(\"T\")\n    var datesplit2 = datesplit1[0].split(\"-\")\n    for (var i=0; i<3; i++){\n    datesplit2[i] = parseInt(datesplit2[i], 10)\n    }\n    global.set(\"medDate6\", datesplit2)\n}else{\n    global.set(\"medDate6\", [0, 0, 0])\n}",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 1240,
-        "y": 1800,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "7a68070896408f2d",
-        "type": "function",
-        "z": "e6a504baa2efc0c0",
-        "name": "[MED6] Change Time Format",
-        "func": "var medtime = msg.payload\n\nif(medtime!=null){\n    var timesplit1 = medtime.split(\"T\")\n    var timesplit2 = timesplit1[1].split(\":\")\n    timesplit2.splice(2) \n    for (var i=0; i<2; i++){\n    timesplit2[i] = parseInt(timesplit2[i], 10)\n    }\n    global.set(\"medTime6\", timesplit2)\n}else{\n    global.set(\"medTime6\", [0,0,0])\n}\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 1240,
-        "y": 1740,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "c238e8223aabb4d6",
-        "type": "function",
-        "z": "e6a504baa2efc0c0",
-        "name": "[MED7] Change Date Format",
-        "func": "var meddate = global.get(\"medStartDate7\")\nif(meddate!=null){\n    var datesplit1 = meddate.split(\"T\")\n    var datesplit2 = datesplit1[0].split(\"-\")\n    for (var i=0; i<3; i++){\n    datesplit2[i] = parseInt(datesplit2[i], 10)\n    }\n    global.set(\"medDate7\", datesplit2)\n}else{\n    global.set(\"medDate7\", [0, 0, 0])\n}",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 1240,
-        "y": 1940,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "9422140fea052501",
-        "type": "function",
-        "z": "e6a504baa2efc0c0",
-        "name": "[MED7] Change Time Format",
-        "func": "var medtime = msg.payload\n\nif(medtime!=null){\n    var timesplit1 = medtime.split(\"T\")\n    var timesplit2 = timesplit1[1].split(\":\")\n    timesplit2.splice(2) \n    for (var i=0; i<2; i++){\n    timesplit2[i] = parseInt(timesplit2[i], 10)\n    }\n    global.set(\"medTime7\", timesplit2)\n}else{\n    global.set(\"medTime7\", [0,0,0])\n}\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 1240,
-        "y": 1880,
+        "x": 870,
+        "y": 1100,
         "wires": [
             []
         ]
@@ -3887,8 +3732,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2130,
-        "y": 380,
+        "x": 2370,
+        "y": 260,
         "wires": []
     },
     {
@@ -3962,8 +3807,8 @@
         "propout": "payload.medStartDate1",
         "object": "msg",
         "objectout": "msg",
-        "x": 1470,
-        "y": 300,
+        "x": 1570,
+        "y": 220,
         "wires": [
             [
                 "44713f510255e781"
@@ -3985,8 +3830,8 @@
         "propout": "payload.medFreq1",
         "object": "msg",
         "objectout": "msg",
-        "x": 1290,
-        "y": 220,
+        "x": 1530,
+        "y": 180,
         "wires": [
             [
                 "d476d45c68972de5"
@@ -4008,8 +3853,8 @@
         "propout": "payload.dosMed1",
         "object": "msg",
         "objectout": "msg",
-        "x": 1280,
-        "y": 260,
+        "x": 1680,
+        "y": 180,
         "wires": [
             [
                 "0ba7cdbde59b5144"
@@ -4031,8 +3876,8 @@
         "propout": "medStartTime1",
         "object": "msg",
         "objectout": "msg",
-        "x": 1450,
-        "y": 340,
+        "x": 1550,
+        "y": 260,
         "wires": [
             [
                 "c78f6a2c22aa473a",
@@ -4076,8 +3921,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1640,
-        "y": 340,
+        "x": 1780,
+        "y": 260,
         "wires": [
             [
                 "5aaa4f02816e4df7"
@@ -4097,8 +3942,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1960,
-        "y": 280,
+        "x": 2180,
+        "y": 220,
         "wires": []
     },
     {
@@ -4116,8 +3961,8 @@
         "propout": "topic",
         "object": "msg",
         "objectout": "msg",
-        "x": 1790,
-        "y": 340,
+        "x": 1950,
+        "y": 260,
         "wires": [
             [
                 "d4da3b436e9b39c9",
@@ -4142,8 +3987,8 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 980,
-        "y": 300,
+        "x": 1120,
+        "y": 220,
         "wires": [
             [
                 "945f79cf9cc61f7f"
@@ -4167,8 +4012,8 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 980,
-        "y": 340,
+        "x": 1120,
+        "y": 260,
         "wires": [
             [
                 "697b01e3d8502d33"
@@ -4197,8 +4042,8 @@
         "z": "e6a504baa2efc0c0",
         "mydb": "059998258fe85c80",
         "name": "",
-        "x": 1970,
-        "y": 380,
+        "x": 2130,
+        "y": 260,
         "wires": [
             [
                 "9639d0274b94465d"
@@ -4217,8 +4062,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1850,
-        "y": 180,
+        "x": 1690,
+        "y": 300,
         "wires": []
     },
     {
@@ -4238,8 +4083,8 @@
         "output": "payload.medStartDate1",
         "outputType": "msg",
         "outTz": "America/Sao_Paulo",
-        "x": 1200,
-        "y": 300,
+        "x": 1320,
+        "y": 220,
         "wires": [
             [
                 "df6e951b9853f843"
@@ -4263,31 +4108,14 @@
         "output": "payload.medStartTime1",
         "outputType": "msg",
         "outTz": "America/Sao_Paulo",
-        "x": 1200,
-        "y": 340,
+        "x": 1320,
+        "y": 260,
         "wires": [
             [
                 "a75b07530cc294e8",
                 "1752782e0f1feb68"
             ]
         ]
-    },
-    {
-        "id": "1752782e0f1feb68",
-        "type": "debug",
-        "z": "e6a504baa2efc0c0",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1390,
-        "y": 400,
-        "wires": []
     },
     {
         "id": "605eefe5e4dcba30",
@@ -4304,8 +4132,8 @@
         "propout": "payload.medName1",
         "object": "msg",
         "objectout": "msg",
-        "x": 1440,
-        "y": 480,
+        "x": 1300,
+        "y": 420,
         "wires": [
             [
                 "bfdaa15b0eafabc2"
@@ -4327,8 +4155,8 @@
         "propout": "payload.medStartDate1",
         "object": "msg",
         "objectout": "msg",
-        "x": 1590,
-        "y": 600,
+        "x": 1550,
+        "y": 460,
         "wires": [
             [
                 "3e0d680da5c008d2",
@@ -4351,8 +4179,8 @@
         "propout": "payload.medFreq1",
         "object": "msg",
         "objectout": "msg",
-        "x": 1410,
-        "y": 520,
+        "x": 1510,
+        "y": 420,
         "wires": [
             [
                 "03807912f41211ae"
@@ -4374,8 +4202,8 @@
         "propout": "payload.dosMed1",
         "object": "msg",
         "objectout": "msg",
-        "x": 1400,
-        "y": 560,
+        "x": 1660,
+        "y": 420,
         "wires": [
             [
                 "fbedd114ce282c69"
@@ -4397,8 +4225,8 @@
         "propout": "medStartTime1",
         "object": "msg",
         "objectout": "msg",
-        "x": 1570,
-        "y": 640,
+        "x": 1550,
+        "y": 500,
         "wires": [
             [
                 "c2688ddc26b54dfc"
@@ -4422,8 +4250,8 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 1240,
-        "y": 480,
+        "x": 1100,
+        "y": 420,
         "wires": [
             [
                 "605eefe5e4dcba30"
@@ -4441,8 +4269,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1760,
-        "y": 640,
+        "x": 1780,
+        "y": 500,
         "wires": [
             [
                 "4e7e9e9058180a48"
@@ -4462,8 +4290,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2060,
-        "y": 600,
+        "x": 2100,
+        "y": 440,
         "wires": []
     },
     {
@@ -4481,8 +4309,8 @@
         "propout": "topic",
         "object": "msg",
         "objectout": "msg",
-        "x": 1910,
-        "y": 640,
+        "x": 1950,
+        "y": 500,
         "wires": [
             [
                 "da7a339d4c9b7a38",
@@ -4508,7 +4336,7 @@
         "allowrate": false,
         "outputs": 1,
         "x": 1100,
-        "y": 660,
+        "y": 460,
         "wires": [
             [
                 "7cdc3df2e6cc52bf"
@@ -4532,8 +4360,8 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 1120,
-        "y": 720,
+        "x": 1100,
+        "y": 500,
         "wires": [
             [
                 "2bb79018564d26bb"
@@ -4546,27 +4374,11 @@
         "z": "e6a504baa2efc0c0",
         "mydb": "059998258fe85c80",
         "name": "",
-        "x": 2070,
-        "y": 680,
+        "x": 2110,
+        "y": 500,
         "wires": [
             []
         ]
-    },
-    {
-        "id": "6d5bb210dcf39b40",
-        "type": "debug",
-        "z": "e6a504baa2efc0c0",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1830,
-        "y": 600,
-        "wires": []
     },
     {
         "id": "7cdc3df2e6cc52bf",
@@ -4585,8 +4397,8 @@
         "output": "payload.medStartDate1",
         "outputType": "msg",
         "outTz": "America/Sao_Paulo",
-        "x": 1320,
-        "y": 600,
+        "x": 1300,
+        "y": 460,
         "wires": [
             [
                 "a20aa33a3619573a"
@@ -4610,12 +4422,1690 @@
         "output": "payload.medStartTime1",
         "outputType": "msg",
         "outTz": "America/Sao_Paulo",
-        "x": 1320,
-        "y": 640,
+        "x": 1300,
+        "y": 500,
         "wires": [
             [
                 "d88b45791b772cc5"
             ]
         ]
+    },
+    {
+        "id": "1752782e0f1feb68",
+        "type": "debug",
+        "z": "e6a504baa2efc0c0",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1450,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "6d5bb210dcf39b40",
+        "type": "debug",
+        "z": "e6a504baa2efc0c0",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1770,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "5344b7d6677f1e41",
+        "type": "string",
+        "z": "e6a504baa2efc0c0",
+        "name": "Nome_medicamento",
+        "methods": [
+            {
+                "name": "toString",
+                "params": []
+            }
+        ],
+        "prop": "payload.medName1",
+        "propout": "payload.medName1",
+        "object": "msg",
+        "objectout": "msg",
+        "x": 1300,
+        "y": 580,
+        "wires": [
+            [
+                "2e51048406b01660"
+            ]
+        ]
+    },
+    {
+        "id": "d381d26163ab5a18",
+        "type": "string",
+        "z": "e6a504baa2efc0c0",
+        "name": "Data_início_tratamento",
+        "methods": [
+            {
+                "name": "toString",
+                "params": []
+            }
+        ],
+        "prop": "payload.medStartDate1",
+        "propout": "payload.medStartDate1",
+        "object": "msg",
+        "objectout": "msg",
+        "x": 1550,
+        "y": 620,
+        "wires": [
+            [
+                "85332b337e570c81",
+                "1d5db7443ff3536c"
+            ]
+        ]
+    },
+    {
+        "id": "2e51048406b01660",
+        "type": "string",
+        "z": "e6a504baa2efc0c0",
+        "name": "Frequencia",
+        "methods": [
+            {
+                "name": "toString",
+                "params": []
+            }
+        ],
+        "prop": "payload.medFreq1",
+        "propout": "payload.medFreq1",
+        "object": "msg",
+        "objectout": "msg",
+        "x": 1510,
+        "y": 580,
+        "wires": [
+            [
+                "8d6a9742ca1b2e98"
+            ]
+        ]
+    },
+    {
+        "id": "8d6a9742ca1b2e98",
+        "type": "string",
+        "z": "e6a504baa2efc0c0",
+        "name": "Dosagem",
+        "methods": [
+            {
+                "name": "toInteger",
+                "params": []
+            }
+        ],
+        "prop": "payload.dosMed1",
+        "propout": "payload.dosMed1",
+        "object": "msg",
+        "objectout": "msg",
+        "x": 1660,
+        "y": 580,
+        "wires": [
+            [
+                "0bd03c1ceebb86c2"
+            ]
+        ]
+    },
+    {
+        "id": "b5902f675a7545d8",
+        "type": "string",
+        "z": "e6a504baa2efc0c0",
+        "name": "Hora_início_tratamento",
+        "methods": [
+            {
+                "name": "toString",
+                "params": []
+            }
+        ],
+        "prop": "payload.medStartTime1",
+        "propout": "medStartTime1",
+        "object": "msg",
+        "objectout": "msg",
+        "x": 1550,
+        "y": 660,
+        "wires": [
+            [
+                "c5c78d90e70998b7"
+            ]
+        ]
+    },
+    {
+        "id": "268d05a34cef0c1f",
+        "type": "delay",
+        "z": "e6a504baa2efc0c0",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "4",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1100,
+        "y": 580,
+        "wires": [
+            [
+                "5344b7d6677f1e41"
+            ]
+        ]
+    },
+    {
+        "id": "c5c78d90e70998b7",
+        "type": "function",
+        "z": "e6a504baa2efc0c0",
+        "name": "",
+        "func": "msg.payload = `INSERT INTO Tcc.Cadastro_Medicamento(paciente_id, Nome_medicamento, Data_inicio_tratamento,Hora_inicio_tratamento,Frequencia,Qtd_comprimidos_compartimento,Compartimento)\n    SELECT  *\n    FROM (SELECT '1' AS paciente_id,\n    \"${msg.payload.medName1}\" AS Nome_medicamento,\n    \"${msg.payload.medStartDate1}\" AS Data_inicio_tratamento,\n    \"${msg.medStartTime1}\" AS Hora_inicio_tratamento,\n    ${msg.payload.medFreq1} AS Frequencia,\n    ${msg.payload.dosMed1} AS Qtd_comprimidos_compartimento,\n    '3' AS Compartimento) AS temp\n    WHERE NOT EXISTS (SELECT paciente_id,Compartimento\n                      FROM Tcc.Cadastro_Medicamento AS med\n                      WHERE med.paciente_id = '1' AND med.Compartimento = '3'\n                     )\n\tLIMIT 1;'\n                     \n\t\t\t\t\t`\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1780,
+        "y": 660,
+        "wires": [
+            [
+                "914e82f1724a7c2d"
+            ]
+        ]
+    },
+    {
+        "id": "ccd6345afedac026",
+        "type": "debug",
+        "z": "e6a504baa2efc0c0",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "topic",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2100,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "914e82f1724a7c2d",
+        "type": "string",
+        "z": "e6a504baa2efc0c0",
+        "name": "",
+        "methods": [
+            {
+                "name": "toString",
+                "params": []
+            }
+        ],
+        "prop": "payload",
+        "propout": "topic",
+        "object": "msg",
+        "objectout": "msg",
+        "x": 1950,
+        "y": 660,
+        "wires": [
+            [
+                "ccd6345afedac026",
+                "0a509ce388ea3527"
+            ]
+        ]
+    },
+    {
+        "id": "0bd03c1ceebb86c2",
+        "type": "delay",
+        "z": "e6a504baa2efc0c0",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "3",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1100,
+        "y": 620,
+        "wires": [
+            [
+                "664e930ede0f5830"
+            ]
+        ]
+    },
+    {
+        "id": "85332b337e570c81",
+        "type": "delay",
+        "z": "e6a504baa2efc0c0",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "4",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1100,
+        "y": 660,
+        "wires": [
+            [
+                "149d10a114a43cb9"
+            ]
+        ]
+    },
+    {
+        "id": "0a509ce388ea3527",
+        "type": "mysql",
+        "z": "e6a504baa2efc0c0",
+        "mydb": "059998258fe85c80",
+        "name": "",
+        "x": 2110,
+        "y": 660,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "664e930ede0f5830",
+        "type": "moment",
+        "z": "e6a504baa2efc0c0",
+        "name": "",
+        "topic": "",
+        "input": "payload.medStartDate1",
+        "inputType": "msg",
+        "inTz": "Africa/Abidjan",
+        "adjAmount": "3",
+        "adjType": "hours",
+        "adjDir": "add",
+        "format": "YYYY-MM-DD",
+        "locale": "pt-BR",
+        "output": "payload.medStartDate1",
+        "outputType": "msg",
+        "outTz": "America/Sao_Paulo",
+        "x": 1300,
+        "y": 620,
+        "wires": [
+            [
+                "d381d26163ab5a18"
+            ]
+        ]
+    },
+    {
+        "id": "149d10a114a43cb9",
+        "type": "moment",
+        "z": "e6a504baa2efc0c0",
+        "name": "",
+        "topic": "",
+        "input": "payload.medStartTime1",
+        "inputType": "msg",
+        "inTz": "Africa/Abidjan",
+        "adjAmount": "3",
+        "adjType": "hours",
+        "adjDir": "add",
+        "format": "HH:mm",
+        "locale": "pt-BR",
+        "output": "payload.medStartTime1",
+        "outputType": "msg",
+        "outTz": "America/Sao_Paulo",
+        "x": 1300,
+        "y": 660,
+        "wires": [
+            [
+                "b5902f675a7545d8"
+            ]
+        ]
+    },
+    {
+        "id": "1d5db7443ff3536c",
+        "type": "debug",
+        "z": "e6a504baa2efc0c0",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1770,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "befdb7605ba5df2c",
+        "type": "string",
+        "z": "e6a504baa2efc0c0",
+        "name": "Nome_medicamento",
+        "methods": [
+            {
+                "name": "toString",
+                "params": []
+            }
+        ],
+        "prop": "payload.medName1",
+        "propout": "payload.medName1",
+        "object": "msg",
+        "objectout": "msg",
+        "x": 1300,
+        "y": 720,
+        "wires": [
+            [
+                "837d54f0b311c7f5"
+            ]
+        ]
+    },
+    {
+        "id": "191f2f9c64a98c67",
+        "type": "string",
+        "z": "e6a504baa2efc0c0",
+        "name": "Data_início_tratamento",
+        "methods": [
+            {
+                "name": "toString",
+                "params": []
+            }
+        ],
+        "prop": "payload.medStartDate1",
+        "propout": "payload.medStartDate1",
+        "object": "msg",
+        "objectout": "msg",
+        "x": 1550,
+        "y": 760,
+        "wires": [
+            [
+                "bcfc648b5f0c5acb",
+                "99de2746c9ae6824"
+            ]
+        ]
+    },
+    {
+        "id": "837d54f0b311c7f5",
+        "type": "string",
+        "z": "e6a504baa2efc0c0",
+        "name": "Frequencia",
+        "methods": [
+            {
+                "name": "toString",
+                "params": []
+            }
+        ],
+        "prop": "payload.medFreq1",
+        "propout": "payload.medFreq1",
+        "object": "msg",
+        "objectout": "msg",
+        "x": 1510,
+        "y": 720,
+        "wires": [
+            [
+                "1d52f430c8aa858b"
+            ]
+        ]
+    },
+    {
+        "id": "1d52f430c8aa858b",
+        "type": "string",
+        "z": "e6a504baa2efc0c0",
+        "name": "Dosagem",
+        "methods": [
+            {
+                "name": "toInteger",
+                "params": []
+            }
+        ],
+        "prop": "payload.dosMed1",
+        "propout": "payload.dosMed1",
+        "object": "msg",
+        "objectout": "msg",
+        "x": 1660,
+        "y": 720,
+        "wires": [
+            [
+                "ce0b73219438a4c1"
+            ]
+        ]
+    },
+    {
+        "id": "c0e082d6226337a6",
+        "type": "string",
+        "z": "e6a504baa2efc0c0",
+        "name": "Hora_início_tratamento",
+        "methods": [
+            {
+                "name": "toString",
+                "params": []
+            }
+        ],
+        "prop": "payload.medStartTime1",
+        "propout": "medStartTime1",
+        "object": "msg",
+        "objectout": "msg",
+        "x": 1550,
+        "y": 800,
+        "wires": [
+            [
+                "4d9fe2e195daa601"
+            ]
+        ]
+    },
+    {
+        "id": "f2df5c4630add2e4",
+        "type": "delay",
+        "z": "e6a504baa2efc0c0",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "4",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1100,
+        "y": 720,
+        "wires": [
+            [
+                "befdb7605ba5df2c"
+            ]
+        ]
+    },
+    {
+        "id": "4d9fe2e195daa601",
+        "type": "function",
+        "z": "e6a504baa2efc0c0",
+        "name": "",
+        "func": "msg.payload = `INSERT INTO Tcc.Cadastro_Medicamento(paciente_id, Nome_medicamento, Data_inicio_tratamento,Hora_inicio_tratamento,Frequencia,Qtd_comprimidos_compartimento,Compartimento)\n    SELECT  *\n    FROM (SELECT '1' AS paciente_id,\n    \"${msg.payload.medName1}\" AS Nome_medicamento,\n    \"${msg.payload.medStartDate1}\" AS Data_inicio_tratamento,\n    \"${msg.medStartTime1}\" AS Hora_inicio_tratamento,\n    ${msg.payload.medFreq1} AS Frequencia,\n    ${msg.payload.dosMed1} AS Qtd_comprimidos_compartimento,\n    '4' AS Compartimento) AS temp\n    WHERE NOT EXISTS (SELECT paciente_id,Compartimento\n                      FROM Tcc.Cadastro_Medicamento AS med\n                      WHERE med.paciente_id = '1' AND med.Compartimento = '4'\n                     )\n\tLIMIT 1;'\n                     \n\t\t\t\t\t`\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1780,
+        "y": 800,
+        "wires": [
+            [
+                "e240d62e9f1278dd"
+            ]
+        ]
+    },
+    {
+        "id": "1f66b2381209dd33",
+        "type": "debug",
+        "z": "e6a504baa2efc0c0",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "topic",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2100,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "e240d62e9f1278dd",
+        "type": "string",
+        "z": "e6a504baa2efc0c0",
+        "name": "",
+        "methods": [
+            {
+                "name": "toString",
+                "params": []
+            }
+        ],
+        "prop": "payload",
+        "propout": "topic",
+        "object": "msg",
+        "objectout": "msg",
+        "x": 1950,
+        "y": 800,
+        "wires": [
+            [
+                "1f66b2381209dd33",
+                "6662de0e01a1b5e2"
+            ]
+        ]
+    },
+    {
+        "id": "ce0b73219438a4c1",
+        "type": "delay",
+        "z": "e6a504baa2efc0c0",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "3",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1100,
+        "y": 760,
+        "wires": [
+            [
+                "236376ae20f1bd35"
+            ]
+        ]
+    },
+    {
+        "id": "bcfc648b5f0c5acb",
+        "type": "delay",
+        "z": "e6a504baa2efc0c0",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "4",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1100,
+        "y": 800,
+        "wires": [
+            [
+                "3fe4f1177385f413"
+            ]
+        ]
+    },
+    {
+        "id": "6662de0e01a1b5e2",
+        "type": "mysql",
+        "z": "e6a504baa2efc0c0",
+        "mydb": "059998258fe85c80",
+        "name": "",
+        "x": 2110,
+        "y": 800,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "236376ae20f1bd35",
+        "type": "moment",
+        "z": "e6a504baa2efc0c0",
+        "name": "",
+        "topic": "",
+        "input": "payload.medStartDate1",
+        "inputType": "msg",
+        "inTz": "Africa/Abidjan",
+        "adjAmount": "3",
+        "adjType": "hours",
+        "adjDir": "add",
+        "format": "YYYY-MM-DD",
+        "locale": "pt-BR",
+        "output": "payload.medStartDate1",
+        "outputType": "msg",
+        "outTz": "America/Sao_Paulo",
+        "x": 1300,
+        "y": 760,
+        "wires": [
+            [
+                "191f2f9c64a98c67"
+            ]
+        ]
+    },
+    {
+        "id": "3fe4f1177385f413",
+        "type": "moment",
+        "z": "e6a504baa2efc0c0",
+        "name": "",
+        "topic": "",
+        "input": "payload.medStartTime1",
+        "inputType": "msg",
+        "inTz": "Africa/Abidjan",
+        "adjAmount": "3",
+        "adjType": "hours",
+        "adjDir": "add",
+        "format": "HH:mm",
+        "locale": "pt-BR",
+        "output": "payload.medStartTime1",
+        "outputType": "msg",
+        "outTz": "America/Sao_Paulo",
+        "x": 1300,
+        "y": 800,
+        "wires": [
+            [
+                "c0e082d6226337a6"
+            ]
+        ]
+    },
+    {
+        "id": "99de2746c9ae6824",
+        "type": "debug",
+        "z": "e6a504baa2efc0c0",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1770,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "9c3868ee65165b08",
+        "type": "string",
+        "z": "e6a504baa2efc0c0",
+        "name": "Nome_medicamento",
+        "methods": [
+            {
+                "name": "toString",
+                "params": []
+            }
+        ],
+        "prop": "payload.medName1",
+        "propout": "payload.medName1",
+        "object": "msg",
+        "objectout": "msg",
+        "x": 1300,
+        "y": 860,
+        "wires": [
+            [
+                "e25bb439f0dd6987"
+            ]
+        ]
+    },
+    {
+        "id": "db12a6d4835edcb2",
+        "type": "string",
+        "z": "e6a504baa2efc0c0",
+        "name": "Data_início_tratamento",
+        "methods": [
+            {
+                "name": "toString",
+                "params": []
+            }
+        ],
+        "prop": "payload.medStartDate1",
+        "propout": "payload.medStartDate1",
+        "object": "msg",
+        "objectout": "msg",
+        "x": 1550,
+        "y": 900,
+        "wires": [
+            [
+                "d06b119afd5b901b",
+                "ec5d6233eb8f1222"
+            ]
+        ]
+    },
+    {
+        "id": "e25bb439f0dd6987",
+        "type": "string",
+        "z": "e6a504baa2efc0c0",
+        "name": "Frequencia",
+        "methods": [
+            {
+                "name": "toString",
+                "params": []
+            }
+        ],
+        "prop": "payload.medFreq1",
+        "propout": "payload.medFreq1",
+        "object": "msg",
+        "objectout": "msg",
+        "x": 1510,
+        "y": 860,
+        "wires": [
+            [
+                "b49eca9ce9d49491"
+            ]
+        ]
+    },
+    {
+        "id": "b49eca9ce9d49491",
+        "type": "string",
+        "z": "e6a504baa2efc0c0",
+        "name": "Dosagem",
+        "methods": [
+            {
+                "name": "toInteger",
+                "params": []
+            }
+        ],
+        "prop": "payload.dosMed1",
+        "propout": "payload.dosMed1",
+        "object": "msg",
+        "objectout": "msg",
+        "x": 1660,
+        "y": 860,
+        "wires": [
+            [
+                "920798058a69949c"
+            ]
+        ]
+    },
+    {
+        "id": "b572a4cf0e231977",
+        "type": "string",
+        "z": "e6a504baa2efc0c0",
+        "name": "Hora_início_tratamento",
+        "methods": [
+            {
+                "name": "toString",
+                "params": []
+            }
+        ],
+        "prop": "payload.medStartTime1",
+        "propout": "medStartTime1",
+        "object": "msg",
+        "objectout": "msg",
+        "x": 1550,
+        "y": 940,
+        "wires": [
+            [
+                "218caabfb2bfb443"
+            ]
+        ]
+    },
+    {
+        "id": "9d10ee4d644d0fba",
+        "type": "delay",
+        "z": "e6a504baa2efc0c0",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "4",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1100,
+        "y": 860,
+        "wires": [
+            [
+                "9c3868ee65165b08"
+            ]
+        ]
+    },
+    {
+        "id": "218caabfb2bfb443",
+        "type": "function",
+        "z": "e6a504baa2efc0c0",
+        "name": "",
+        "func": "msg.payload = `INSERT INTO Tcc.Cadastro_Medicamento(paciente_id, Nome_medicamento, Data_inicio_tratamento,Hora_inicio_tratamento,Frequencia,Qtd_comprimidos_compartimento,Compartimento)\n    SELECT  *\n    FROM (SELECT '1' AS paciente_id,\n    \"${msg.payload.medName1}\" AS Nome_medicamento,\n    \"${msg.payload.medStartDate1}\" AS Data_inicio_tratamento,\n    \"${msg.medStartTime1}\" AS Hora_inicio_tratamento,\n    ${msg.payload.medFreq1} AS Frequencia,\n    ${msg.payload.dosMed1} AS Qtd_comprimidos_compartimento,\n    '5' AS Compartimento) AS temp\n    WHERE NOT EXISTS (SELECT paciente_id,Compartimento\n                      FROM Tcc.Cadastro_Medicamento AS med\n                      WHERE med.paciente_id = '1' AND med.Compartimento = '5'\n                     )\n\tLIMIT 1;'\n                     \n\t\t\t\t\t`\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1780,
+        "y": 940,
+        "wires": [
+            [
+                "fb7efe34ffeb1278"
+            ]
+        ]
+    },
+    {
+        "id": "868660b3f33af0b5",
+        "type": "debug",
+        "z": "e6a504baa2efc0c0",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "topic",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2100,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "fb7efe34ffeb1278",
+        "type": "string",
+        "z": "e6a504baa2efc0c0",
+        "name": "",
+        "methods": [
+            {
+                "name": "toString",
+                "params": []
+            }
+        ],
+        "prop": "payload",
+        "propout": "topic",
+        "object": "msg",
+        "objectout": "msg",
+        "x": 1950,
+        "y": 940,
+        "wires": [
+            [
+                "868660b3f33af0b5",
+                "94f9a589c4665471"
+            ]
+        ]
+    },
+    {
+        "id": "920798058a69949c",
+        "type": "delay",
+        "z": "e6a504baa2efc0c0",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "3",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1100,
+        "y": 900,
+        "wires": [
+            [
+                "3a9cab47561ac913"
+            ]
+        ]
+    },
+    {
+        "id": "d06b119afd5b901b",
+        "type": "delay",
+        "z": "e6a504baa2efc0c0",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "4",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1100,
+        "y": 940,
+        "wires": [
+            [
+                "c543c5aeb01566bf"
+            ]
+        ]
+    },
+    {
+        "id": "94f9a589c4665471",
+        "type": "mysql",
+        "z": "e6a504baa2efc0c0",
+        "mydb": "059998258fe85c80",
+        "name": "",
+        "x": 2110,
+        "y": 940,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3a9cab47561ac913",
+        "type": "moment",
+        "z": "e6a504baa2efc0c0",
+        "name": "",
+        "topic": "",
+        "input": "payload.medStartDate1",
+        "inputType": "msg",
+        "inTz": "Africa/Abidjan",
+        "adjAmount": "3",
+        "adjType": "hours",
+        "adjDir": "add",
+        "format": "YYYY-MM-DD",
+        "locale": "pt-BR",
+        "output": "payload.medStartDate1",
+        "outputType": "msg",
+        "outTz": "America/Sao_Paulo",
+        "x": 1300,
+        "y": 900,
+        "wires": [
+            [
+                "db12a6d4835edcb2"
+            ]
+        ]
+    },
+    {
+        "id": "c543c5aeb01566bf",
+        "type": "moment",
+        "z": "e6a504baa2efc0c0",
+        "name": "",
+        "topic": "",
+        "input": "payload.medStartTime1",
+        "inputType": "msg",
+        "inTz": "Africa/Abidjan",
+        "adjAmount": "3",
+        "adjType": "hours",
+        "adjDir": "add",
+        "format": "HH:mm",
+        "locale": "pt-BR",
+        "output": "payload.medStartTime1",
+        "outputType": "msg",
+        "outTz": "America/Sao_Paulo",
+        "x": 1300,
+        "y": 940,
+        "wires": [
+            [
+                "b572a4cf0e231977"
+            ]
+        ]
+    },
+    {
+        "id": "ec5d6233eb8f1222",
+        "type": "debug",
+        "z": "e6a504baa2efc0c0",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1770,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "c4989f3051153973",
+        "type": "string",
+        "z": "e6a504baa2efc0c0",
+        "name": "Nome_medicamento",
+        "methods": [
+            {
+                "name": "toString",
+                "params": []
+            }
+        ],
+        "prop": "payload.medName1",
+        "propout": "payload.medName1",
+        "object": "msg",
+        "objectout": "msg",
+        "x": 1300,
+        "y": 1000,
+        "wires": [
+            [
+                "93de449c3b196bf3"
+            ]
+        ]
+    },
+    {
+        "id": "83aa4e1e1af6c073",
+        "type": "string",
+        "z": "e6a504baa2efc0c0",
+        "name": "Data_início_tratamento",
+        "methods": [
+            {
+                "name": "toString",
+                "params": []
+            }
+        ],
+        "prop": "payload.medStartDate1",
+        "propout": "payload.medStartDate1",
+        "object": "msg",
+        "objectout": "msg",
+        "x": 1550,
+        "y": 1040,
+        "wires": [
+            [
+                "eb2bec15a52cccdb",
+                "2c35ba93ac420185"
+            ]
+        ]
+    },
+    {
+        "id": "93de449c3b196bf3",
+        "type": "string",
+        "z": "e6a504baa2efc0c0",
+        "name": "Frequencia",
+        "methods": [
+            {
+                "name": "toString",
+                "params": []
+            }
+        ],
+        "prop": "payload.medFreq1",
+        "propout": "payload.medFreq1",
+        "object": "msg",
+        "objectout": "msg",
+        "x": 1510,
+        "y": 1000,
+        "wires": [
+            [
+                "547cc418bb213eaf"
+            ]
+        ]
+    },
+    {
+        "id": "547cc418bb213eaf",
+        "type": "string",
+        "z": "e6a504baa2efc0c0",
+        "name": "Dosagem",
+        "methods": [
+            {
+                "name": "toInteger",
+                "params": []
+            }
+        ],
+        "prop": "payload.dosMed1",
+        "propout": "payload.dosMed1",
+        "object": "msg",
+        "objectout": "msg",
+        "x": 1660,
+        "y": 1000,
+        "wires": [
+            [
+                "b727195c8f2dc6c6"
+            ]
+        ]
+    },
+    {
+        "id": "4a65b4b4e92daeaf",
+        "type": "string",
+        "z": "e6a504baa2efc0c0",
+        "name": "Hora_início_tratamento",
+        "methods": [
+            {
+                "name": "toString",
+                "params": []
+            }
+        ],
+        "prop": "payload.medStartTime1",
+        "propout": "medStartTime1",
+        "object": "msg",
+        "objectout": "msg",
+        "x": 1550,
+        "y": 1080,
+        "wires": [
+            [
+                "9679311709bb2dcb"
+            ]
+        ]
+    },
+    {
+        "id": "b6a09d34938c0abc",
+        "type": "delay",
+        "z": "e6a504baa2efc0c0",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "4",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1100,
+        "y": 1000,
+        "wires": [
+            [
+                "c4989f3051153973"
+            ]
+        ]
+    },
+    {
+        "id": "9679311709bb2dcb",
+        "type": "function",
+        "z": "e6a504baa2efc0c0",
+        "name": "",
+        "func": "msg.payload = `INSERT INTO Tcc.Cadastro_Medicamento(paciente_id, Nome_medicamento, Data_inicio_tratamento,Hora_inicio_tratamento,Frequencia,Qtd_comprimidos_compartimento,Compartimento)\n    SELECT  *\n    FROM (SELECT '1' AS paciente_id,\n    \"${msg.payload.medName1}\" AS Nome_medicamento,\n    \"${msg.payload.medStartDate1}\" AS Data_inicio_tratamento,\n    \"${msg.medStartTime1}\" AS Hora_inicio_tratamento,\n    ${msg.payload.medFreq1} AS Frequencia,\n    ${msg.payload.dosMed1} AS Qtd_comprimidos_compartimento,\n    '6' AS Compartimento) AS temp\n    WHERE NOT EXISTS (SELECT paciente_id,Compartimento\n                      FROM Tcc.Cadastro_Medicamento AS med\n                      WHERE med.paciente_id = '1' AND med.Compartimento = '6'\n                     )\n\tLIMIT 1;'\n                     \n\t\t\t\t\t`\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1780,
+        "y": 1080,
+        "wires": [
+            [
+                "b21be219d36f091d"
+            ]
+        ]
+    },
+    {
+        "id": "9c41b8c261fe7772",
+        "type": "debug",
+        "z": "e6a504baa2efc0c0",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "topic",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2100,
+        "y": 1020,
+        "wires": []
+    },
+    {
+        "id": "b21be219d36f091d",
+        "type": "string",
+        "z": "e6a504baa2efc0c0",
+        "name": "",
+        "methods": [
+            {
+                "name": "toString",
+                "params": []
+            }
+        ],
+        "prop": "payload",
+        "propout": "topic",
+        "object": "msg",
+        "objectout": "msg",
+        "x": 1950,
+        "y": 1080,
+        "wires": [
+            [
+                "9c41b8c261fe7772",
+                "6174ed5c7f1ea8b7"
+            ]
+        ]
+    },
+    {
+        "id": "b727195c8f2dc6c6",
+        "type": "delay",
+        "z": "e6a504baa2efc0c0",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "3",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1100,
+        "y": 1040,
+        "wires": [
+            [
+                "175d57e44424118d"
+            ]
+        ]
+    },
+    {
+        "id": "eb2bec15a52cccdb",
+        "type": "delay",
+        "z": "e6a504baa2efc0c0",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "4",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1100,
+        "y": 1080,
+        "wires": [
+            [
+                "1293e07036bc8684"
+            ]
+        ]
+    },
+    {
+        "id": "6174ed5c7f1ea8b7",
+        "type": "mysql",
+        "z": "e6a504baa2efc0c0",
+        "mydb": "059998258fe85c80",
+        "name": "",
+        "x": 2110,
+        "y": 1080,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "175d57e44424118d",
+        "type": "moment",
+        "z": "e6a504baa2efc0c0",
+        "name": "",
+        "topic": "",
+        "input": "payload.medStartDate1",
+        "inputType": "msg",
+        "inTz": "Africa/Abidjan",
+        "adjAmount": "3",
+        "adjType": "hours",
+        "adjDir": "add",
+        "format": "YYYY-MM-DD",
+        "locale": "pt-BR",
+        "output": "payload.medStartDate1",
+        "outputType": "msg",
+        "outTz": "America/Sao_Paulo",
+        "x": 1300,
+        "y": 1040,
+        "wires": [
+            [
+                "83aa4e1e1af6c073"
+            ]
+        ]
+    },
+    {
+        "id": "1293e07036bc8684",
+        "type": "moment",
+        "z": "e6a504baa2efc0c0",
+        "name": "",
+        "topic": "",
+        "input": "payload.medStartTime1",
+        "inputType": "msg",
+        "inTz": "Africa/Abidjan",
+        "adjAmount": "3",
+        "adjType": "hours",
+        "adjDir": "add",
+        "format": "HH:mm",
+        "locale": "pt-BR",
+        "output": "payload.medStartTime1",
+        "outputType": "msg",
+        "outTz": "America/Sao_Paulo",
+        "x": 1300,
+        "y": 1080,
+        "wires": [
+            [
+                "4a65b4b4e92daeaf"
+            ]
+        ]
+    },
+    {
+        "id": "2c35ba93ac420185",
+        "type": "debug",
+        "z": "e6a504baa2efc0c0",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1770,
+        "y": 1040,
+        "wires": []
+    },
+    {
+        "id": "0e44f28e1bc1949d",
+        "type": "string",
+        "z": "e6a504baa2efc0c0",
+        "name": "Nome_medicamento",
+        "methods": [
+            {
+                "name": "toString",
+                "params": []
+            }
+        ],
+        "prop": "payload.medName1",
+        "propout": "payload.medName1",
+        "object": "msg",
+        "objectout": "msg",
+        "x": 1300,
+        "y": 1140,
+        "wires": [
+            [
+                "dad282fc1a9520d5"
+            ]
+        ]
+    },
+    {
+        "id": "60be3e0e7412bda1",
+        "type": "string",
+        "z": "e6a504baa2efc0c0",
+        "name": "Data_início_tratamento",
+        "methods": [
+            {
+                "name": "toString",
+                "params": []
+            }
+        ],
+        "prop": "payload.medStartDate1",
+        "propout": "payload.medStartDate1",
+        "object": "msg",
+        "objectout": "msg",
+        "x": 1550,
+        "y": 1180,
+        "wires": [
+            [
+                "99fe28abc9223013",
+                "d37075a86768fb47"
+            ]
+        ]
+    },
+    {
+        "id": "dad282fc1a9520d5",
+        "type": "string",
+        "z": "e6a504baa2efc0c0",
+        "name": "Frequencia",
+        "methods": [
+            {
+                "name": "toString",
+                "params": []
+            }
+        ],
+        "prop": "payload.medFreq1",
+        "propout": "payload.medFreq1",
+        "object": "msg",
+        "objectout": "msg",
+        "x": 1510,
+        "y": 1140,
+        "wires": [
+            [
+                "5fca6d2739b0f12e"
+            ]
+        ]
+    },
+    {
+        "id": "5fca6d2739b0f12e",
+        "type": "string",
+        "z": "e6a504baa2efc0c0",
+        "name": "Dosagem",
+        "methods": [
+            {
+                "name": "toInteger",
+                "params": []
+            }
+        ],
+        "prop": "payload.dosMed1",
+        "propout": "payload.dosMed1",
+        "object": "msg",
+        "objectout": "msg",
+        "x": 1660,
+        "y": 1140,
+        "wires": [
+            [
+                "c70bb42f8bab7462"
+            ]
+        ]
+    },
+    {
+        "id": "55fde4bb836085f2",
+        "type": "string",
+        "z": "e6a504baa2efc0c0",
+        "name": "Hora_início_tratamento",
+        "methods": [
+            {
+                "name": "toString",
+                "params": []
+            }
+        ],
+        "prop": "payload.medStartTime1",
+        "propout": "medStartTime1",
+        "object": "msg",
+        "objectout": "msg",
+        "x": 1550,
+        "y": 1220,
+        "wires": [
+            [
+                "3fa081c9be50f9fc"
+            ]
+        ]
+    },
+    {
+        "id": "bea4adac6eff4df0",
+        "type": "delay",
+        "z": "e6a504baa2efc0c0",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "4",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1100,
+        "y": 1140,
+        "wires": [
+            [
+                "0e44f28e1bc1949d"
+            ]
+        ]
+    },
+    {
+        "id": "3fa081c9be50f9fc",
+        "type": "function",
+        "z": "e6a504baa2efc0c0",
+        "name": "",
+        "func": "msg.payload = `INSERT INTO Tcc.Cadastro_Medicamento(paciente_id, Nome_medicamento, Data_inicio_tratamento,Hora_inicio_tratamento,Frequencia,Qtd_comprimidos_compartimento,Compartimento)\n    SELECT  *\n    FROM (SELECT '1' AS paciente_id,\n    \"${msg.payload.medName1}\" AS Nome_medicamento,\n    \"${msg.payload.medStartDate1}\" AS Data_inicio_tratamento,\n    \"${msg.medStartTime1}\" AS Hora_inicio_tratamento,\n    ${msg.payload.medFreq1} AS Frequencia,\n    ${msg.payload.dosMed1} AS Qtd_comprimidos_compartimento,\n    '4' AS Compartimento) AS temp\n    WHERE NOT EXISTS (SELECT paciente_id,Compartimento\n                      FROM Tcc.Cadastro_Medicamento AS med\n                      WHERE med.paciente_id = '1' AND med.Compartimento = '4'\n                     )\n\tLIMIT 1;'\n                     \n\t\t\t\t\t`\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1780,
+        "y": 1220,
+        "wires": [
+            [
+                "e03637b8af2cfde1"
+            ]
+        ]
+    },
+    {
+        "id": "b7c242ce5cb63c27",
+        "type": "debug",
+        "z": "e6a504baa2efc0c0",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "topic",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2100,
+        "y": 1160,
+        "wires": []
+    },
+    {
+        "id": "e03637b8af2cfde1",
+        "type": "string",
+        "z": "e6a504baa2efc0c0",
+        "name": "",
+        "methods": [
+            {
+                "name": "toString",
+                "params": []
+            }
+        ],
+        "prop": "payload",
+        "propout": "topic",
+        "object": "msg",
+        "objectout": "msg",
+        "x": 1950,
+        "y": 1220,
+        "wires": [
+            [
+                "b7c242ce5cb63c27",
+                "2f32d6e894e71829"
+            ]
+        ]
+    },
+    {
+        "id": "c70bb42f8bab7462",
+        "type": "delay",
+        "z": "e6a504baa2efc0c0",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "3",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1100,
+        "y": 1180,
+        "wires": [
+            [
+                "290c5e37e0352beb"
+            ]
+        ]
+    },
+    {
+        "id": "99fe28abc9223013",
+        "type": "delay",
+        "z": "e6a504baa2efc0c0",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "4",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1100,
+        "y": 1220,
+        "wires": [
+            [
+                "fb0ce49d0edc1e34"
+            ]
+        ]
+    },
+    {
+        "id": "2f32d6e894e71829",
+        "type": "mysql",
+        "z": "e6a504baa2efc0c0",
+        "mydb": "059998258fe85c80",
+        "name": "",
+        "x": 2110,
+        "y": 1220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "290c5e37e0352beb",
+        "type": "moment",
+        "z": "e6a504baa2efc0c0",
+        "name": "",
+        "topic": "",
+        "input": "payload.medStartDate1",
+        "inputType": "msg",
+        "inTz": "Africa/Abidjan",
+        "adjAmount": "3",
+        "adjType": "hours",
+        "adjDir": "add",
+        "format": "YYYY-MM-DD",
+        "locale": "pt-BR",
+        "output": "payload.medStartDate1",
+        "outputType": "msg",
+        "outTz": "America/Sao_Paulo",
+        "x": 1300,
+        "y": 1180,
+        "wires": [
+            [
+                "60be3e0e7412bda1"
+            ]
+        ]
+    },
+    {
+        "id": "fb0ce49d0edc1e34",
+        "type": "moment",
+        "z": "e6a504baa2efc0c0",
+        "name": "",
+        "topic": "",
+        "input": "payload.medStartTime1",
+        "inputType": "msg",
+        "inTz": "Africa/Abidjan",
+        "adjAmount": "3",
+        "adjType": "hours",
+        "adjDir": "add",
+        "format": "HH:mm",
+        "locale": "pt-BR",
+        "output": "payload.medStartTime1",
+        "outputType": "msg",
+        "outTz": "America/Sao_Paulo",
+        "x": 1300,
+        "y": 1220,
+        "wires": [
+            [
+                "55fde4bb836085f2"
+            ]
+        ]
+    },
+    {
+        "id": "d37075a86768fb47",
+        "type": "debug",
+        "z": "e6a504baa2efc0c0",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1770,
+        "y": 1180,
+        "wires": []
     }
 ]
