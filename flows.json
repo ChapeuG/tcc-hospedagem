@@ -932,7 +932,7 @@
         "type": "function",
         "z": "06f3eaa7a038e5a3",
         "name": "",
-        "func": "qtd = msg.payload;\n\nif (qtd == 0) {\n    msg.topic = \"\"\n    return msg;\n} else if (qtd == 1) {\n    msg.topic = \"SELECT * FROM Tcc.Cadastro_medicamento WHERE Compartimento = 1\";\n    return msg;\n} else if (qtd == 2) {\n    msg.topic1 = \"SELECT * FROM Tcc.Cadastro_medicamento WHERE Compartimento = 1\";\n    msg.topic2 = \"SELECT * FROM Tcc.Cadastro_medicamento WHERE Compartimento = 2\";\n    return msg;\n} else if (qtd == 3) {\n    msg.topic = \"SELECT * FROM Tcc.Cadastro_medicamento WHERE Compartimento = 3\";\n    return msg;\n} else if (qtd == 4) {\n    msg.topic = \"SELECT * FROM Tcc.Cadastro_medicamento WHERE Compartimento = 4\";\n    return msg;\n} else if (qtd == 5) {\n    msg.topic = \"SELECT * FROM Tcc.Cadastro_medicamento WHERE Compartimento = 5\";\n    return msg;\n} else if (qtd == 6) {\n    msg.topic = \"SELECT * FROM Tcc.Cadastro_medicamento WHERE Compartimento = 6\";\n    return msg;\n} else if (qtd == 7) {\n    msg.topic = \"SELECT * FROM Tcc.Cadastro_medicamento WHERE Compartimento = 7\";\n    return msg;\n}\n\n\n\n\n\n\n",
+        "func": "qtd = msg.payload;\n\nif (qtd == 0) {\n    msg.topic = \"\"\n    return msg;\n} else if (qtd == 1) {\n    msg.topic = \"SELECT * FROM Tcc.Cadastro_medicamento WHERE Compartimento = 1\";\n    return msg;\n} else if (qtd == 2) {\n    msg.topic2 = \"SELECT * FROM Tcc.Cadastro_medicamento WHERE Compartimento = 2\";\n    return msg;\n} else if (qtd == 3) {\n    msg.topic = \"SELECT * FROM Tcc.Cadastro_medicamento WHERE Compartimento = 3\";\n    return msg;\n} else if (qtd == 4) {\n    msg.topic = \"SELECT * FROM Tcc.Cadastro_medicamento WHERE Compartimento = 4\";\n    return msg;\n} else if (qtd == 5) {\n    msg.topic = \"SELECT * FROM Tcc.Cadastro_medicamento WHERE Compartimento = 5\";\n    return msg;\n} else if (qtd == 6) {\n    msg.topic = \"SELECT * FROM Tcc.Cadastro_medicamento WHERE Compartimento = 6\";\n    return msg;\n} else if (qtd == 7) {\n    msg.topic = \"SELECT * FROM Tcc.Cadastro_medicamento WHERE Compartimento = 7\";\n    return msg;\n}\n\n\n\n\n\n\n",
         "outputs": 1,
         "noerr": 9,
         "initialize": "",
@@ -2198,7 +2198,7 @@
         "type": "ui_form",
         "z": "e6a504baa2efc0c0",
         "name": "",
-        "label": "Medicamento 3",
+        "label": "Compartimento 3",
         "group": "49ce15cd.8c285c",
         "order": 1,
         "width": 0,
@@ -2240,52 +2240,10 @@
                 "rows": null
             },
             {
-                "label": "Compartimento 1 do Meepi?",
-                "value": "medPlace3_1",
-                "type": "checkbox",
-                "required": false,
-                "rows": null
-            },
-            {
-                "label": "Compartimento 2  do Meepi?",
-                "value": "medPlace3_2",
-                "type": "checkbox",
-                "required": false,
-                "rows": null
-            },
-            {
-                "label": "Compartimento 3 do Meepi?",
+                "label": "Compartimento 3",
                 "value": "medPlace3_3",
-                "type": "checkbox",
+                "type": "switch",
                 "required": true,
-                "rows": null
-            },
-            {
-                "label": "Compartimento 4 do Meepi?",
-                "value": "medPlace3_4",
-                "type": "checkbox",
-                "required": false,
-                "rows": null
-            },
-            {
-                "label": "Compartimento 5 do Meepi?",
-                "value": "medPlace3_5",
-                "type": "checkbox",
-                "required": false,
-                "rows": null
-            },
-            {
-                "label": "Compartimento 6 do Meepi?",
-                "value": "medPlace3_6",
-                "type": "checkbox",
-                "required": false,
-                "rows": null
-            },
-            {
-                "label": "Compartimento 7 do Meepi?",
-                "value": "medPlace3_7",
-                "type": "checkbox",
-                "required": false,
                 "rows": null
             }
         ],
@@ -2295,13 +2253,7 @@
             "medStartTime3": "",
             "medFreq3": "",
             "dosMed3": "",
-            "medPlace3_1": false,
-            "medPlace3_2": false,
-            "medPlace3_3": false,
-            "medPlace3_4": false,
-            "medPlace3_5": false,
-            "medPlace3_6": false,
-            "medPlace3_7": false
+            "medPlace3_3": false
         },
         "payload": "",
         "submit": "Enviar",
@@ -2309,7 +2261,8 @@
         "topic": "topic",
         "topicType": "msg",
         "splitLayout": "",
-        "x": 600,
+        "className": "",
+        "x": 610,
         "y": 580,
         "wires": [
             [
@@ -2323,7 +2276,7 @@
         "type": "ui_form",
         "z": "e6a504baa2efc0c0",
         "name": "",
-        "label": "Medicamento 4",
+        "label": "Compartimento  4",
         "group": "ab7eb3dd.ce18e",
         "order": 1,
         "width": 0,
@@ -2365,52 +2318,10 @@
                 "rows": null
             },
             {
-                "label": "Compartimento 1 do Meepi?",
-                "value": "medPlace4_1",
-                "type": "checkbox",
-                "required": false,
-                "rows": null
-            },
-            {
-                "label": "Compartimento 2 do Meepi?",
-                "value": "medPlace4_2",
-                "type": "checkbox",
-                "required": false,
-                "rows": null
-            },
-            {
-                "label": "Compartimento 3 do Meepi?",
-                "value": "medPlace4_3",
-                "type": "checkbox",
-                "required": false,
-                "rows": null
-            },
-            {
-                "label": "Compartimento 4 do Meepi?",
+                "label": "Compartimento 4",
                 "value": "medPlace4_4",
                 "type": "checkbox",
                 "required": true,
-                "rows": null
-            },
-            {
-                "label": "Compartimento 5 do Meepi?",
-                "value": "medPlace4_5",
-                "type": "checkbox",
-                "required": false,
-                "rows": null
-            },
-            {
-                "label": "Compartimento 6 do Meepi?",
-                "value": "medPlace4_6",
-                "type": "checkbox",
-                "required": false,
-                "rows": null
-            },
-            {
-                "label": "Compartimento 7 do Meepi?",
-                "value": "medPlace4_7",
-                "type": "checkbox",
-                "required": false,
                 "rows": null
             }
         ],
@@ -2420,13 +2331,7 @@
             "medStartTime4": "",
             "medFreq4": "",
             "dosMed4": "",
-            "medPlace4_1": false,
-            "medPlace4_2": false,
-            "medPlace4_3": false,
-            "medPlace4_4": false,
-            "medPlace4_5": false,
-            "medPlace4_6": false,
-            "medPlace4_7": false
+            "medPlace4_4": false
         },
         "payload": "",
         "submit": "Enviar",
@@ -2434,7 +2339,8 @@
         "topic": "topic",
         "topicType": "msg",
         "splitLayout": "",
-        "x": 600,
+        "className": "",
+        "x": 610,
         "y": 720,
         "wires": [
             [
@@ -2490,52 +2396,10 @@
                 "rows": null
             },
             {
-                "label": "Compartimento 1?",
-                "value": "medPlace5_1",
-                "type": "checkbox",
-                "required": false,
-                "rows": null
-            },
-            {
-                "label": "Compartimento 2?",
-                "value": "medPlace5_2",
-                "type": "checkbox",
-                "required": false,
-                "rows": null
-            },
-            {
-                "label": "Compartimento 3 do Meepi?",
-                "value": "medPlace5_3",
-                "type": "checkbox",
-                "required": false,
-                "rows": null
-            },
-            {
-                "label": "Compartimento 4 do Meepi?",
-                "value": "medPlace5_4",
-                "type": "checkbox",
-                "required": false,
-                "rows": null
-            },
-            {
-                "label": "Compartimento 5 do Meepi?",
+                "label": "Compartimento 5 ",
                 "value": "medPlace5_5",
-                "type": "checkbox",
+                "type": "switch",
                 "required": true,
-                "rows": null
-            },
-            {
-                "label": "Compartimento 6 do Meepi?",
-                "value": "medPlace5_6",
-                "type": "checkbox",
-                "required": false,
-                "rows": null
-            },
-            {
-                "label": "Compartimento 7 do Meepi?",
-                "value": "medPlace5_7",
-                "type": "checkbox",
-                "required": false,
                 "rows": null
             }
         ],
@@ -2545,13 +2409,7 @@
             "medStartTime5": "",
             "medFreq5": "",
             "dosMed5": "",
-            "medPlace5_1": false,
-            "medPlace5_2": false,
-            "medPlace5_3": false,
-            "medPlace5_4": false,
-            "medPlace5_5": false,
-            "medPlace5_6": false,
-            "medPlace5_7": false
+            "medPlace5_5": false
         },
         "payload": "",
         "submit": "Enviar",
@@ -2559,6 +2417,7 @@
         "topic": "topic",
         "topicType": "msg",
         "splitLayout": "",
+        "className": "",
         "x": 600,
         "y": 860,
         "wires": [
@@ -2573,7 +2432,7 @@
         "type": "ui_form",
         "z": "e6a504baa2efc0c0",
         "name": "",
-        "label": "Medicamento 6",
+        "label": "Compartimento  6",
         "group": "65ee5774.da5698",
         "order": 1,
         "width": 0,
@@ -2615,52 +2474,10 @@
                 "rows": null
             },
             {
-                "label": "Compartimento 1 do Meepi?",
-                "value": "medPlace6_1",
-                "type": "checkbox",
-                "required": false,
-                "rows": null
-            },
-            {
-                "label": "Compartimento 2 do Meepi?",
-                "value": "medPlace6_2",
-                "type": "checkbox",
-                "required": false,
-                "rows": null
-            },
-            {
-                "label": "Compartimento 3 do Meepi?",
-                "value": "medPlace6_3",
-                "type": "checkbox",
-                "required": false,
-                "rows": null
-            },
-            {
-                "label": "Compartimento 4 do Meepi?",
-                "value": "medPlace6_4",
-                "type": "checkbox",
-                "required": false,
-                "rows": null
-            },
-            {
-                "label": "Compartimento 5 do Meepi?",
-                "value": "medPlace6_5",
-                "type": "checkbox",
-                "required": false,
-                "rows": null
-            },
-            {
-                "label": "Compartimento 6 do Meepi?",
+                "label": "Compartimento 6",
                 "value": "medPlace6_6",
-                "type": "checkbox",
+                "type": "switch",
                 "required": true,
-                "rows": null
-            },
-            {
-                "label": "Compartimento 7 do Meepi?",
-                "value": "medPlace6_7",
-                "type": "checkbox",
-                "required": false,
                 "rows": null
             }
         ],
@@ -2670,13 +2487,7 @@
             "medStartTime6": "",
             "medFreq6": "",
             "dosMed6": "",
-            "medPlace6_1": false,
-            "medPlace6_2": false,
-            "medPlace6_3": false,
-            "medPlace6_4": false,
-            "medPlace6_5": false,
-            "medPlace6_6": false,
-            "medPlace6_7": false
+            "medPlace6_6": false
         },
         "payload": "",
         "submit": "Enviar",
@@ -2684,7 +2495,8 @@
         "topic": "topic",
         "topicType": "msg",
         "splitLayout": "",
-        "x": 600,
+        "className": "",
+        "x": 610,
         "y": 1000,
         "wires": [
             [
@@ -2698,7 +2510,7 @@
         "type": "ui_form",
         "z": "e6a504baa2efc0c0",
         "name": "",
-        "label": "Medicamento 7",
+        "label": "Compartimento 7",
         "group": "c12a1ba1.28b078",
         "order": 1,
         "width": 0,
@@ -2740,49 +2552,7 @@
                 "rows": null
             },
             {
-                "label": "Compartimento 1 do Meepi?",
-                "value": "medPlace7_1",
-                "type": "checkbox",
-                "required": false,
-                "rows": null
-            },
-            {
-                "label": "Compartimento 2 do Meepi?",
-                "value": "medPlace7_2",
-                "type": "checkbox",
-                "required": false,
-                "rows": null
-            },
-            {
-                "label": "Compartimento 3 do Meepi?",
-                "value": "medPlace7_3",
-                "type": "checkbox",
-                "required": false,
-                "rows": null
-            },
-            {
-                "label": "Compartimento 4 do Meepi?",
-                "value": "medPlace7_4",
-                "type": "checkbox",
-                "required": false,
-                "rows": null
-            },
-            {
-                "label": "Compartimento 5 do Meepi?",
-                "value": "medPlace7_5",
-                "type": "checkbox",
-                "required": false,
-                "rows": null
-            },
-            {
-                "label": "Compartimento 6 do Meepi?",
-                "value": "medPlace7_6",
-                "type": "checkbox",
-                "required": false,
-                "rows": null
-            },
-            {
-                "label": "Compartimento 7 do Meepi?",
+                "label": "Compartimento 7 ",
                 "value": "medPlace7_7",
                 "type": "checkbox",
                 "required": true,
@@ -2795,12 +2565,6 @@
             "medStartTime7": "",
             "medFreq7": "",
             "dosMed7": "",
-            "medPlace7_1": false,
-            "medPlace7_2": false,
-            "medPlace7_3": false,
-            "medPlace7_4": false,
-            "medPlace7_5": false,
-            "medPlace7_6": false,
             "medPlace7_7": false
         },
         "payload": "",
@@ -2809,7 +2573,8 @@
         "topic": "topic",
         "topicType": "msg",
         "splitLayout": "",
-        "x": 600,
+        "className": "",
+        "x": 610,
         "y": 1140,
         "wires": [
             [
@@ -5925,7 +5690,7 @@
         "type": "function",
         "z": "e6a504baa2efc0c0",
         "name": "",
-        "func": "msg.payload = `INSERT INTO Tcc.Cadastro_Medicamento(paciente_id, Nome_medicamento, Data_inicio_tratamento,Hora_inicio_tratamento,Frequencia,Qtd_comprimidos_compartimento,Compartimento)\n    SELECT  *\n    FROM (SELECT '1' AS paciente_id,\n    \"${msg.payload.medName1}\" AS Nome_medicamento,\n    \"${msg.payload.medStartDate1}\" AS Data_inicio_tratamento,\n    \"${msg.medStartTime1}\" AS Hora_inicio_tratamento,\n    ${msg.payload.medFreq1} AS Frequencia,\n    ${msg.payload.dosMed1} AS Qtd_comprimidos_compartimento,\n    '4' AS Compartimento) AS temp\n    WHERE NOT EXISTS (SELECT paciente_id,Compartimento\n                      FROM Tcc.Cadastro_Medicamento AS med\n                      WHERE med.paciente_id = '1' AND med.Compartimento = '4'\n                     )\n\tLIMIT 1;'\n                     \n\t\t\t\t\t`\nreturn msg;",
+        "func": "msg.payload = `INSERT INTO Tcc.Cadastro_Medicamento(paciente_id, Nome_medicamento, Data_inicio_tratamento,Hora_inicio_tratamento,Frequencia,Qtd_comprimidos_compartimento,Compartimento)\n    SELECT  *\n    FROM (SELECT '1' AS paciente_id,\n    \"${msg.payload.medName1}\" AS Nome_medicamento,\n    \"${msg.payload.medStartDate1}\" AS Data_inicio_tratamento,\n    \"${msg.medStartTime1}\" AS Hora_inicio_tratamento,\n    ${msg.payload.medFreq1} AS Frequencia,\n    ${msg.payload.dosMed1} AS Qtd_comprimidos_compartimento,\n    '7' AS Compartimento) AS temp\n    WHERE NOT EXISTS (SELECT paciente_id,Compartimento\n                      FROM Tcc.Cadastro_Medicamento AS med\n                      WHERE med.paciente_id = '1' AND med.Compartimento = '7'\n                     )\n\tLIMIT 1;'\n                     \n\t\t\t\t\t`\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
